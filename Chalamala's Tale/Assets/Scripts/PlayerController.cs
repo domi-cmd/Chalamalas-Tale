@@ -3,18 +3,41 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5f;
+
     private Rigidbody2D body;
     private Vector2 movement;
+
+    public SpriteRenderer spriteImage;
+
+    public Sprite spriteRight;
+    public Sprite spriteLeft;
+    public Sprite spriteIdle;
 
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        spriteImage = GetComponent<SpriteRenderer>();
+        
     }
 
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        // Change sprite based on direction
+        if (movement.x > 0)
+        {
+            spriteImage.sprite = spriteRight;
+        }
+        else if (movement.x < 0)
+        {
+            spriteImage.sprite = spriteLeft;
+        }
+        else
+        {
+            spriteImage.sprite = spriteIdle;
+        }
     }
 
     void FixedUpdate()
