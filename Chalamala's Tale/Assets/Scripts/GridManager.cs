@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class GridManager : MonoBehaviour
 {
     public static GridManager Instance;
+    // Keep track of which rooms have been visited, and should be part of the minimap
+    public HashSet<(int, int)> visitedRooms = new HashSet<(int, int)>();
 
     public int currentRow = 3;
     public int currentCol = 3;
@@ -25,24 +27,27 @@ public class GridManager : MonoBehaviour
         ( 0,  1,  1,  3),  // right:  my=right(1),  neighbor=left(3)
     };
 
+    // Creates the GridManager before any scene loads if it doesnt exist yet
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    static void CreateInstance()
+    {
+        if (Instance != null) return;
+        new GameObject("GridManager").AddComponent<GridManager>();
+    }
+
     void Awake()
     {
+        // Singleton pattern that destroys duplicates and persist across scenes
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
         GenerateGrid();
     }
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    static void CreateInstance()
-    {
-        if (Instance != null) return;
-        var go = new GameObject("GridManager");
-        go.AddComponent<GridManager>();
-    }
-
+    // Returns whether a certain side of the room has a door
     public bool IsOpen(int row, int col, int side) => walls[row, col, side];
 
+    // Updates current room position and loads the new room that the player moved to
     public void MoveToRoom(int side)
     {
         if (side == 0) currentRow--;
@@ -52,95 +57,58 @@ public class GridManager : MonoBehaviour
         SceneManager.LoadScene("Room");
     }
 
+    // Generates the map grid using a recursive dfs approach
     public void GenerateGrid()
     {
-        // Reset all walls to closed
-        for (int r = 0; r < ROWS; r++)
-            for (int c = 0; c < COLS; c++)
-                for (int s = 0; s < 4; s++)
-                    walls[r, c, s] = false;
-
-        bool[,] visited = new bool[ROWS, COLS];
+        var visited = new bool[ROWS, COLS];
         var stack = new Stack<(int r, int c)>();
+
         stack.Push((0, 0));
         visited[0, 0] = true;
 
         while (stack.Count > 0)
         {
             var (r, c) = stack.Peek();
+            var neighbors = GetUnvisitedNeighbors(r, c, visited);
 
-            // Check for neighbors that already have their wall open toward us
-            var forcedDirs = new List<int>();
-            for (int i = 0; i < DIRECTIONS.Length; i++)
-            {
-                var (dr, dc, my, nb) = DIRECTIONS[i];
-                int nr = r + dr, nc = c + dc;
-                if (InBounds(nr, nc) && !visited[nr, nc] && walls[nr, nc, nb])
-                    forcedDirs.Add(i);
-            }
+            // Backtrack if no unvisited neighbors
+            if (neighbors.Count == 0) { stack.Pop(); continue; }
 
-            int chosen;
-            if (forcedDirs.Count > 0)
-            {
-                chosen = forcedDirs[Random.Range(0, forcedDirs.Count)];
-                BreakWall(r, c, chosen);
-                var (dr, dc, _, _) = DIRECTIONS[chosen];
-                int nr = r + dr, nc = c + dc;
-                visited[nr, nc] = true;
-                stack.Push((nr, nc));
-            }
-            else
-            {
-                // Find unvisited neighbors
-                var available = new List<int>();
-                for (int i = 0; i < DIRECTIONS.Length; i++)
-                {
-                    var (dr, dc, _, _) = DIRECTIONS[i];
-                    int nr = r + dr, nc = c + dc;
-                    if (InBounds(nr, nc) && !visited[nr, nc])
-                        available.Add(i);
-                }
+            // Carve a passage to a random unvisited neighbor
+            int dirIndex = neighbors[Random.Range(0, neighbors.Count)];
+            OpenPassage(r, c, dirIndex, visited, stack);
 
-                if (available.Count == 0) { stack.Pop(); continue; }
-
-                chosen = available[Random.Range(0, available.Count)];
-                BreakWall(r, c, chosen);
-                var (ddr, ddc, _, _) = DIRECTIONS[chosen];
-                int nnr = r + ddr, nnc = c + ddc;
-                visited[nnr, nnc] = true;
-                stack.Push((nnr, nnc));
-            }
-
-            // 50% chance to break a second wall — but not for boss room [0,0]
+            // 50% chance to carve a second passage for more open layouts
+            // Disabled for the boss room to keep it more isolated
             if (r == 0 && c == 0) continue;
-
-            var remaining = new List<int>();
-            for (int i = 0; i < DIRECTIONS.Length; i++)
-            {
-                if (i == chosen) continue;
-                var (dr, dc, _, _) = DIRECTIONS[i];
-                int nr = r + dr, nc = c + dc;
-                if (InBounds(nr, nc) && !visited[nr, nc])
-                    remaining.Add(i);
-            }
-
-            if (remaining.Count > 0 && Random.value < 0.5f)
-            {
-                int extra = remaining[Random.Range(0, remaining.Count)];
-                BreakWall(r, c, extra);
-                var (dr, dc, _, _) = DIRECTIONS[extra];
-                int nr = r + dr, nc = c + dc;
-                visited[nr, nc] = true;
-                stack.Push((nr, nc));
-            }
+            neighbors = GetUnvisitedNeighbors(r, c, visited);
+            if (neighbors.Count > 0 && Random.value < 0.5f)
+                OpenPassage(r, c, neighbors[Random.Range(0, neighbors.Count)], visited, stack);
         }
     }
 
-    private void BreakWall(int r, int c, int dirIndex)
+    // Returns a list of direction indices leading to unvisited in-bounds neighbors
+    List<int> GetUnvisitedNeighbors(int r, int c, bool[,] visited)
+    {
+        var result = new List<int>();
+        for (int i = 0; i < DIRECTIONS.Length; i++)
+        {
+            var (dr, dc, _, _) = DIRECTIONS[i];
+            int nr = r + dr, nc = c + dc;
+            if (InBounds(nr, nc) && !visited[nr, nc])
+                result.Add(i);
+        }
+        return result;
+    }
+
+    // Helper method that opens the wall between current cell and its neighbor in designated direction
+    void OpenPassage(int r, int c, int dirIndex, bool[,] visited, Stack<(int, int)> stack)
     {
         var (dr, dc, my, nb) = DIRECTIONS[dirIndex];
         walls[r, c, my] = true;
         walls[r + dr, c + dc, nb] = true;
+        visited[r + dr, c + dc] = true;
+        stack.Push((r + dr, c + dc));
     }
 
     private bool InBounds(int r, int c) => r >= 0 && r < ROWS && c >= 0 && c < COLS;

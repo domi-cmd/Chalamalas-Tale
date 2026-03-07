@@ -30,12 +30,19 @@ public class Minimap : MonoBehaviour
         // Initialize the room rectangle that stores the minimap squares
         roomRects = new RectTransform[rows, cols];
 
+        // Add current room to visited rooms
+        gm.visitedRooms.Add((gm.currentRow, gm.currentCol));
+
         for (int r = 0; r < rows; r++)
         {
             for (int c = 0; c < cols; c++)
             {
                 float x = c * (cellSize);
                 float y = -r * (cellSize);
+
+                // Check if the room has been visited as part of the minimap, skip if not
+                if (!gm.visitedRooms.Contains((r, c)))
+                    continue;
 
                 // Room square
                 var room = CreateRect("Room", transform);
@@ -89,6 +96,7 @@ public class Minimap : MonoBehaviour
         }
     }
 
+    // Helper method for drawing a closed wall
     void DrawWall(float x, float y, bool horizontal)
     {
         var wall = CreateRect("Wall", transform);
@@ -99,6 +107,8 @@ public class Minimap : MonoBehaviour
         wall.GetComponent<Image>().color = wallColor;
     }
 
+    // Helper method for drawing a wall with a doorway.
+    // Currently, the door is 2/4 of the wall, with one fourth each being the walls left and right of the door
     void DrawDoor(float x, float y, bool horizontal)
     {
         // First calculate how large each side of the wall next to the door is
