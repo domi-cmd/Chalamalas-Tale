@@ -1838,6 +1838,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7983309495581144791, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      propertyPath: spriteIdle
+      value: 
+      objectReference: {fileID: 4190077506490258871, guid: 4523a3c3d8be59a47aa15c437c26a6c2, type: 3}
+    - target: {fileID: 7983309495581144791, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      propertyPath: spriteLeft
+      value: 
+      objectReference: {fileID: -1941889073703371520, guid: 20fa853baa366b54abb8abd8a67f9a19, type: 3}
+    - target: {fileID: 7983309495581144791, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      propertyPath: spriteImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983309495581144791, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      propertyPath: spriteRight
+      value: 
+      objectReference: {fileID: 1826953908740716271, guid: 6aaa4a61cf505ed48ba8a448d487cc2e, type: 3}
     - target: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_Name
       value: Player
