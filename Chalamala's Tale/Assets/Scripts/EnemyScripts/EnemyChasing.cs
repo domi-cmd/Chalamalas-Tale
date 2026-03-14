@@ -24,7 +24,7 @@ public class EnemyChasing : MonoBehaviour
     void Start()
     {
         // Get the player object
-        player = GameObject.Find("PlayerHitbox");
+        player = GameObject.Find("Player");
 
         body = GetComponent<Rigidbody2D>();
         // No sprite yet :)
