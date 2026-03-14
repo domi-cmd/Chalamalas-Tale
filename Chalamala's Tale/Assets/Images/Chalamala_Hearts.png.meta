@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 80046897ae545ee48b796855432abaf1
+guid: c64862bd5c91083458f3f001c5a9d1f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4915620324684567951
-    second: boss_icon_0
+      213: -4114642976813766425
+    second: Chalamala_Hearts_0
+  - first:
+      213: 5493121218688105084
+    second: Chalamala_Hearts_1
+  - first:
+      213: -2984566982296354348
+    second: Chalamala_Hearts_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: boss_icon_0
+      name: Chalamala_Hearts_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 1024
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f85938724aac73440800000000000000
-      internalID: 4915620324684567951
+      spriteID: 7e8a57d430ad5e6c0800000000000000
+      internalID: -4114642976813766425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chalamala_Hearts_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7ab01405ac7b3c40800000000000000
+      internalID: 5493121218688105084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chalamala_Hearts_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1cddb7420b496d0800000000000000
+      internalID: -2984566982296354348
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a735db793abee954288d795df89a2825
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +196,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      boss_icon_0: 4915620324684567951
+      Chalamala_Hearts_0: -4114642976813766425
+      Chalamala_Hearts_1: 5493121218688105084
+      Chalamala_Hearts_2: -2984566982296354348
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
