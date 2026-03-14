@@ -1222,10 +1222,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2111646262}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -239, y: -106}
+  m_SizeDelta: {x: 328.8767, y: 324.253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922939149
 MonoBehaviour:
@@ -1239,8 +1239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956a37476cf4680469a1471bd9f4f3db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  cellSize: 24
-  wallThickness: 2
+  cellSize: 60
+  wallThickness: 8
   roomColor: {r: 0.9056604, g: 0.667392, b: 0.43574217, a: 1}
   currentRoomColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   wallColor: {r: 0, g: 0, b: 0, a: 1}
@@ -2912,10 +2912,10 @@ RectTransform:
   - {fileID: 922939148}
   m_Father: {fileID: 912409675}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 367, y: 195.16667}
-  m_SizeDelta: {x: 734, y: 390.33334}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -377, y: -211}
+  m_SizeDelta: {x: 734, y: 390.33337}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2125525856
 GameObject:
