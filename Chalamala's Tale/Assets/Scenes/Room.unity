@@ -573,7 +573,7 @@ GameObject:
   - component: {fileID: 665216755}
   - component: {fileID: 665216756}
   m_Layer: 0
-  m_Name: Castle_background
+  m_Name: CastleBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 821400008}
   - component: {fileID: 821400009}
   m_Layer: 0
-  m_Name: fortress
+  m_Name: Fortress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
