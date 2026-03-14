@@ -24,6 +24,15 @@ public class Minimap : MonoBehaviour
         foreach (Transform child in transform)
             Destroy(child.gameObject);
 
+        // Anchor the minimap to the top right screen corner. This should fix the previous changing resolution problem.
+        var rectTransform = GetComponent<RectTransform>();
+        rectTransform.anchorMin = new Vector2(1, 1);
+        rectTransform.anchorMax = new Vector2(1, 1);
+        rectTransform.pivot = new Vector2(1, 1);
+        // -10 pixel padding from the top right side screen edge
+        rectTransform.anchoredPosition = new Vector2(-60, 0);
+
+
         int rows = 4, cols = 4;
         var gm = GridManager.Instance;
 
