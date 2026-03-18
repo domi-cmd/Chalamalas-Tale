@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteRight;
     public Sprite spriteLeft;
     public Sprite spriteIdle;
+    public Sprite spriteBack;
+    public Canvas info;
 
     void Start()
     {
@@ -34,6 +36,10 @@ public class PlayerController : MonoBehaviour
         {
             spriteImage.sprite = spriteLeft;
         }
+        else if (movement.y > 0)
+        {
+            spriteImage.sprite = spriteBack;
+        }
         else
         {
             spriteImage.sprite = spriteIdle;
@@ -44,4 +50,6 @@ public class PlayerController : MonoBehaviour
     {
         body.linearVelocity = movement * speed;
     }
+
+
 }
