@@ -2117,9 +2117,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
   spriteImage: {fileID: 0}
-  spriteRight: {fileID: 1826953908740716271, guid: 6aaa4a61cf505ed48ba8a448d487cc2e, type: 3}
-  spriteLeft: {fileID: -1941889073703371520, guid: 20fa853baa366b54abb8abd8a67f9a19, type: 3}
-  spriteIdle: {fileID: 4190077506490258871, guid: 4523a3c3d8be59a47aa15c437c26a6c2, type: 3}
+  spriteRight: {fileID: -3582396759679167091, guid: 26c8516e613e85b4c8c2e2b04f8c47bd, type: 3}
+  spriteLeft: {fileID: -7670900094635721571, guid: 451e076697ab9ef4391c723206b91cde, type: 3}
+  spriteIdle: {fileID: -8287984193659030122, guid: 5f288092300a65f45a62a7ef19f209a0, type: 3}
+  spriteBack: {fileID: 3686686467743869865, guid: 4f373581fb9c193459d09f89cd7b4151, type: 3}
+  info: {fileID: 0}
 --- !u!212 &1592484138
 SpriteRenderer:
   serializedVersion: 2
@@ -2177,7 +2179,7 @@ SpriteRenderer:
   m_Size: {x: 7.06, y: 19.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1592484139
 BoxCollider2D:
