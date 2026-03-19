@@ -1,0 +1,5883 @@
+fileFormatVersion: 2
+guid: f4cecd1a1c70c054eaa5f988d8c4d12c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6154046580407657457
+    second: GNF Atlas_0
+  - first:
+      213: -5092007470412545442
+    second: GNF Atlas_1
+  - first:
+      213: -158219947452716891
+    second: GNF Atlas_2
+  - first:
+      213: 4019464068399876026
+    second: GNF Atlas_3
+  - first:
+      213: -8373782122011109512
+    second: GNF Atlas_4
+  - first:
+      213: -4852783064674912401
+    second: GNF Atlas_5
+  - first:
+      213: -7523834772569470834
+    second: GNF Atlas_6
+  - first:
+      213: -2203597427041725625
+    second: GNF Atlas_7
+  - first:
+      213: 5289239615936660050
+    second: GNF Atlas_8
+  - first:
+      213: 3546550265611239803
+    second: GNF Atlas_9
+  - first:
+      213: -3430220552132396042
+    second: GNF Atlas_10
+  - first:
+      213: -285884069133066481
+    second: GNF Atlas_11
+  - first:
+      213: 3963343428530116344
+    second: GNF Atlas_12
+  - first:
+      213: -6300906564083447587
+    second: GNF Atlas_13
+  - first:
+      213: -5268992343562660310
+    second: GNF Atlas_14
+  - first:
+      213: 4785758011065368104
+    second: GNF Atlas_15
+  - first:
+      213: -8491270907187551407
+    second: GNF Atlas_16
+  - first:
+      213: -6419873706129153437
+    second: GNF Atlas_17
+  - first:
+      213: 8332656232544227852
+    second: GNF Atlas_18
+  - first:
+      213: -475273141518667137
+    second: GNF Atlas_19
+  - first:
+      213: -2124223855677180776
+    second: GNF Atlas_20
+  - first:
+      213: -8225742167539267498
+    second: GNF Atlas_21
+  - first:
+      213: 6803144723707502338
+    second: GNF Atlas_22
+  - first:
+      213: 1406418211661011334
+    second: GNF Atlas_23
+  - first:
+      213: -3461043004998064383
+    second: GNF Atlas_24
+  - first:
+      213: 1938355695329648837
+    second: GNF Atlas_25
+  - first:
+      213: 3912747245310357601
+    second: GNF Atlas_26
+  - first:
+      213: -519049654181393246
+    second: GNF Atlas_27
+  - first:
+      213: 31679332110425106
+    second: GNF Atlas_28
+  - first:
+      213: -5840343042252464059
+    second: GNF Atlas_29
+  - first:
+      213: -1085994254274730486
+    second: GNF Atlas_30
+  - first:
+      213: 1160798277973234722
+    second: GNF Atlas_31
+  - first:
+      213: 4639313894555192495
+    second: GNF Atlas_32
+  - first:
+      213: 189524526628521057
+    second: GNF Atlas_33
+  - first:
+      213: 7537817656738185675
+    second: GNF Atlas_34
+  - first:
+      213: -3363270654278754960
+    second: GNF Atlas_35
+  - first:
+      213: -5784501448669365745
+    second: GNF Atlas_36
+  - first:
+      213: -7836904832314229046
+    second: GNF Atlas_37
+  - first:
+      213: -1583740742513895009
+    second: GNF Atlas_38
+  - first:
+      213: 3905788551662307976
+    second: GNF Atlas_39
+  - first:
+      213: -5378364201080549614
+    second: GNF Atlas_40
+  - first:
+      213: -6078617824575228006
+    second: GNF Atlas_41
+  - first:
+      213: 3997204899325182232
+    second: GNF Atlas_42
+  - first:
+      213: 7858986172029410460
+    second: GNF Atlas_43
+  - first:
+      213: -7209946673039946197
+    second: GNF Atlas_44
+  - first:
+      213: -4178077871605739276
+    second: GNF Atlas_45
+  - first:
+      213: 686112888733285376
+    second: GNF Atlas_46
+  - first:
+      213: 1966169899482284137
+    second: GNF Atlas_47
+  - first:
+      213: -4012925605824216534
+    second: GNF Atlas_48
+  - first:
+      213: -7751114000514270652
+    second: GNF Atlas_49
+  - first:
+      213: -9051232902627031330
+    second: GNF Atlas_50
+  - first:
+      213: 3898570408111851012
+    second: GNF Atlas_51
+  - first:
+      213: -1724345179803407026
+    second: GNF Atlas_52
+  - first:
+      213: 7704657030598878206
+    second: GNF Atlas_53
+  - first:
+      213: -4114959455198526549
+    second: GNF Atlas_54
+  - first:
+      213: -8430693547058209036
+    second: GNF Atlas_55
+  - first:
+      213: -8273812208269799048
+    second: GNF Atlas_56
+  - first:
+      213: -1943618214152163812
+    second: GNF Atlas_57
+  - first:
+      213: 2748048999152664677
+    second: GNF Atlas_58
+  - first:
+      213: -9052275502495188711
+    second: GNF Atlas_59
+  - first:
+      213: 1827888950682529185
+    second: GNF Atlas_60
+  - first:
+      213: -5056275501099874319
+    second: GNF Atlas_61
+  - first:
+      213: -3952734162545224145
+    second: GNF Atlas_62
+  - first:
+      213: 711448276946087058
+    second: GNF Atlas_63
+  - first:
+      213: 3854174354279914868
+    second: GNF Atlas_64
+  - first:
+      213: -177351146796456171
+    second: GNF Atlas_65
+  - first:
+      213: 2106200165236517741
+    second: GNF Atlas_66
+  - first:
+      213: -2339145393788954230
+    second: GNF Atlas_67
+  - first:
+      213: -6918642521356057882
+    second: GNF Atlas_68
+  - first:
+      213: 6756978781148233117
+    second: GNF Atlas_69
+  - first:
+      213: 5990764778998877634
+    second: GNF Atlas_70
+  - first:
+      213: 4177767785405075737
+    second: GNF Atlas_71
+  - first:
+      213: -6786820816492521631
+    second: GNF Atlas_72
+  - first:
+      213: 2978712668862175517
+    second: GNF Atlas_73
+  - first:
+      213: 1500104850498569741
+    second: GNF Atlas_74
+  - first:
+      213: 162245415085818147
+    second: GNF Atlas_75
+  - first:
+      213: -836552873620597854
+    second: GNF Atlas_76
+  - first:
+      213: 3249403037677871727
+    second: GNF Atlas_77
+  - first:
+      213: -7294271135307576251
+    second: GNF Atlas_78
+  - first:
+      213: -1697897663355723542
+    second: GNF Atlas_79
+  - first:
+      213: 8228571351269497673
+    second: GNF Atlas_80
+  - first:
+      213: 6620840749944455575
+    second: GNF Atlas_81
+  - first:
+      213: -6551325630675932645
+    second: GNF Atlas_82
+  - first:
+      213: 6167922210925721983
+    second: GNF Atlas_83
+  - first:
+      213: -2048294754385273366
+    second: GNF Atlas_84
+  - first:
+      213: -7658307456645023261
+    second: GNF Atlas_85
+  - first:
+      213: -1429966655077698496
+    second: GNF Atlas_86
+  - first:
+      213: 1014935975645489927
+    second: GNF Atlas_87
+  - first:
+      213: -7902980427985031070
+    second: GNF Atlas_88
+  - first:
+      213: -8103319396658758116
+    second: GNF Atlas_89
+  - first:
+      213: -6464063403999098996
+    second: GNF Atlas_90
+  - first:
+      213: -3124606498874604912
+    second: GNF Atlas_91
+  - first:
+      213: -3889199350729750313
+    second: GNF Atlas_92
+  - first:
+      213: -1834251805542598780
+    second: GNF Atlas_93
+  - first:
+      213: -3417823788249533041
+    second: GNF Atlas_94
+  - first:
+      213: -203552836739262316
+    second: GNF Atlas_95
+  - first:
+      213: -2203365201084676623
+    second: GNF Atlas_96
+  - first:
+      213: -676024674574652283
+    second: GNF Atlas_97
+  - first:
+      213: 962809029867417923
+    second: GNF Atlas_98
+  - first:
+      213: 7605566264624157530
+    second: GNF Atlas_99
+  - first:
+      213: -6476159651549179133
+    second: GNF Atlas_100
+  - first:
+      213: 5418147011711975066
+    second: GNF Atlas_101
+  - first:
+      213: 6419620268761624844
+    second: GNF Atlas_102
+  - first:
+      213: -891327222386912472
+    second: GNF Atlas_103
+  - first:
+      213: -6128545594372276417
+    second: GNF Atlas_104
+  - first:
+      213: -7543210721035917945
+    second: GNF Atlas_105
+  - first:
+      213: 3384482562978525795
+    second: GNF Atlas_106
+  - first:
+      213: 1137203076095533037
+    second: GNF Atlas_107
+  - first:
+      213: -2560442385620437728
+    second: GNF Atlas_108
+  - first:
+      213: -1801938469552416273
+    second: GNF Atlas_109
+  - first:
+      213: -3441055511428432675
+    second: GNF Atlas_110
+  - first:
+      213: -4356450314312245115
+    second: GNF Atlas_111
+  - first:
+      213: 7126376720860815490
+    second: GNF Atlas_112
+  - first:
+      213: 6295643096185046390
+    second: GNF Atlas_113
+  - first:
+      213: -9186627741095878684
+    second: GNF Atlas_114
+  - first:
+      213: -4056797883257954234
+    second: GNF Atlas_115
+  - first:
+      213: 2192842933718537984
+    second: GNF Atlas_116
+  - first:
+      213: -7099971403857722927
+    second: GNF Atlas_117
+  - first:
+      213: 1240301543910162183
+    second: GNF Atlas_118
+  - first:
+      213: 8364074745430840436
+    second: GNF Atlas_119
+  - first:
+      213: 7645263565796365417
+    second: GNF Atlas_120
+  - first:
+      213: 6399143838954994946
+    second: GNF Atlas_121
+  - first:
+      213: -8875271859774706342
+    second: GNF Atlas_122
+  - first:
+      213: 533263990555443490
+    second: GNF Atlas_123
+  - first:
+      213: 7797465222233101216
+    second: GNF Atlas_124
+  - first:
+      213: 4688849086811981715
+    second: GNF Atlas_125
+  - first:
+      213: -9195923844169817961
+    second: GNF Atlas_126
+  - first:
+      213: 1046339876177065917
+    second: GNF Atlas_127
+  - first:
+      213: -1003274140288703393
+    second: GNF Atlas_128
+  - first:
+      213: -2484874976498504096
+    second: GNF Atlas_129
+  - first:
+      213: -4902962508478597182
+    second: GNF Atlas_130
+  - first:
+      213: -2842971529330044371
+    second: GNF Atlas_131
+  - first:
+      213: 3136329615494038496
+    second: GNF Atlas_132
+  - first:
+      213: 5223272692367060376
+    second: GNF Atlas_133
+  - first:
+      213: 2003521980984376365
+    second: GNF Atlas_134
+  - first:
+      213: 6077912373479400197
+    second: GNF Atlas_135
+  - first:
+      213: -8641613662289386145
+    second: GNF Atlas_136
+  - first:
+      213: -96827211549912428
+    second: GNF Atlas_137
+  - first:
+      213: 6211184769551601623
+    second: GNF Atlas_138
+  - first:
+      213: -3945713845888731396
+    second: GNF Atlas_139
+  - first:
+      213: -5247972451305863520
+    second: GNF Atlas_140
+  - first:
+      213: 7188948982184134033
+    second: GNF Atlas_141
+  - first:
+      213: 3008591934061692873
+    second: GNF Atlas_142
+  - first:
+      213: 8768379031451503549
+    second: GNF Atlas_143
+  - first:
+      213: -5879403736199670176
+    second: GNF Atlas_144
+  - first:
+      213: -6916543055671033179
+    second: GNF Atlas_145
+  - first:
+      213: 8318250696466710270
+    second: GNF Atlas_146
+  - first:
+      213: -7822726019446937850
+    second: GNF Atlas_147
+  - first:
+      213: -5016449843191072579
+    second: GNF Atlas_148
+  - first:
+      213: 7057910544526310055
+    second: GNF Atlas_149
+  - first:
+      213: 6445781004645718120
+    second: GNF Atlas_150
+  - first:
+      213: 3091452360696971997
+    second: GNF Atlas_151
+  - first:
+      213: -7124772663886452785
+    second: GNF Atlas_152
+  - first:
+      213: -3150501339005721992
+    second: GNF Atlas_153
+  - first:
+      213: 7887289120184579530
+    second: GNF Atlas_154
+  - first:
+      213: 4887268034708603852
+    second: GNF Atlas_155
+  - first:
+      213: 6833586684086820235
+    second: GNF Atlas_156
+  - first:
+      213: 6204187061237350518
+    second: GNF Atlas_157
+  - first:
+      213: 1586933857950869418
+    second: GNF Atlas_158
+  - first:
+      213: 3409225825156712385
+    second: GNF Atlas_159
+  - first:
+      213: 6206197521337417615
+    second: GNF Atlas_160
+  - first:
+      213: -2741394572863000020
+    second: GNF Atlas_161
+  - first:
+      213: -982530601361403023
+    second: GNF Atlas_162
+  - first:
+      213: 690885384490089210
+    second: GNF Atlas_163
+  - first:
+      213: -8009799489465191547
+    second: GNF Atlas_164
+  - first:
+      213: -515928705119234815
+    second: GNF Atlas_165
+  - first:
+      213: -8011681659104947318
+    second: GNF Atlas_166
+  - first:
+      213: -1878526593102001773
+    second: GNF Atlas_167
+  - first:
+      213: 3568768193892477413
+    second: GNF Atlas_168
+  - first:
+      213: 6819474927643454265
+    second: GNF Atlas_169
+  - first:
+      213: 5453166348537403903
+    second: GNF Atlas_170
+  - first:
+      213: -1903043820578684894
+    second: GNF Atlas_171
+  - first:
+      213: -4266477295215798099
+    second: GNF Atlas_172
+  - first:
+      213: -2597934777206627468
+    second: GNF Atlas_173
+  - first:
+      213: 1821432090721149018
+    second: GNF Atlas_174
+  - first:
+      213: 5588259774993263255
+    second: GNF Atlas_175
+  - first:
+      213: 5790962638974389509
+    second: GNF Atlas_176
+  - first:
+      213: 4288678160515815159
+    second: GNF Atlas_177
+  - first:
+      213: -3812357074103968527
+    second: GNF Atlas_178
+  - first:
+      213: 8629156767110802227
+    second: GNF Atlas_179
+  - first:
+      213: 5533751746253468407
+    second: GNF Atlas_180
+  - first:
+      213: 9054444038172156514
+    second: GNF Atlas_181
+  - first:
+      213: -1217949750493887479
+    second: GNF Atlas_182
+  - first:
+      213: 1930885107873194411
+    second: GNF Atlas_183
+  - first:
+      213: 4998751525182685575
+    second: GNF Atlas_184
+  - first:
+      213: -9067784830715639357
+    second: GNF Atlas_185
+  - first:
+      213: 61166076746487028
+    second: GNF Atlas_186
+  - first:
+      213: -3800550317001485863
+    second: GNF Atlas_187
+  - first:
+      213: -7158855212362498617
+    second: GNF Atlas_188
+  - first:
+      213: 8022865673126591402
+    second: GNF Atlas_189
+  - first:
+      213: 737506258213917359
+    second: GNF Atlas_190
+  - first:
+      213: -926340941816560161
+    second: GNF Atlas_191
+  - first:
+      213: 5439543226560527145
+    second: GNF Atlas_192
+  - first:
+      213: 3500199980159051598
+    second: GNF Atlas_193
+  - first:
+      213: 1057891626594361478
+    second: GNF Atlas_194
+  - first:
+      213: 8245784608479540669
+    second: GNF Atlas_195
+  - first:
+      213: -324130413625387540
+    second: GNF Atlas_196
+  - first:
+      213: -1337559791445028066
+    second: GNF Atlas_197
+  - first:
+      213: 4286455317029727126
+    second: GNF Atlas_198
+  - first:
+      213: 5275727684297695487
+    second: GNF Atlas_199
+  - first:
+      213: 6856331468483447397
+    second: GNF Atlas_200
+  - first:
+      213: -2923018140309906240
+    second: GNF Atlas_201
+  - first:
+      213: 4417125807027510102
+    second: GNF Atlas_202
+  - first:
+      213: 4880474975307392808
+    second: GNF Atlas_203
+  - first:
+      213: -6778348713982995364
+    second: GNF Atlas_204
+  - first:
+      213: 5969648642257739665
+    second: GNF Atlas_205
+  - first:
+      213: -4216190272444399946
+    second: GNF Atlas_206
+  - first:
+      213: 4832945407591950133
+    second: GNF Atlas_207
+  - first:
+      213: -1759341336857025775
+    second: GNF Atlas_208
+  - first:
+      213: -1679486658952514196
+    second: GNF Atlas_209
+  - first:
+      213: 1256872035843866178
+    second: GNF Atlas_210
+  - first:
+      213: -563704102168370474
+    second: GNF Atlas_211
+  - first:
+      213: 2862011640496435407
+    second: GNF Atlas_212
+  - first:
+      213: 3562840461871664193
+    second: GNF Atlas_213
+  - first:
+      213: 2142480320236852862
+    second: GNF Atlas_214
+  - first:
+      213: -2872289656857248536
+    second: GNF Atlas_215
+  - first:
+      213: 3920353940081345547
+    second: GNF Atlas_216
+  - first:
+      213: 8322465075306472419
+    second: GNF Atlas_217
+  - first:
+      213: -3281789060175197002
+    second: GNF Atlas_218
+  - first:
+      213: -9076856781916300017
+    second: GNF Atlas_219
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GNF Atlas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3e76462c0976550800000000000000
+      internalID: 6154046580407657457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52cc6c2f2e8559b0800000000000000
+      internalID: -5092007470412545442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a823bbcbc3edcdf0800000000000000
+      internalID: -158219947452716891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7cb60364108c730800000000000000
+      internalID: 4019464068399876026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_4
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877d207b6895acb80800000000000000
+      internalID: -8373782122011109512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 3
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67350a838377acb0800000000000000
+      internalID: -4852783064674912401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_6
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88c3482328f59790800000000000000
+      internalID: -7523834772569470834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7439635b0df3b61e0800000000000000
+      internalID: -2203597427041725625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25204d73867276940800000000000000
+      internalID: 5289239615936660050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7143d71da0e73130800000000000000
+      internalID: 3546550265611239803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_10
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb77e8f4986560d0800000000000000
+      internalID: -3430220552132396042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f516c24f5580cf0800000000000000
+      internalID: -285884069133066481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f69a6c79df900730800000000000000
+      internalID: 3963343428530116344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd801e41ddeae88a0800000000000000
+      internalID: -6300906564083447587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_14
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26d1bd3167c0e6b0800000000000000
+      internalID: -5268992343562660310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_15
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ef7861e8d6a6240800000000000000
+      internalID: 4785758011065368104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1532a7d3912f82a80800000000000000
+      internalID: -8491270907187551407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3622d43d0e608e6a0800000000000000
+      internalID: -6419873706129153437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c025e38f1ba83a370800000000000000
+      internalID: 8332656232544227852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_19
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72fe7c889d7769f0800000000000000
+      internalID: -475273141518667137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_20
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89473fa68ad3582e0800000000000000
+      internalID: -2124223855677180776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658ced9941b48dd80800000000000000
+      internalID: -8225742167539267498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_22
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f9824e410a96e50800000000000000
+      internalID: 6803144723707502338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689d1b779e9948310800000000000000
+      internalID: 1406418211661011334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_24
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1076dbe69b7e7ffc0800000000000000
+      internalID: -3461043004998064383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0aa7c2c3c66ea10800000000000000
+      internalID: 1938355695329648837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_26
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 160bc9493eedc4630800000000000000
+      internalID: 3912747245310357601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac8abde617fbc8f0800000000000000
+      internalID: -519049654181393246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_28
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cd9294f2c807000800000000000000
+      internalID: 31679332110425106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_29
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5402e1052fee2fea0800000000000000
+      internalID: -5840343042252464059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_30
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06e6d5caf5cde0f0800000000000000
+      internalID: -1085994254274730486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_31
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224da7632ebfb1010800000000000000
+      internalID: 1160798277973234722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_32
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac0f7e2867226040800000000000000
+      internalID: 4639313894555192495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_33
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 164cae58d8351a200800000000000000
+      internalID: 189524526628521057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_34
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc10c83c835bb9860800000000000000
+      internalID: 7537817656738185675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_35
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d1838c8234351d0800000000000000
+      internalID: -3363270654278754960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a745d749259bfa0800000000000000
+      internalID: -5784501448669365745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_37
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace3e53a398bd3390800000000000000
+      internalID: -7836904832314229046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_38
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f99552a8f2c650ae0800000000000000
+      internalID: -1583740742513895009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_39
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a8e957ef5243630800000000000000
+      internalID: 3905788551662307976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_40
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f8ae141463c55b0800000000000000
+      internalID: -5378364201080549614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a97f5d06b4964aba0800000000000000
+      internalID: -6078617824575228006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_42
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8118ab68dace87730800000000000000
+      internalID: 3997204899325182232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_43
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9c1586e84ab01d60800000000000000
+      internalID: 7858986172029410460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_44
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ec1f763bf11fb90800000000000000
+      internalID: -7209946673039946197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_45
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0150bef4c7406c0800000000000000
+      internalID: -4178077871605739276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_46
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00cb3c08900958900800000000000000
+      internalID: 686112888733285376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_47
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96005ba3b1d394b10800000000000000
+      internalID: 1966169899482284137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_48
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2247c24c693f48c0800000000000000
+      internalID: -4012925605824216534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_49
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a3ac932e28e6490800000000000000
+      internalID: -7751114000514270652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_50
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6869b61af836280800000000000000
+      internalID: -9051232902627031330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_51
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4064b5371218a1630800000000000000
+      internalID: 3898570408111851012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_52
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d29a7e135e118e0800000000000000
+      internalID: -1724345179803407026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_53
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3ef019fb07cea60800000000000000
+      internalID: 7704657030598878206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_54
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3c1cf6d2ab4e6c0800000000000000
+      internalID: -4114959455198526549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_55
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4feda6df2e8200b80800000000000000
+      internalID: -8430693547058209036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_56
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871d9c312a38d2d80800000000000000
+      internalID: -8273812208269799048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_57
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e2b7e2881e605e0800000000000000
+      internalID: -1943618214152163812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_58
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560ccd34108032620800000000000000
+      internalID: 2748048999152664677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_59
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919bdc8346bdf5280800000000000000
+      internalID: -9052275502495188711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_60
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ad2b4ae057fd5910800000000000000
+      internalID: 1827888950682529185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_61
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f78e66983084d9b0800000000000000
+      internalID: -5056275501099874319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_62
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26d0fdb8311529c0800000000000000
+      internalID: -3952734162545224145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_63
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c6f6f30729fd900800000000000000
+      internalID: 711448276946087058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_64
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d5649a727cc7530800000000000000
+      internalID: 3854174354279914868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_65
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51760b6521ce98df0800000000000000
+      internalID: -177351146796456171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_66
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6baac224e9ba3d10800000000000000
+      internalID: 2106200165236517741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_67
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a89d73d58afa98fd0800000000000000
+      internalID: -2339145393788954230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_68
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e2c8aa884b0cff90800000000000000
+      internalID: -6918642521356057882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_69
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d3135c66c95cd50800000000000000
+      internalID: 6756978781148233117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_70
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd462973d8732350800000000000000
+      internalID: 5990764778998877634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_71
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911d3238aa96af930800000000000000
+      internalID: 4177767785405075737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_72
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1679cbeec6e50d1a0800000000000000
+      internalID: -6786820816492521631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_73
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d195c73f363865920800000000000000
+      internalID: 2978712668862175517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_74
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06cec3e96171d410800000000000000
+      internalID: 1500104850498569741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_75
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32140ac6859604200800000000000000
+      internalID: 162245415085818147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_76
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3130cf797f364f0800000000000000
+      internalID: -836552873620597854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_77
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f626dd0c8d2381d20800000000000000
+      internalID: 3249403037677871727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_78
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c4b949c0b85ca90800000000000000
+      internalID: -7294271135307576251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_79
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae067be221bdf68e0800000000000000
+      internalID: -1697897663355723542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_80
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bdf511c02c13270800000000000000
+      internalID: 8228571351269497673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_81
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791ced65593f1eb50800000000000000
+      internalID: 6620840749944455575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_82
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a26af9c040515a0800000000000000
+      internalID: -6551325630675932645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_83
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f793870629cd89550800000000000000
+      internalID: 6167922210925721983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_84
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedd191f5cef293e0800000000000000
+      internalID: -2048294754385273366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_85
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9b2f191f938b590800000000000000
+      internalID: -7658307456645023261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_86
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044b07b47ecb72ce0800000000000000
+      internalID: -1429966655077698496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_87
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b2d1a74e6c51e00800000000000000
+      internalID: 1014935975645489927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_88
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260761b2c29f25290800000000000000
+      internalID: -7902980427985031070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_89
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e3f9421f93b8f80800000000000000
+      internalID: -8103319396658758116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_90
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c87080705980b46a0800000000000000
+      internalID: -6464063403999098996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_91
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092c3b3b1fa23a4d0800000000000000
+      internalID: -3124606498874604912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_92
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8c21fdbc9c60ac0800000000000000
+      internalID: -3889199350729750313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_93
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487b30e73bd6b86e0800000000000000
+      internalID: -1834251805542598780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_94
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85b18c7f537190d0800000000000000
+      internalID: -3417823788249533041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_95
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 0
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498122106c5dc2df0800000000000000
+      internalID: -203552836739262316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_96
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f504e606031c61e0800000000000000
+      internalID: -2203365201084676623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_97
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c2494e3274e96f0800000000000000
+      internalID: -676024674574652283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_98
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34139c326b59c5d00800000000000000
+      internalID: 962809029867417923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_99
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a531e9eb8366c8960800000000000000
+      internalID: 7605566264624157530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_100
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30391bceb1f0026a0800000000000000
+      internalID: -6476159651549179133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_101
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ebfe52000213b40800000000000000
+      internalID: 5418147011711975066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_102
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c013f603f92171950800000000000000
+      internalID: 6419620268761624844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_103
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8231efa1d9e51a3f0800000000000000
+      internalID: -891327222386912472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_104
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3fb7a9904803faa0800000000000000
+      internalID: -6128545594372276417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_105
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7856cba90d1215790800000000000000
+      internalID: -7543210721035917945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_106
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362b6d295f818fe20800000000000000
+      internalID: 3384482562978525795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_107
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defd72c2c2828cf00800000000000000
+      internalID: 1137203076095533037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_108
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0257d31573b777cd0800000000000000
+      internalID: -2560442385620437728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_109
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 1
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe9973f428a3ef6e0800000000000000
+      internalID: -1801938469552416273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_110
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc78ec6e3aee30d0800000000000000
+      internalID: -3441055511428432675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_111
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 580a7c54587ca83c0800000000000000
+      internalID: -4356450314312245115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_112
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280a586ded9f5e260800000000000000
+      internalID: 7126376720860815490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_113
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67500cc4a0e9e5750800000000000000
+      internalID: 6295643096185046390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_114
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef1b380eba828080800000000000000
+      internalID: -9186627741095878684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_115
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6406adaa1db53b7c0800000000000000
+      internalID: -4056797883257954234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_116
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007d480b70b8e6e10800000000000000
+      internalID: 2192842933718537984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_117
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d101ad10a5d77d90800000000000000
+      internalID: -7099971403857722927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_118
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f322bceaf663110800000000000000
+      internalID: 1240301543910162183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_119
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474983c8aa9231470800000000000000
+      internalID: 8364074745430840436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_120
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964578de4be691a60800000000000000
+      internalID: 7645263565796365417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_121
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 0
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20dba8bda635ec850800000000000000
+      internalID: 6399143838954994946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_122
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5dab194443b4d480800000000000000
+      internalID: -8875271859774706342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_123
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221809826c8866700800000000000000
+      internalID: 533263990555443490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_124
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a39aaf8e49263c60800000000000000
+      internalID: 7797465222233101216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_125
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397c7d0e663221140800000000000000
+      internalID: 4688849086811981715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_126
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 1
+        width: 18
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790a6be5cf3816080800000000000000
+      internalID: -9195923844169817961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_127
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db73cd9d298558e00800000000000000
+      internalID: 1046339876177065917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_128
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54a1c72c77a312f0800000000000000
+      internalID: -1003274140288703393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_129
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06eac82df53f38dd0800000000000000
+      internalID: -2484874976498504096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_130
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c73317539d25fbb0800000000000000
+      internalID: -4902962508478597182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_131
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22dbbfe47cbb88d0800000000000000
+      internalID: -2842971529330044371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_132
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e34f061b2b768b20800000000000000
+      internalID: 3136329615494038496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_133
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d6981f6dacc7840800000000000000
+      internalID: 5223272692367060376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_134
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cb24860a0fdcb10800000000000000
+      internalID: 2003521980984376365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_135
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503e03df915195450800000000000000
+      internalID: 6077912373479400197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_136
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55241dc822d21880800000000000000
+      internalID: -8641613662289386145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_137
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492d9f20a2008aef0800000000000000
+      internalID: -96827211549912428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_138
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 0
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df807fb3af823650800000000000000
+      internalID: 6211184769551601623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_139
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6367699220e39c0800000000000000
+      internalID: -3945713845888731396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_140
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6c0e84cd47b27b0800000000000000
+      internalID: -5247972451305863520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_141
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195cd77b20744c360800000000000000
+      internalID: 7188948982184134033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_142
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c74adf7c6aa0c920800000000000000
+      internalID: 3008591934061692873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_143
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb86a1b54a8fa970800000000000000
+      internalID: 8768379031451503549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_144
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 1
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066d6bcc379286ea0800000000000000
+      internalID: -5879403736199670176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_145
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 1
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2880d7cb08300a0800000000000000
+      internalID: -6916543055671033179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_146
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe3b8bbfec507370800000000000000
+      internalID: 8318250696466710270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_147
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607e8a3c128107390800000000000000
+      internalID: -7822726019446937850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_148
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db83807227df16ab0800000000000000
+      internalID: -5016449843191072579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_149
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa79feee3cb2f160800000000000000
+      internalID: 7057910544526310055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_150
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 1
+        width: 25
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8685ed92ca3047950800000000000000
+      internalID: 6445781004645718120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_151
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2c267fa8b07ea20800000000000000
+      internalID: 3091452360696971997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_152
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 1
+        width: 27
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc762a7c209bf1d90800000000000000
+      internalID: -7124772663886452785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_153
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872eb2869bb2744d0800000000000000
+      internalID: -3150501339005721992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_154
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5b7698aa7457d60800000000000000
+      internalID: 7887289120184579530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_155
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc38dea326013d340800000000000000
+      internalID: 4887268034708603852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_156
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d95de12e6c5de50800000000000000
+      internalID: 6833586684086820235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_157
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6708021d243b91650800000000000000
+      internalID: 6204187061237350518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_158
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7a3359febe50610800000000000000
+      internalID: 1586933857950869418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_159
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7cd8b33d0005f20800000000000000
+      internalID: 3409225825156712385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_160
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ff93983c7d02650800000000000000
+      internalID: 6206197521337417615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_161
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c223157192c94f9d0800000000000000
+      internalID: -2741394572863000020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_162
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17317ecaf995d52f0800000000000000
+      internalID: -982530601361403023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_163
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa7a03c894869900800000000000000
+      internalID: 690885384490089210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_164
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58372545dc977d090800000000000000
+      internalID: -8009799489465191547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_165
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105d0f1839d07d8f0800000000000000
+      internalID: -515928705119234815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_166
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83998f8af9c0d090800000000000000
+      internalID: -8011681659104947318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_167
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399c70534022ee5e0800000000000000
+      internalID: -1878526593102001773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_168
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e96ca2a3cfc68130800000000000000
+      internalID: 3568768193892477413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_169
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 1
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93beed8c054a3ae50800000000000000
+      internalID: 6819474927643454265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_170
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff99fa1e6e98dab40800000000000000
+      internalID: 5453166348537403903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_171
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220c76a5ab70795e0800000000000000
+      internalID: -1903043820578684894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_172
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da89468318d6ac4c0800000000000000
+      internalID: -4266477295215798099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_173
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 1
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47327f6a51842fbd0800000000000000
+      internalID: -2597934777206627468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_174
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a506eed06d6074910800000000000000
+      internalID: 1821432090721149018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_175
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ae31158ac7d8d40800000000000000
+      internalID: 5588259774993263255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_176
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 0
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d80ab96d1ad5050800000000000000
+      internalID: 5790962638974389509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_177
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f655898012748b30800000000000000
+      internalID: 4288678160515815159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_178
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcd5199079c71bc0800000000000000
+      internalID: -3812357074103968527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_179
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b2cc64c5ce0c770800000000000000
+      internalID: 8629156767110802227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_180
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2b2a6e4e5dbcc40800000000000000
+      internalID: 5533751746253468407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_181
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 262a7e551e8d7ad70800000000000000
+      internalID: 9054444038172156514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_182
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 0
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9044987a729f81fe0800000000000000
+      internalID: -1217949750493887479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_183
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1afdc76c1ebca10800000000000000
+      internalID: 1930885107873194411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_184
+      rect:
+        serializedVersion: 2
+        x: 1762
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781c4f217022f5540800000000000000
+      internalID: 4998751525182685575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_185
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9c4895db1c82280800000000000000
+      internalID: -9067784830715639357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_186
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 0
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f457c4093e49d000800000000000000
+      internalID: 61166076746487028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_187
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1d0247f9bb14bc0800000000000000
+      internalID: -3800550317001485863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_188
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdfda41d13a6ac90800000000000000
+      internalID: -7158855212362498617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_189
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 1
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabb26f92d1f65f60800000000000000
+      internalID: 8022865673126591402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_190
+      rect:
+        serializedVersion: 2
+        x: 1817
+        y: 1
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2d77cc8062c3a00800000000000000
+      internalID: 737506258213917359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_191
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 1
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd58f1642d9f423f0800000000000000
+      internalID: -926340941816560161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_192
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bb58f9eb32d7b40800000000000000
+      internalID: 5439543226560527145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_193
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e47a53c4655339030800000000000000
+      internalID: 3500199980159051598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_194
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680640654d26eae00800000000000000
+      internalID: 1057891626594361478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_195
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db57ec2d969ee6270800000000000000
+      internalID: 8245784608479540669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_196
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce555fa2b15708bf0800000000000000
+      internalID: -324130413625387540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_197
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13d215d478007de0800000000000000
+      internalID: -1337559791445028066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_198
+      rect:
+        serializedVersion: 2
+        x: 1899
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b2425766c8c7b30800000000000000
+      internalID: 4286455317029727126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_199
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0224a7066273940800000000000000
+      internalID: 5275727684297695487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_200
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ac949e425962f50800000000000000
+      internalID: 6856331468483447397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_201
+      rect:
+        serializedVersion: 2
+        x: 1932
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc1ecafc7a5f67d0800000000000000
+      internalID: -2923018140309906240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_202
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65bd510c488cc4d30800000000000000
+      internalID: 4417125807027510102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_203
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8276166d12eeab340800000000000000
+      internalID: 4880474975307392808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_204
+      rect:
+        serializedVersion: 2
+        x: 1958
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c54515302c77ee1a0800000000000000
+      internalID: -6778348713982995364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_205
+      rect:
+        serializedVersion: 2
+        x: 1967
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f5aa3cfc378d250800000000000000
+      internalID: 5969648642257739665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_206
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be7e7919451d75c0800000000000000
+      internalID: -4216190272444399946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_207
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537af5efd32121340800000000000000
+      internalID: 4832945407591950133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_208
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113e9f120609597e0800000000000000
+      internalID: -1759341336857025775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_209
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 0
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c65b02038c341b8e0800000000000000
+      internalID: -1679486658952514196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_210
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e7898157e417110800000000000000
+      internalID: 1256872035843866178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_211
+      rect:
+        serializedVersion: 2
+        x: 2020
+        y: 1
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2e2df0b125d28f0800000000000000
+      internalID: -563704102168370474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_212
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 2
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0b2d66c68e7b720800000000000000
+      internalID: 2862011640496435407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_213
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 0
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ccf39f580c17130800000000000000
+      internalID: 3562840461871664193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_214
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e769bf9ff7e9bbd10800000000000000
+      internalID: 2142480320236852862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_215
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ecbefe66c39328d0800000000000000
+      internalID: -2872289656857248536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_216
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 1
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b040a583325e76630800000000000000
+      internalID: 3920353940081345547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_217
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3ac3544e55f7370800000000000000
+      internalID: 8322465075306472419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_218
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 1
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc8e78cc3eb472d0800000000000000
+      internalID: -3281789060175197002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GNF Atlas_219
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 0
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d98cc19d6880280800000000000000
+      internalID: -9076856781916300017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GNF Atlas_0: 6154046580407657457
+      GNF Atlas_1: -5092007470412545442
+      GNF Atlas_10: -3430220552132396042
+      GNF Atlas_100: -6476159651549179133
+      GNF Atlas_101: 5418147011711975066
+      GNF Atlas_102: 6419620268761624844
+      GNF Atlas_103: -891327222386912472
+      GNF Atlas_104: -6128545594372276417
+      GNF Atlas_105: -7543210721035917945
+      GNF Atlas_106: 3384482562978525795
+      GNF Atlas_107: 1137203076095533037
+      GNF Atlas_108: -2560442385620437728
+      GNF Atlas_109: -1801938469552416273
+      GNF Atlas_11: -285884069133066481
+      GNF Atlas_110: -3441055511428432675
+      GNF Atlas_111: -4356450314312245115
+      GNF Atlas_112: 7126376720860815490
+      GNF Atlas_113: 6295643096185046390
+      GNF Atlas_114: -9186627741095878684
+      GNF Atlas_115: -4056797883257954234
+      GNF Atlas_116: 2192842933718537984
+      GNF Atlas_117: -7099971403857722927
+      GNF Atlas_118: 1240301543910162183
+      GNF Atlas_119: 8364074745430840436
+      GNF Atlas_12: 3963343428530116344
+      GNF Atlas_120: 7645263565796365417
+      GNF Atlas_121: 6399143838954994946
+      GNF Atlas_122: -8875271859774706342
+      GNF Atlas_123: 533263990555443490
+      GNF Atlas_124: 7797465222233101216
+      GNF Atlas_125: 4688849086811981715
+      GNF Atlas_126: -9195923844169817961
+      GNF Atlas_127: 1046339876177065917
+      GNF Atlas_128: -1003274140288703393
+      GNF Atlas_129: -2484874976498504096
+      GNF Atlas_13: -6300906564083447587
+      GNF Atlas_130: -4902962508478597182
+      GNF Atlas_131: -2842971529330044371
+      GNF Atlas_132: 3136329615494038496
+      GNF Atlas_133: 5223272692367060376
+      GNF Atlas_134: 2003521980984376365
+      GNF Atlas_135: 6077912373479400197
+      GNF Atlas_136: -8641613662289386145
+      GNF Atlas_137: -96827211549912428
+      GNF Atlas_138: 6211184769551601623
+      GNF Atlas_139: -3945713845888731396
+      GNF Atlas_14: -5268992343562660310
+      GNF Atlas_140: -5247972451305863520
+      GNF Atlas_141: 7188948982184134033
+      GNF Atlas_142: 3008591934061692873
+      GNF Atlas_143: 8768379031451503549
+      GNF Atlas_144: -5879403736199670176
+      GNF Atlas_145: -6916543055671033179
+      GNF Atlas_146: 8318250696466710270
+      GNF Atlas_147: -7822726019446937850
+      GNF Atlas_148: -5016449843191072579
+      GNF Atlas_149: 7057910544526310055
+      GNF Atlas_15: 4785758011065368104
+      GNF Atlas_150: 6445781004645718120
+      GNF Atlas_151: 3091452360696971997
+      GNF Atlas_152: -7124772663886452785
+      GNF Atlas_153: -3150501339005721992
+      GNF Atlas_154: 7887289120184579530
+      GNF Atlas_155: 4887268034708603852
+      GNF Atlas_156: 6833586684086820235
+      GNF Atlas_157: 6204187061237350518
+      GNF Atlas_158: 1586933857950869418
+      GNF Atlas_159: 3409225825156712385
+      GNF Atlas_16: -8491270907187551407
+      GNF Atlas_160: 6206197521337417615
+      GNF Atlas_161: -2741394572863000020
+      GNF Atlas_162: -982530601361403023
+      GNF Atlas_163: 690885384490089210
+      GNF Atlas_164: -8009799489465191547
+      GNF Atlas_165: -515928705119234815
+      GNF Atlas_166: -8011681659104947318
+      GNF Atlas_167: -1878526593102001773
+      GNF Atlas_168: 3568768193892477413
+      GNF Atlas_169: 6819474927643454265
+      GNF Atlas_17: -6419873706129153437
+      GNF Atlas_170: 5453166348537403903
+      GNF Atlas_171: -1903043820578684894
+      GNF Atlas_172: -4266477295215798099
+      GNF Atlas_173: -2597934777206627468
+      GNF Atlas_174: 1821432090721149018
+      GNF Atlas_175: 5588259774993263255
+      GNF Atlas_176: 5790962638974389509
+      GNF Atlas_177: 4288678160515815159
+      GNF Atlas_178: -3812357074103968527
+      GNF Atlas_179: 8629156767110802227
+      GNF Atlas_18: 8332656232544227852
+      GNF Atlas_180: 5533751746253468407
+      GNF Atlas_181: 9054444038172156514
+      GNF Atlas_182: -1217949750493887479
+      GNF Atlas_183: 1930885107873194411
+      GNF Atlas_184: 4998751525182685575
+      GNF Atlas_185: -9067784830715639357
+      GNF Atlas_186: 61166076746487028
+      GNF Atlas_187: -3800550317001485863
+      GNF Atlas_188: -7158855212362498617
+      GNF Atlas_189: 8022865673126591402
+      GNF Atlas_19: -475273141518667137
+      GNF Atlas_190: 737506258213917359
+      GNF Atlas_191: -926340941816560161
+      GNF Atlas_192: 5439543226560527145
+      GNF Atlas_193: 3500199980159051598
+      GNF Atlas_194: 1057891626594361478
+      GNF Atlas_195: 8245784608479540669
+      GNF Atlas_196: -324130413625387540
+      GNF Atlas_197: -1337559791445028066
+      GNF Atlas_198: 4286455317029727126
+      GNF Atlas_199: 5275727684297695487
+      GNF Atlas_2: -158219947452716891
+      GNF Atlas_20: -2124223855677180776
+      GNF Atlas_200: 6856331468483447397
+      GNF Atlas_201: -2923018140309906240
+      GNF Atlas_202: 4417125807027510102
+      GNF Atlas_203: 4880474975307392808
+      GNF Atlas_204: -6778348713982995364
+      GNF Atlas_205: 5969648642257739665
+      GNF Atlas_206: -4216190272444399946
+      GNF Atlas_207: 4832945407591950133
+      GNF Atlas_208: -1759341336857025775
+      GNF Atlas_209: -1679486658952514196
+      GNF Atlas_21: -8225742167539267498
+      GNF Atlas_210: 1256872035843866178
+      GNF Atlas_211: -563704102168370474
+      GNF Atlas_212: 2862011640496435407
+      GNF Atlas_213: 3562840461871664193
+      GNF Atlas_214: 2142480320236852862
+      GNF Atlas_215: -2872289656857248536
+      GNF Atlas_216: 3920353940081345547
+      GNF Atlas_217: 8322465075306472419
+      GNF Atlas_218: -3281789060175197002
+      GNF Atlas_219: -9076856781916300017
+      GNF Atlas_22: 6803144723707502338
+      GNF Atlas_23: 1406418211661011334
+      GNF Atlas_24: -3461043004998064383
+      GNF Atlas_25: 1938355695329648837
+      GNF Atlas_26: 3912747245310357601
+      GNF Atlas_27: -519049654181393246
+      GNF Atlas_28: 31679332110425106
+      GNF Atlas_29: -5840343042252464059
+      GNF Atlas_3: 4019464068399876026
+      GNF Atlas_30: -1085994254274730486
+      GNF Atlas_31: 1160798277973234722
+      GNF Atlas_32: 4639313894555192495
+      GNF Atlas_33: 189524526628521057
+      GNF Atlas_34: 7537817656738185675
+      GNF Atlas_35: -3363270654278754960
+      GNF Atlas_36: -5784501448669365745
+      GNF Atlas_37: -7836904832314229046
+      GNF Atlas_38: -1583740742513895009
+      GNF Atlas_39: 3905788551662307976
+      GNF Atlas_4: -8373782122011109512
+      GNF Atlas_40: -5378364201080549614
+      GNF Atlas_41: -6078617824575228006
+      GNF Atlas_42: 3997204899325182232
+      GNF Atlas_43: 7858986172029410460
+      GNF Atlas_44: -7209946673039946197
+      GNF Atlas_45: -4178077871605739276
+      GNF Atlas_46: 686112888733285376
+      GNF Atlas_47: 1966169899482284137
+      GNF Atlas_48: -4012925605824216534
+      GNF Atlas_49: -7751114000514270652
+      GNF Atlas_5: -4852783064674912401
+      GNF Atlas_50: -9051232902627031330
+      GNF Atlas_51: 3898570408111851012
+      GNF Atlas_52: -1724345179803407026
+      GNF Atlas_53: 7704657030598878206
+      GNF Atlas_54: -4114959455198526549
+      GNF Atlas_55: -8430693547058209036
+      GNF Atlas_56: -8273812208269799048
+      GNF Atlas_57: -1943618214152163812
+      GNF Atlas_58: 2748048999152664677
+      GNF Atlas_59: -9052275502495188711
+      GNF Atlas_6: -7523834772569470834
+      GNF Atlas_60: 1827888950682529185
+      GNF Atlas_61: -5056275501099874319
+      GNF Atlas_62: -3952734162545224145
+      GNF Atlas_63: 711448276946087058
+      GNF Atlas_64: 3854174354279914868
+      GNF Atlas_65: -177351146796456171
+      GNF Atlas_66: 2106200165236517741
+      GNF Atlas_67: -2339145393788954230
+      GNF Atlas_68: -6918642521356057882
+      GNF Atlas_69: 6756978781148233117
+      GNF Atlas_7: -2203597427041725625
+      GNF Atlas_70: 5990764778998877634
+      GNF Atlas_71: 4177767785405075737
+      GNF Atlas_72: -6786820816492521631
+      GNF Atlas_73: 2978712668862175517
+      GNF Atlas_74: 1500104850498569741
+      GNF Atlas_75: 162245415085818147
+      GNF Atlas_76: -836552873620597854
+      GNF Atlas_77: 3249403037677871727
+      GNF Atlas_78: -7294271135307576251
+      GNF Atlas_79: -1697897663355723542
+      GNF Atlas_8: 5289239615936660050
+      GNF Atlas_80: 8228571351269497673
+      GNF Atlas_81: 6620840749944455575
+      GNF Atlas_82: -6551325630675932645
+      GNF Atlas_83: 6167922210925721983
+      GNF Atlas_84: -2048294754385273366
+      GNF Atlas_85: -7658307456645023261
+      GNF Atlas_86: -1429966655077698496
+      GNF Atlas_87: 1014935975645489927
+      GNF Atlas_88: -7902980427985031070
+      GNF Atlas_89: -8103319396658758116
+      GNF Atlas_9: 3546550265611239803
+      GNF Atlas_90: -6464063403999098996
+      GNF Atlas_91: -3124606498874604912
+      GNF Atlas_92: -3889199350729750313
+      GNF Atlas_93: -1834251805542598780
+      GNF Atlas_94: -3417823788249533041
+      GNF Atlas_95: -203552836739262316
+      GNF Atlas_96: -2203365201084676623
+      GNF Atlas_97: -676024674574652283
+      GNF Atlas_98: 962809029867417923
+      GNF Atlas_99: 7605566264624157530
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 322855
+  packageName: Free retro pixel font - GNF
+  packageVersion: 1.1.1
+  assetPath: Assets/Nytrock/Global Nytrock Font/Legacy/GNF Atlas.png
+  uploadId: 820242

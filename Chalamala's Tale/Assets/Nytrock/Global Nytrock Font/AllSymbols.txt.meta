@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: 128e987d567d4e2c824d754223b3f3b0
-ShaderImporter:
+guid: c59d3ee3b64a4b5469481335d584a19a
+TextScriptImporter:
   externalObjects: {}
-  defaultTextures: []
-  nonModifiableTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 
@@ -12,5 +10,5 @@ AssetOrigin:
   productId: 322855
   packageName: Free retro pixel font - GNF
   packageVersion: 1.1.1
-  assetPath: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  assetPath: Assets/Nytrock/Global Nytrock Font/AllSymbols.txt
   uploadId: 820242
