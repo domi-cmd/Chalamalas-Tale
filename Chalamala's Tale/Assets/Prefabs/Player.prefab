@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8982173871041878989}
   - component: {fileID: 7997439711726872630}
-  - component: {fileID: 7983309495581144791}
   - component: {fileID: 5945644426760354532}
   - component: {fileID: 7813339115540346515}
+  - component: {fileID: 4627514562132394298}
   m_Layer: 0
-  m_Name: Square
+  m_Name: AAA
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,19 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &7983309495581144791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55192176409587063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470bcbce98a96e8419ea7d7e6a79b29c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  speed: 5
 --- !u!50 &5945644426760354532
 Rigidbody2D:
   serializedVersion: 5
@@ -180,6 +167,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.1448073, y: 15.364933}
   m_EdgeRadius: 0
+--- !u!114 &4627514562132394298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55192176409587063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75bf8ebcd7b066d48aa7cdb6d9e08e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  speed: 5
+  spriteImage: {fileID: 0}
+  spriteRight: {fileID: 1826953908740716271, guid: 6aaa4a61cf505ed48ba8a448d487cc2e, type: 3}
+  spriteLeft: {fileID: -1941889073703371520, guid: 20fa853baa366b54abb8abd8a67f9a19, type: 3}
+  spriteIdle: {fileID: 4190077506490258871, guid: 4523a3c3d8be59a47aa15c437c26a6c2, type: 3}
 --- !u!1 &9117654029680623180
 GameObject:
   m_ObjectHideFlags: 0

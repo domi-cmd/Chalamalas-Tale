@@ -8,8 +8,14 @@ public class GridManager : MonoBehaviour
     // Keep track of which rooms have been visited, and should be part of the minimap
     public HashSet<(int, int)> visitedRooms = new HashSet<(int, int)>();
 
+    // Keeps track of the current row and column in the 4x4 room grid. 
+    // At the moment, the player starts at the bottom right, meaning coordinates (3, 3).
     public int currentRow = 3;
     public int currentCol = 3;
+
+    // Keeps track of the side from which the player exits the room, as to place him on the opposite side of the next room
+    // (If u go left, u should come out at the right side of the next room, ect.)
+    public int enteredFromSide = -1;
 
     private const int ROWS = 4;
     private const int COLS = 4;
@@ -50,6 +56,7 @@ public class GridManager : MonoBehaviour
     // Updates current room position and loads the new room that the player moved to
     public void MoveToRoom(int side)
     {
+        enteredFromSide = side;
         if (side == 0) currentRow--;
         if (side == 1) currentCol++;
         if (side == 2) currentRow++;
