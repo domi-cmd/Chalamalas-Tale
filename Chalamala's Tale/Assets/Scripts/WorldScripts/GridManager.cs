@@ -8,6 +8,9 @@ public class GridManager : MonoBehaviour
     // Keep track of which rooms have been visited, and should be part of the minimap
     public HashSet<(int, int)> visitedRooms = new HashSet<(int, int)>();
 
+    // Keep track of the types of the rooms (enemy, npc, boss, startc, etc.)
+    public RoomTypes[,] roomTypes = new RoomTypes[4, 4];
+
     // Keeps track of the current row and column in the 4x4 room grid. 
     // At the moment, the player starts at the bottom right, meaning coordinates (3, 3).
     public int currentRow = 3;
@@ -62,6 +65,8 @@ public class GridManager : MonoBehaviour
         if (side == 2) currentRow++;
         if (side == 3) currentCol--;
         SceneManager.LoadScene("Room");
+        Debug.Log("Test" + roomTypes[currentRow, currentCol]);
+
     }
 
     // Generates the map grid using a recursive dfs approach
@@ -73,9 +78,16 @@ public class GridManager : MonoBehaviour
         stack.Push((0, 0));
         visited[0, 0] = true;
 
+        // Create a random number generator to randomly assign the other rooms later in the method
+        System.Random roomRandomNumber = new System.Random();
+
         while (stack.Count > 0)
         {
             var (r, c) = stack.Peek();
+
+             // Assign the room to either be npc or enemy
+            AssignRoomType(roomRandomNumber, r, c);
+
             var neighbors = GetUnvisitedNeighbors(r, c, visited);
 
             // Backtrack if no unvisited neighbors
@@ -92,6 +104,10 @@ public class GridManager : MonoBehaviour
             if (neighbors.Count > 0 && Random.value < 0.5f)
                 OpenPassage(r, c, neighbors[Random.Range(0, neighbors.Count)], visited, stack);
         }
+
+        // Set the room types of the start and final boss room, as they are fixed in place
+        roomTypes[0, 0] = RoomTypes.Dragon_Room;
+        roomTypes[3, 3] = RoomTypes.Start_Room;
     }
 
     // Returns a list of direction indices leading to unvisited in-bounds neighbors
@@ -106,6 +122,15 @@ public class GridManager : MonoBehaviour
                 result.Add(i);
         }
         return result;
+    }
+
+    private void AssignRoomType(System.Random roomRandomNumber, int r, int c)
+    {
+        // Decide on the type of the room (at the moment there are only two types, 0 for npc, 1 for enemy)
+        int roomType = roomRandomNumber.Next(2, 4);
+
+        // Assign the type
+        roomTypes[r, c] = (RoomTypes)roomType;
     }
 
     // Helper method that opens the wall between current cell and its neighbor in designated direction
@@ -123,5 +148,8 @@ public class GridManager : MonoBehaviour
 
 public enum RoomTypes
 {
-    
+    Start_Room,
+    Dragon_Room,
+    NPC_Room,
+    Chasing_Enemy_Room
 }
