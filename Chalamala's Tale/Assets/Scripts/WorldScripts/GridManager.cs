@@ -120,3 +120,8 @@ public class GridManager : MonoBehaviour
 
     private bool InBounds(int r, int c) => r >= 0 && r < ROWS && c >= 0 && c < COLS;
 }
+
+public enum RoomTypes
+{
+    
+}
