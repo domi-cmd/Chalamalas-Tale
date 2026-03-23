@@ -17,7 +17,7 @@ public class RoomSetup : MonoBehaviour
             case 2: player.transform.position = new Vector3(0.17f, 3.47f, 0); break; // entered from bottom, spawn at top
             case 3: player.transform.position = new Vector3(6.76f, 0.46f, 0); break; // entered from left, spawn at right
         }
-        Debug.Log($"Player spawned at: {player.transform.position}");
+        //Debug.Log($"Player spawned at: {player.transform.position}");
 
         GameObject.Find("DoorTop").SetActive(   GridManager.Instance.IsOpen(r, c, 0));
         GameObject.Find("DoorRight").SetActive( GridManager.Instance.IsOpen(r, c, 1));
