@@ -75,8 +75,8 @@ public class GridManager : MonoBehaviour
                 break;
             
             case RoomTypes.NPC_Room:
-                //SceneManager.LoadScene("Tutorial_first_scene");
-                SceneManager.LoadScene("Room");
+                SceneManager.LoadScene("RoomBasicNPC");
+                //SceneManager.LoadScene("Room");
                 break;
 
             case RoomTypes.Start_Room:

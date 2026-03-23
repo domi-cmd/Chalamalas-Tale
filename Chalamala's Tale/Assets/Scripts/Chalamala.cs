@@ -10,6 +10,10 @@ public class Chalamala : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Load the player dynamically, since he enters this scene from an already existing scene
+        if (player == null)
+            player = GameObject.FindWithTag("Player").transform;
+
         // at the beginning we don't see the dialogue
         info.enabled = false;
         dial.gameObject.SetActive(false);   // since it has its own script, it need to be completely blocked
@@ -25,7 +29,7 @@ public class Chalamala : MonoBehaviour
             info.enabled = true;
             if (Input.GetKeyDown(KeyCode.E)){
                 dial.gameObject.SetActive(true);
-                Dialogue dialogueScript = dial.GetComponent<Dialogue>();
+                Dialogue dialogueScript = dial.GetComponentInChildren<Dialogue>(true);
                 dialogueScript.StartDialogue();
             }
         }
