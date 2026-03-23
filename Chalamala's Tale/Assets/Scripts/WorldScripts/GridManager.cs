@@ -64,7 +64,30 @@ public class GridManager : MonoBehaviour
         if (side == 1) currentCol++;
         if (side == 2) currentRow++;
         if (side == 3) currentCol--;
-        SceneManager.LoadScene("Room");
+
+        // Check what type of room should be loaded (start room, enemy room, npc room, boss room, etc.)
+        RoomTypes roomTypeToLoad = roomTypes[currentRow, currentCol];
+        
+        switch (roomTypeToLoad)
+        {
+            case RoomTypes.Chasing_Enemy_Room:
+                SceneManager.LoadScene("RoomEnemyChasing");
+                break;
+            
+            case RoomTypes.NPC_Room:
+                //SceneManager.LoadScene("Tutorial_first_scene");
+                SceneManager.LoadScene("Room");
+                break;
+
+            case RoomTypes.Start_Room:
+                SceneManager.LoadScene("Room");
+                break;
+
+            // TODO: Missing rooms here (such as dragon room, other enemy rooms, more specific types of npc rooms, etc)
+            default:
+                SceneManager.LoadScene("Room");
+                break;
+        }
         Debug.Log("Test" + roomTypes[currentRow, currentCol]);
 
     }
