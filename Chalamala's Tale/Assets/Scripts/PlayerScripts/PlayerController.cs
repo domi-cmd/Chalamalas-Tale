@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteLeft;
     public Sprite spriteIdle;
     public Sprite spriteBack;
-    public Canvas info;
+    
 
     void Start()
     {
