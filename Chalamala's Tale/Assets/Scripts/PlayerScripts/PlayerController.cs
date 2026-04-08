@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteLeft;
     public Sprite spriteIdle;
     public Sprite spriteBack;
+
+    public bool canMove = true; // to stop player actions when the scene is paused (menu, dialogues)
     
 
     void Start()
@@ -23,6 +25,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
+        if (!canMove) // when the player has to be locked
+        {
+            movement = Vector2.zero;
+            return;
+        }
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 

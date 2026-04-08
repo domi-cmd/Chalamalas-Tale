@@ -63,8 +63,11 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            // once the text is finished, hide dialogue and allow player to move around
             index = 0;
             gameObject.SetActive(false);
+            GameObject player = GameObject.FindWithTag("Player");
+            player.GetComponent<PlayerController>().canMove = true;
         }
     }
 
