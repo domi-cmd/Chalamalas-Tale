@@ -1,0 +1,25 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SimpleDoorTrigger : MonoBehaviour
+{
+    // 0=top, 1=right, 2=bottom, 3=left
+    public int side;
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player")) return;
+
+        // Save which door we used
+        PlayerSpawnData.entrySide = side;
+
+        // to correctly update the map, we change room accordingly to its logic
+        BasicGridManager.Instance.MoveToRoom(side);
+    }
+
+}
+    public static class PlayerSpawnData
+{
+    public static int entrySide = -1;
+}
