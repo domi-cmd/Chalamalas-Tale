@@ -294,7 +294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleRoomSetup
   doorTop: {fileID: 423606724}
   doorBottom: {fileID: 0}
-  ennemies: []
 --- !u!1 &106780046
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,15 +893,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.10805849
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.072038986
-      objectReference: {fileID: 0}
-    - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.72038984
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_LocalPosition.x
@@ -910,7 +905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44518
+      value: 0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 7605467718730506603, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1061,15 +1056,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -8287984193659030122, guid: 5f288092300a65f45a62a7ef19f209a0, type: 3}
+  m_Sprite: {fileID: 4190077506490258871, guid: 4523a3c3d8be59a47aa15c437c26a6c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.42, y: 15.02}
+  m_Size: {x: 7.06, y: 19.53}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!61 &813671719
 BoxCollider2D:
@@ -1109,8 +1104,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.42, y: 15.02}
-    newSize: {x: 5.42, y: 15.02}
+    oldSize: {x: 7.06, y: 19.53}
+    newSize: {x: 7.06, y: 19.53}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -1289,7 +1284,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -7
+  m_SortingOrder: -5
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7885011860675019658, guid: acb3315cb5239a543af55fa5782a03cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2294,8 +2289,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2939,24 +2934,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7808
-      objectReference: {fileID: 0}
-    - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7808
-      objectReference: {fileID: 0}
-    - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7808
-      objectReference: {fileID: 0}
-    - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.51
+      value: 4.38
       objectReference: {fileID: 0}
     - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 7943174300511558827, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3004,11 +2987,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1558069731}
-  - {fileID: 813671716}
   - {fileID: 134958927192985210}
   - {fileID: 826122290}
   - {fileID: 7701948021695860048}
   - {fileID: 1923563292}
   - {fileID: 1623065416}
+  - {fileID: 813671716}
   - {fileID: 802562241}
   - {fileID: 455701946}

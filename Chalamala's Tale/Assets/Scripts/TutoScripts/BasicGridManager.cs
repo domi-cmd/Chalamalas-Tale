@@ -119,45 +119,12 @@ public class BasicGridManager : MonoBehaviour
         walls[0, 0, 2] = true; // bottom of boss
     }
 
-    // Returns a list of direction indices leading to unvisited in-bounds neighbors
-    List<int> GetUnvisitedNeighbors(int r, int c, bool[,] visited)
-    {
-        var result = new List<int>();
-        for (int i = 0; i < DIRECTIONS.Length; i++)
-        {
-            var (dr, dc, _, _) = DIRECTIONS[i];
-            int nr = r + dr, nc = c + dc;
-            if (InBounds(nr, nc) && !visited[nr, nc])
-                result.Add(i);
-        }
-        return result;
-    }
 
-    private void AssignRoomType(System.Random roomRandomNumber, int r, int c)
-    {
-        // Decide on the type of the room (at the moment there are only two types, 0 for npc, 1 for enemy)
-        int roomType = roomRandomNumber.Next(2, 4);
-
-        // Assign the type
-        roomTypes[r, c] = (TutoRoomTypes)roomType;
-    }
-
-    // Helper method that opens the wall between current cell and its neighbor in designated direction
-    void OpenPassage(int r, int c, int dirIndex, bool[,] visited, Stack<(int, int)> stack)
-    {
-        var (dr, dc, my, nb) = DIRECTIONS[dirIndex];
-        walls[r, c, my] = true;
-        walls[r + dr, c + dc, nb] = true;
-        visited[r + dr, c + dc] = true;
-        stack.Push((r + dr, c + dc));
-    }
-
-    private bool InBounds(int r, int c) => r >= 0 && r < ROWS && c >= 0 && c < COLS;
-}
 
 public enum TutoRoomTypes
 {
     Start_Room,
     Dragon_Room,
     Simple_Enemy_Room
+}
 }

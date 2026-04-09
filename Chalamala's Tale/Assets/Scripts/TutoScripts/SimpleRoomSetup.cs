@@ -5,6 +5,7 @@ public class SimpleRoomSetup : MonoBehaviour
     // connect manually the doors gameobjects in Unity 
     public GameObject doorTop;
     public GameObject doorBottom;
+    public  GameObject [] ennemies;    // will be used to unlock the doors only when the ennemies are killed. For now the ennemies don't have health properties 
     void Start()
     {
         Debug.Log("PlayerHealth: " + PlayerHealth.Instance);
