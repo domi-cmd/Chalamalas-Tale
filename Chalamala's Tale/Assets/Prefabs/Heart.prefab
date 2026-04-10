@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cfc1421e514e644787bd03186af725d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHeart
-  fullHeart: {fileID: -4114642976813766425, guid: c64862bd5c91083458f3f001c5a9d1f6, type: 3}
-  halfHeart: {fileID: 5493121218688105084, guid: c64862bd5c91083458f3f001c5a9d1f6, type: 3}
-  emptyHeart: {fileID: -2984566982296354348, guid: c64862bd5c91083458f3f001c5a9d1f6, type: 3}
+  fullHeart: {fileID: -5080595550760813040, guid: f35c0c1aee096d34db6d53808e084410, type: 3}
+  halfHeart: {fileID: -4190777762730400788, guid: 188611acb037bd3498dbd9c94d09cb17, type: 3}
+  emptyHeart: {fileID: -4913936802494625090, guid: 2f2da85363775b04aa3ea602324c2ff5, type: 3}
