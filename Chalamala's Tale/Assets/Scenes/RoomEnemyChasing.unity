@@ -2103,6 +2103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   currentHealth: 8
   maxHealth: 8
+  deathCounter: 0
 --- !u!114 &1592484137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2121,6 +2122,7 @@ MonoBehaviour:
   spriteLeft: {fileID: -7670900094635721571, guid: 451e076697ab9ef4391c723206b91cde, type: 3}
   spriteIdle: {fileID: -8287984193659030122, guid: 5f288092300a65f45a62a7ef19f209a0, type: 3}
   spriteBack: {fileID: 3686686467743869865, guid: 4f373581fb9c193459d09f89cd7b4151, type: 3}
+  canMove: 1
 --- !u!212 &1592484138
 SpriteRenderer:
   serializedVersion: 2
@@ -2616,6 +2618,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
+  currentHealth: 0
+  maxHealth: 8
   aggroRangeRadius: 5
   showAggroRange: 1
   speed: 2.5

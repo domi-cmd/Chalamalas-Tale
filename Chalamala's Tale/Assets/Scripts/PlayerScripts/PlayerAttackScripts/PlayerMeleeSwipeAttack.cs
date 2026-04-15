@@ -14,6 +14,9 @@ public class PlayerMeleeSwipeAttack : MonoBehaviour
     void Start()
     {
         attackArea = transform.GetChild(0).gameObject;
+
+        attacking = false;
+        attackArea.SetActive(attacking);
     }
     
     void Update()
