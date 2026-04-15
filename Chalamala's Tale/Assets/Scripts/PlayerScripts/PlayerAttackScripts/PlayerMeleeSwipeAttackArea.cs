@@ -7,8 +7,13 @@ public class PlayerMeleeSwipeAttackArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        collider.gameObject.GetComponentInParent<EnemyChasing>().TakeDamage(damage);
-
+        // Check first whether the object hit has the tag enemy, as to avoid damaging a door
+        // (This tag has to be assigned manually to the enemy game objects)
+        if (collider.CompareTag("Enemy"))
+        {
+            collider.gameObject.GetComponentInParent<EnemyChasing>().TakeDamage(damage);
+            //Debug.Log("Enemy hit!");
+        }
         /**
         // If an enemy is in the trigger collider area, check if it has a health component
         enemyHealth = collider.GetComponent<currentHealth>();
@@ -19,9 +24,5 @@ public class PlayerMeleeSwipeAttackArea : MonoBehaviour
             enemyHealth.TakeDamage(damage);
         }
         **/
-        
-        
-        Debug.Log("Enemy hit!");
     }
-    
 }

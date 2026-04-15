@@ -2227,6 +2227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
+  currentHealth: 0
+  maxHealth: 0
   aggroRangeRadius: 5
   showAggroRange: 1
   speed: 2.5
