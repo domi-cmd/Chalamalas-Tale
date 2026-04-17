@@ -699,10 +699,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6734cfc0b458b4099af35e2976f2b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  musicSource: {fileID: 1668383879}
-  SFXSource: {fileID: 1516575270}
-  background_calm: {fileID: 8300000, guid: fb83f34b505cb4d2f996761391835861, type: 3}
-  background_battle: {fileID: 8300000, guid: cf3ab49afaaea4d938814d4e167ea465, type: 3}
+  calmSource: {fileID: 1668383879}
+  battleSource: {fileID: 1516575270}
+  backgroundCalm: {fileID: 8300000, guid: fb83f34b505cb4d2f996761391835861, type: 3}
+  backgroundBattle: {fileID: 8300000, guid: cf3ab49afaaea4d938814d4e167ea465, type: 3}
+  transitionDuration: 2
 --- !u!4 &486086642
 Transform:
   m_ObjectHideFlags: 0
@@ -1869,7 +1870,7 @@ GameObject:
   - component: {fileID: 1516575271}
   - component: {fileID: 1516575270}
   m_Layer: 0
-  m_Name: SFX
+  m_Name: battleMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,7 +1888,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2701,7 +2702,7 @@ GameObject:
   - component: {fileID: 1668383880}
   - component: {fileID: 1668383879}
   m_Layer: 0
-  m_Name: Music
+  m_Name: calmMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2719,7 +2720,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
