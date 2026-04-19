@@ -93,7 +93,7 @@ public class EnemyChasing : MonoBehaviour
     void OnDisable()
     {
         AudioManager.instance.UnregisterEnemy();
-
+    }
     public void TakeDamage(float damageAmount){
         currentHealth -= damageAmount;
         Debug.Log($"Enemy health after damage: {currentHealth}");
