@@ -85,6 +85,14 @@ public class EnemyChasing : MonoBehaviour
         mat.color = new Color(1f, 0f, 0f, 0.3f); // red, 30% opacity
         this.aggroRange.GetComponent<MeshRenderer>().material = mat;
     }
+    void OnEnable()
+    {
+        AudioManager.instance.RegisterEnemy();
+    }
+
+    void OnDisable()
+    {
+        AudioManager.instance.UnregisterEnemy();
 
     public void TakeDamage(float damageAmount){
         currentHealth -= damageAmount;
