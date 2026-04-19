@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponentInChildren<Rigidbody2D>();
         spriteImage = GetComponentInChildren<SpriteRenderer>();
+        spriteImage.sprite = spriteIdle;
     }
 
     void Update()
@@ -47,9 +48,13 @@ public class PlayerController : MonoBehaviour
         {
             spriteImage.sprite = spriteBack;
         }
-        else
+        else if (movement.y < 0)
         {
             spriteImage.sprite = spriteIdle;
+        }
+        else
+        {
+            return;
         }
     }
 
