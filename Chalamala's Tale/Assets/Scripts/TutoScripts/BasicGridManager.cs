@@ -80,7 +80,7 @@ public class BasicGridManager : MonoBehaviour
         
         switch (roomTypeToLoad)
         {
-            case TutoRoomTypes.Dragon_Room:
+            case TutoRoomTypes.Tutorial_Dragon_Room:
                 SceneManager.LoadScene("dragon_killing_you");
                 break;
             
@@ -104,7 +104,7 @@ public class BasicGridManager : MonoBehaviour
         visitedRooms.Clear();
 
         // Define room types manually
-        roomTypes[0, 0] = TutoRoomTypes.Dragon_Room;       // top
+        roomTypes[0, 0] = TutoRoomTypes.Tutorial_Dragon_Room;       // top
         roomTypes[1, 0] = TutoRoomTypes.Simple_Enemy_Room; // middle
         roomTypes[2, 0] = TutoRoomTypes.Start_Room;        // bottom
 
@@ -124,7 +124,7 @@ public class BasicGridManager : MonoBehaviour
 public enum TutoRoomTypes
 {
     Start_Room,
-    Dragon_Room,
+    Tutorial_Dragon_Room,
     Simple_Enemy_Room
 }
 }

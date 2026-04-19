@@ -51,7 +51,7 @@ public class PlayerHealth : MonoBehaviour
     public void Resurrect()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "easy_fight")
+        if (currentScene.name == "easy_fight" | currentScene.name == "dragon_killing_you")
         {
             // to not mess up with room positions, we assign it automatically
             BasicGridManager.Instance.currentRow = 2;
@@ -59,8 +59,16 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("Tutorial_first_scene");
             currentHealth = maxHealth; // go back to total health
             deathCounter += 1;
+        } else
+        // Else we are past the tutorial (and I think we should respawn in the tutorial?)
+        {
+            // to not mess up with room positions, we assign it automatically
+            GridManager.Instance.currentRow = 3;
+            GridManager.Instance.currentCol = 3;
+            SceneManager.LoadScene("Room");
+            currentHealth = maxHealth; // go back to total health
+            deathCounter += 1;
         }
-
 
     }
 }
