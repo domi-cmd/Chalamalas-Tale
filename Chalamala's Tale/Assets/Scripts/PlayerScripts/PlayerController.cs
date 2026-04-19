@@ -62,6 +62,9 @@ public class PlayerController : MonoBehaviour
     {
         body.linearVelocity = movement * speed;
     }
-
+    public void SetPlayerMovement(bool value)
+    {
+        canMove = value;
+    }
 
 }

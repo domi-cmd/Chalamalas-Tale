@@ -2,11 +2,15 @@ using UnityEngine;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine.SceneManagement;
+using System.Runtime.CompilerServices;
 public class AudioManager : MonoBehaviour
 {
     [Header("Music Sources")]
     [SerializeField] AudioSource calmSource;
     [SerializeField] AudioSource battleSource;
+    [SerializeField] AudioLowPassFilter calmFilter;
+    [SerializeField] AudioLowPassFilter battleFilter;
+
     [Header("Clips")]
     public AudioClip backgroundCalm;
     public AudioClip backgroundBattle;
@@ -14,19 +18,9 @@ public class AudioManager : MonoBehaviour
     [Header("Settings")]
     public float transitionDuration = 2f;
     private Coroutine currentTransition;
-    private int enemyCount = 0;
-
-
+    private int enemyCount = 0;  
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        } else
-        {
-            Destroy(gameObject);
-        }
         calmSource.volume = 1f;
         battleSource.volume = 0f;
     }
@@ -45,7 +39,19 @@ public class AudioManager : MonoBehaviour
         calmSource.Play();
         battleSource.Play();
     }
-    
+    public void Update()
+    {
+        if(PauseMenu.IsPaused == true)
+        {
+            calmFilter.cutoffFrequency = 500f;
+            battleFilter.cutoffFrequency = 500f;
+        }else
+        {
+            calmFilter.cutoffFrequency = 22000f;
+            battleFilter.cutoffFrequency = 22000f;
+        }
+    }
+
     public void SwitchToBattle()
     {
         StartCrossfade(0f, 1f);
