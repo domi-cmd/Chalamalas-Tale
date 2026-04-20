@@ -13,16 +13,25 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteLeft;
     public Sprite spriteIdle;
     public Sprite spriteBack;
+
+    public bool canMove = true; // to stop player actions when the scene is paused (menu, dialogues)
     
 
     void Start()
     {
         body = GetComponentInChildren<Rigidbody2D>();
         spriteImage = GetComponentInChildren<SpriteRenderer>();
+        spriteImage.sprite = spriteIdle;
     }
 
     void Update()
     {
+
+        if (!canMove) // when the player has to be locked
+        {
+            movement = Vector2.zero;
+            return;
+        }
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -39,9 +48,13 @@ public class PlayerController : MonoBehaviour
         {
             spriteImage.sprite = spriteBack;
         }
-        else
+        else if (movement.y < 0)
         {
             spriteImage.sprite = spriteIdle;
+        }
+        else
+        {
+            return;
         }
     }
 
