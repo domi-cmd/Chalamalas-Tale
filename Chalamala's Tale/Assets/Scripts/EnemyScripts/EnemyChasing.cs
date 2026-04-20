@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class EnemyChasing : MonoBehaviour
 {
+    [Header("Health")]
+    [SerializeField] private float maxHealth = 3f;
+    private float currentHealth;
+
     // Reference to the player object, as to be able to calculate the distance to it and how to move towards it, etc.
     GameObject player;
 
@@ -23,6 +27,8 @@ public class EnemyChasing : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentHealth = maxHealth;
+
         // Get the player object
         player = GameObject.Find("Player");
 
@@ -57,6 +63,20 @@ public class EnemyChasing : MonoBehaviour
 
         
 
+    }
+
+    public void TakeDamage(float damageAmount)
+    {
+        if (damageAmount <= 0f)
+        {
+            return;
+        }
+
+        currentHealth -= damageAmount;
+        if (currentHealth <= 0f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Helper method that sets up the aggro range centered on the object (enemy) that this script is attached to.
