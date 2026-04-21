@@ -83,6 +83,14 @@ public class GridManager : MonoBehaviour
                 SceneManager.LoadScene("Room");
                 break;
 
+            case RoomTypes.Goat_Room:
+                SceneManager.LoadScene("RoomEnemyGoat");
+                break;
+
+            case RoomTypes.Turret_Room:
+                SceneManager.LoadScene("RoomEnemyTurret");
+                break;
+
             // TODO: Missing rooms here (such as dragon room, other enemy rooms, more specific types of npc rooms, etc)
             default:
                 SceneManager.LoadScene("Room");
@@ -149,8 +157,8 @@ public class GridManager : MonoBehaviour
 
     private void AssignRoomType(System.Random roomRandomNumber, int r, int c)
     {
-        // Decide on the type of the room (at the moment there are only two types, 0 for npc, 1 for enemy)
-        int roomType = roomRandomNumber.Next(2, 4);
+        // Decide on the type of the room 
+        int roomType = roomRandomNumber.Next(2, 6);
 
         // Assign the type
         roomTypes[r, c] = (RoomTypes)roomType;
@@ -174,5 +182,7 @@ public enum RoomTypes
     Start_Room,
     Dragon_Room,
     NPC_Room,
-    Chasing_Enemy_Room
+    Chasing_Enemy_Room,
+    Goat_Room,
+    Turret_Room
 }
