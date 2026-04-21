@@ -9,8 +9,6 @@ public class EnemyChasing : MonoBehaviour
     // Reference to the player object, as to be able to calculate the distance to it and how to move towards it, etc.
     GameObject player;
 
-    public float currentHealth, maxHealth;
-
     // Radius for the area in which the enemy is aggro'd by the player
     public float aggroRangeRadius = 5f;
     // Field for the (possibly) visible aggro range of the enemy
@@ -117,23 +115,5 @@ public class EnemyChasing : MonoBehaviour
         AudioManager am = FindAnyObjectByType<AudioManager>();
         if (am != null)
             am.UnregisterEnemy();
-    }
-
-    public void TakeDamage(float damageAmount){
-        currentHealth -= damageAmount;
-        Debug.Log($"Enemy health after damage: {currentHealth}");
-        // No such action yet, not sure if we want/need it
-        //OnEnemyDamaged?.Invoke();
-
-        if(currentHealth <= 0)
-        {
-            currentHealth = 0;
-            Debug.Log("Enemy died!");
-            // Destroy the game object (currently not using actions logic)
-            Destroy(this.gameObject);
-            // No such action yet, similar to on enemy damaged
-            //OnEnemyDeath?.Invoke();
-            //Resurrect();
-        }
     }
 }

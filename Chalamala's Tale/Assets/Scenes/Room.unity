@@ -4829,6 +4829,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4241963996546195205, guid: 9f279eb3b904a4e1fab29ebad41cfac2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1592484137}
+    - target: {fileID: 4241963996546195205, guid: 9f279eb3b904a4e1fab29ebad41cfac2, type: 3}
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1383166378}
