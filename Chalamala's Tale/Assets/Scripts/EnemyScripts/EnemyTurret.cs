@@ -69,7 +69,19 @@ public class EnemyTurret : MonoBehaviour
         FireBurst(currentPattern);
         currentPattern = currentPattern == ShotPattern.Cardinal ? ShotPattern.Diagonal : ShotPattern.Cardinal;
     }
+    void OnEnable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.RegisterEnemy();
+    }
 
+    void OnDisable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.UnregisterEnemy();
+    }
     private void FireBurst(ShotPattern pattern)
     {
         Vector2[] directions = pattern == ShotPattern.Cardinal

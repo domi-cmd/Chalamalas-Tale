@@ -147,7 +147,20 @@ public class EnemyGoat : MonoBehaviour
                 break;
         }
     }
+    void OnEnable()
+    {
+        Debug.Log("GOAT ENABLED");
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.RegisterEnemy();
+    }
 
+    void OnDisable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.UnregisterEnemy();
+    }
     private void EnterPhase(Phase newPhase)
     {
         currentPhase = newPhase;
