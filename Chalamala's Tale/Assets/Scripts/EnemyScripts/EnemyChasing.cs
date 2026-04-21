@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class EnemyChasing : MonoBehaviour
 {
+    [Header("Health")]
+    [SerializeField] private float maxHealth = 3f;
+    private float currentHealth;
+
     // Reference to the player object, as to be able to calculate the distance to it and how to move towards it, etc.
     GameObject player;
 
@@ -23,6 +27,8 @@ public class EnemyChasing : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentHealth = maxHealth;
+
         // Get the player object
         player = GameObject.Find("Player");
 
@@ -32,6 +38,9 @@ public class EnemyChasing : MonoBehaviour
         
         // Instantiate the aggro range object based on the decided range radius
         CreateAggroRange();
+
+        // Set the hp to max at spawn
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -59,6 +68,20 @@ public class EnemyChasing : MonoBehaviour
 
     }
 
+    public void TakeDamage(float damageAmount)
+    {
+        if (damageAmount <= 0f)
+        {
+            return;
+        }
+
+        currentHealth -= damageAmount;
+        if (currentHealth <= 0f)
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Helper method that sets up the aggro range centered on the object (enemy) that this script is attached to.
     private void CreateAggroRange(){
         this.aggroRange = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -79,5 +102,18 @@ public class EnemyChasing : MonoBehaviour
         mat.renderQueue = 3000;
         mat.color = new Color(1f, 0f, 0f, 0.3f); // red, 30% opacity
         this.aggroRange.GetComponent<MeshRenderer>().material = mat;
+    }
+   void OnEnable()
+{
+    AudioManager am = FindAnyObjectByType<AudioManager>();
+    if (am != null)
+        am.RegisterEnemy();
+}
+
+    void OnDisable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.UnregisterEnemy();
     }
 }

@@ -35,7 +35,8 @@ public class Chalamala : MonoBehaviour
 
                 //stop player movement
                 PlayerController playerController = player.GetComponent<PlayerController>();
-                playerController.canMove = false;
+                playerController.FreezePlayerMovement();
+                //playerController.playerState = playerController.PlayerState.CantMove;
                 
                 Dialogue dialogueScript = dial.GetComponentInChildren<Dialogue>(true);
                 dialogueScript.StartDialogue();
