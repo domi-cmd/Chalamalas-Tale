@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     private enum PlayerState
     {
+        CantMove,
         Normal,
         DodgeRollSliding,
     }
@@ -39,15 +40,13 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!canMove) // when the player has to be locked
-                {
-                    movement = Vector2.zero;
-                    return;
-                }
-
-
         switch (playerState)
         {
+            case(PlayerState.CantMove):
+            // when the player has to be locked (during dialoge, etc.)
+                movement = Vector2.zero;
+                return;
+
             case(PlayerState.Normal):
                 HandleBasicMovement();
                 HandleDodgeRoll();  
@@ -112,9 +111,13 @@ public class PlayerController : MonoBehaviour
         } 
     }
 
-    public void SetPlayerMovement(bool value)
+    public void FreezePlayerMovement()
     {
-        canMove = value;
+        playerState = PlayerState.CantMove;
     }
 
+    public void UnfreezePlayerMovement()
+    {
+        playerState = PlayerState.Normal;
+    }
 }
