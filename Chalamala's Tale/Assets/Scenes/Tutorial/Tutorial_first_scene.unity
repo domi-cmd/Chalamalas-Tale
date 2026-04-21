@@ -1158,6 +1158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   currentHealth: 4
   maxHealth: 8
+  deathCounter: 0
 --- !u!114 &813671722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2912,6 +2913,58 @@ PrefabInstance:
     - target: {fileID: 252291185997146027, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164254392929636034, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164254392929636034, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791708668823305694, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791708668823305694, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5193603708860438194, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: firstDialogueText.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: secondDialogueText.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'firstDialogueText.Array.data[0]'
+      value: Hello traveler, it's a pleasure to talk to you thanks to the spacebar
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'firstDialogueText.Array.data[1]'
+      value: 'welcome to Fribourg ! A very calm city,surely not a deadly city... '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'firstDialogueText.Array.data[2]'
+      value: Your adventure awaits for you above
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'firstDialogueText.Array.data[3]'
+      value: See you again ... I hope :)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'secondDialogueText.Array.data[0]'
+      value: damn you  are weak little boi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      propertyPath: 'secondDialogueText.Array.data[1]'
+      value: try again if you want to save... I mean to explore Fribourg
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

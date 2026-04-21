@@ -392,6 +392,57 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1020246882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020246884}
+  - component: {fileID: 1020246883}
+  m_Layer: 0
+  m_Name: Flames
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1020246883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020246882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2098b854cc0d5a47824fdbf5c469d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  flamePrefab: {fileID: 7608552235706221553, guid: 7d333c6d116b1844191377658057d57e, type: 3}
+  centerPoint: {fileID: 1929999558}
+  initialRadius: 0.5
+  radiusStep: 0.1
+  angleStep: 15
+  flameCount: 80
+  spiralDelay: 0.05
+--- !u!4 &1020246884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020246882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.94354, y: 3.48136, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065355379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,6 +1415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   currentHealth: 4
   maxHealth: 8
+  deathCounter: 0
 --- !u!114 &1776330480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1509,7 +1561,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8855292966332548456, guid: 976059cad2077f2459c3bf7a53d3d763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1600,6 +1652,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimpleRoomSetup
   doorTop: {fileID: 0}
   doorBottom: {fileID: 0}
+  ennemies: []
 --- !u!1 &2133996575
 GameObject:
   m_ObjectHideFlags: 0
@@ -1862,3 +1915,4 @@ SceneRoots:
   - {fileID: 1737047369}
   - {fileID: 1776330474}
   - {fileID: 1929999558}
+  - {fileID: 1020246884}

@@ -1617,6 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   currentHealth: 8
   maxHealth: 8
+  deathCounter: 0
 --- !u!114 &1592484137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,6 +1636,7 @@ MonoBehaviour:
   spriteLeft: {fileID: -7670900094635721571, guid: 451e076697ab9ef4391c723206b91cde, type: 3}
   spriteIdle: {fileID: -8287984193659030122, guid: 5f288092300a65f45a62a7ef19f209a0, type: 3}
   spriteBack: {fileID: 3686686467743869865, guid: 4f373581fb9c193459d09f89cd7b4151, type: 3}
+  canMove: 1
 --- !u!212 &1592484138
 SpriteRenderer:
   serializedVersion: 2
@@ -1684,15 +1686,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 4190077506490258871, guid: 4523a3c3d8be59a47aa15c437c26a6c2, type: 3}
+  m_Sprite: {fileID: -8287984193659030122, guid: 5f288092300a65f45a62a7ef19f209a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 7.06, y: 19.53}
+  m_Size: {x: 5.42, y: 15.02}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
 --- !u!61 &1592484139
 BoxCollider2D:
@@ -1732,8 +1734,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.06, y: 19.53}
-    newSize: {x: 7.06, y: 19.53}
+    oldSize: {x: 5.42, y: 15.02}
+    newSize: {x: 5.42, y: 15.02}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
