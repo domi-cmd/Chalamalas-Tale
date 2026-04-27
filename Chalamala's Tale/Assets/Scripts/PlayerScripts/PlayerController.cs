@@ -13,11 +13,15 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteIdle;
     public Sprite spriteBack;
 
-    public bool canMove = true; // to stop player actions when the scene is paused (menu, dialogues)
+    // to stop player actions when the scene is paused (menu, dialogues)
+    public bool canMove = true; 
 
     private PlayerState playerState;
     private float slideSpeed;
     private Vector2 slideDirection;
+
+    // Flag to check whether the player already has the ranged attack unlocked
+    private bool rangedAttackEnabled = false;
     
 
     private enum PlayerState
@@ -133,5 +137,15 @@ public class PlayerController : MonoBehaviour
     public void UnfreezePlayerMovement()
     {
         playerState = PlayerState.Normal;
+    }
+
+    public void EnablePlayerRangedAttack()
+    {
+        rangedAttackEnabled = true;
+    }
+
+    public bool HasRangedAttack()
+    {
+        return rangedAttackEnabled;
     }
 }

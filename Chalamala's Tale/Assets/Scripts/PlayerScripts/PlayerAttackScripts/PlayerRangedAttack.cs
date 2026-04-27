@@ -21,7 +21,7 @@ public class PlayerRangedAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) && Time.time >= nextFiringTime)
+        if (Input.GetKeyDown(KeyCode.K) && Time.time >= nextFiringTime && playerController.HasRangedAttack())
         {
             FireAttack();
         }
