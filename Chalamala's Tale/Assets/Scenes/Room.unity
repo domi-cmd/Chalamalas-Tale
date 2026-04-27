@@ -2124,7 +2124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f27061abe884cf49810a8601b66f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoNotDestroy
-  ObjectIndex: 10
 --- !u!1 &922939147
 GameObject:
   m_ObjectHideFlags: 0
@@ -5112,7 +5111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
-  currentHealth: 0
   maxHealth: 0
   aggroRangeRadius: 5
   showAggroRange: 1
@@ -5304,6 +5302,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1817446292}
+    - targetCorrespondingSourceObject: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1817446293}
   m_SourcePrefab: {fileID: 100100000, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
 --- !u!4 &1817446291 stripped
 Transform:
@@ -5322,6 +5323,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009d74417e24cad4cba0a304ccfdc346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeSwipeAttack
+--- !u!114 &1817446293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592484134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380def68486824c42b4af4268dbc0657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRangedAttack
+  projectilePrefab: {fileID: 4007544879303788332, guid: 5de02bf3fb92cda48abf225da16c4c5d, type: 3}
+  attackRangeRadius: 5
+  firingCooldown: 1.25
 --- !u!1 &1864970491
 GameObject:
   m_ObjectHideFlags: 0
