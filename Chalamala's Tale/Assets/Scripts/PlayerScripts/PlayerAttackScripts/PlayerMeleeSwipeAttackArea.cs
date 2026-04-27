@@ -51,7 +51,7 @@ public class PlayerMeleeSwipeAttackArea : MonoBehaviour
         // (This tag has to be assigned manually to the enemy game objects)
         if (collider.CompareTag("Enemy"))
         {
-            collider.gameObject.GetComponentInParent<EnemyChasing>().TakeDamage(damage);
+            collider.gameObject.GetComponentInParent<IDamageable>()?.TakeDamage(damage);
             //Debug.Log("Enemy hit!");
         }
         /**

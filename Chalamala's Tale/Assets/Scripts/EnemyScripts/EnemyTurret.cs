@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyTurret : MonoBehaviour
+public class EnemyTurret : MonoBehaviour, IDamageable
 {
     private enum ShotPattern
     {
