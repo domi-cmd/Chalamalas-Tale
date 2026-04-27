@@ -3036,11 +3036,48 @@ PrefabInstance:
       propertyPath: 'firstDialogueText.Array.data[0]'
       value: HELLOOOOO
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6725041334311739807, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 134958927192985213}
   m_SourcePrefab: {fileID: 100100000, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+--- !u!114 &134958927192985211 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4791708668823305694, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+  m_PrefabInstance: {fileID: 134958927192985210}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &134958927192985212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6725041334311739807, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+  m_PrefabInstance: {fileID: 134958927192985210}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &134958927192985213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134958927192985212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1949c6a7866785342bfc2638064c00fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  textMeshPro: {fileID: 134958927192985211}
+  firstDialogueText:
+  - HELLOOOOO
+  secondDialogueText: []
+  textSpeed: 0
 --- !u!1001 &7701948021695860048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3105,11 +3142,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5079394879316420551, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3653561345472420146, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7701948021695860050}
   m_SourcePrefab: {fileID: 100100000, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
+--- !u!1 &7701948021695860049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3653561345472420146, guid: 6fd91a4020f81924d9ffec6ebcb0e60d, type: 3}
+  m_PrefabInstance: {fileID: 7701948021695860048}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7701948021695860050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7701948021695860049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce2afa9eadb7474f9b37bf242d1ca18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Chalamala
+  info: {fileID: 1623065415}
+  dial: {fileID: 1582395058}
+  player: {fileID: 0}
+  showDistance: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
