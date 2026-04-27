@@ -18,11 +18,11 @@ public class PlayerArrowProjectile : MonoBehaviour
         var col = GetComponent<Collider2D>();
         col.isTrigger = true;
 
-        var rb = GetComponent<Rigidbody2D>();
-        if (rb != null)
+        var rigidBody = GetComponent<Rigidbody2D>();
+        if (rigidBody != null)
         {
-            rb.gravityScale = 0f;
-            rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+            rigidBody.gravityScale = 0f;
+            rigidBody.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         }
     }
 
@@ -40,13 +40,7 @@ public class PlayerArrowProjectile : MonoBehaviour
             return;
         }
 
-        if (((1 << other.gameObject.layer) & wallLayerMask) != 0 
-            && Time.time - spawnTime >= wallArmDelaySeconds)
+        if (((1 << other.gameObject.layer) & wallLayerMask) != 0 && Time.time - spawnTime >= wallArmDelaySeconds)
             Destroy(gameObject);
-    }
-
-    private static bool IsInLayerMask(GameObject obj, LayerMask mask)
-    {
-        return (mask.value & (1 << obj.layer)) != 0;
     }
 }

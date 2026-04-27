@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102291582}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 436961315}
   - component: {fileID: 436961317}
   - component: {fileID: 436961316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 605901715}
   - component: {fileID: 605901717}
   - component: {fileID: 605901716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1147,7 +1147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
-  currentHealth: 0
   maxHealth: 8
   aggroRangeRadius: 4
   showAggroRange: 0
@@ -1538,7 +1537,7 @@ GameObject:
   - component: {fileID: 863998824}
   - component: {fileID: 863998826}
   - component: {fileID: 863998825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1870,7 +1869,7 @@ GameObject:
   - component: {fileID: 999902125}
   - component: {fileID: 999902127}
   - component: {fileID: 999902126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2150,7 +2149,7 @@ GameObject:
   - component: {fileID: 1262789230}
   - component: {fileID: 1262789232}
   - component: {fileID: 1262789231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2288,7 +2287,7 @@ GameObject:
   - component: {fileID: 1428217008}
   - component: {fileID: 1428217010}
   - component: {fileID: 1428217009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2568,7 +2567,7 @@ GameObject:
   - component: {fileID: 1519415358}
   - component: {fileID: 1519415360}
   - component: {fileID: 1519415359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2807,7 +2806,7 @@ GameObject:
   - component: {fileID: 1657918843}
   - component: {fileID: 1657918845}
   - component: {fileID: 1657918844}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3058,7 +3057,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
-  currentHealth: 0
   maxHealth: 8
   aggroRangeRadius: 4
   showAggroRange: 0
@@ -3285,7 +3283,7 @@ GameObject:
   - component: {fileID: 2005612059}
   - component: {fileID: 2005612061}
   - component: {fileID: 2005612060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
