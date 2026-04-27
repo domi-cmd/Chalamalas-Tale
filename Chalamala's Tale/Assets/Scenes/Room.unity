@@ -478,7 +478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 102291582}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 436961315}
   - component: {fileID: 436961317}
   - component: {fileID: 436961316}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 605901715}
   - component: {fileID: 605901717}
   - component: {fileID: 605901716}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1411,7 +1411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 821400008}
   - component: {fileID: 821400009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fortress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1643,7 +1643,7 @@ GameObject:
   - component: {fileID: 863998824}
   - component: {fileID: 863998826}
   - component: {fileID: 863998825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2124,7 +2124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f27061abe884cf49810a8601b66f3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoNotDestroy
-  ObjectIndex: 10
 --- !u!1 &922939147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2368,7 @@ GameObject:
   - component: {fileID: 999902125}
   - component: {fileID: 999902127}
   - component: {fileID: 999902126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3192,7 +3191,7 @@ GameObject:
   - component: {fileID: 1262789230}
   - component: {fileID: 1262789232}
   - component: {fileID: 1262789231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3719,7 +3718,7 @@ GameObject:
   - component: {fileID: 1428217008}
   - component: {fileID: 1428217010}
   - component: {fileID: 1428217009}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4021,7 +4020,7 @@ GameObject:
   - component: {fileID: 1519415358}
   - component: {fileID: 1519415360}
   - component: {fileID: 1519415359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4717,7 +4716,7 @@ GameObject:
   - component: {fileID: 1657918843}
   - component: {fileID: 1657918845}
   - component: {fileID: 1657918844}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5112,7 +5111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
-  currentHealth: 0
   maxHealth: 0
   aggroRangeRadius: 5
   showAggroRange: 1
@@ -5304,6 +5302,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1817446292}
+    - targetCorrespondingSourceObject: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1817446293}
   m_SourcePrefab: {fileID: 100100000, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
 --- !u!4 &1817446291 stripped
 Transform:
@@ -5322,6 +5323,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 009d74417e24cad4cba0a304ccfdc346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMeleeSwipeAttack
+--- !u!114 &1817446293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592484134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380def68486824c42b4af4268dbc0657, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRangedAttack
+  projectilePrefab: {fileID: 4007544879303788332, guid: 5de02bf3fb92cda48abf225da16c4c5d, type: 3}
+  firingCooldown: 1.25
 --- !u!1 &1864970491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,7 +5459,7 @@ GameObject:
   - component: {fileID: 2005612059}
   - component: {fileID: 2005612061}
   - component: {fileID: 2005612060}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

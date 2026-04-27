@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 1851779}
   - component: {fileID: 1851781}
   - component: {fileID: 1851780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 26389243}
   - component: {fileID: 26389245}
   - component: {fileID: 26389244}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 169874622}
   - component: {fileID: 169874624}
   - component: {fileID: 169874623}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,7 +1128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 488203517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Borders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1204,7 +1204,7 @@ GameObject:
   - component: {fileID: 654649009}
   - component: {fileID: 654649011}
   - component: {fileID: 654649010}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 861179739}
   - component: {fileID: 861179741}
   - component: {fileID: 861179740}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,7 +1749,7 @@ GameObject:
   - component: {fileID: 1369883838}
   - component: {fileID: 1369883840}
   - component: {fileID: 1369883839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 1378677066}
   - component: {fileID: 1378677068}
   - component: {fileID: 1378677067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: upper_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2752,7 +2752,7 @@ GameObject:
   - component: {fileID: 1689634780}
   - component: {fileID: 1689634782}
   - component: {fileID: 1689634781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2890,7 +2890,7 @@ GameObject:
   - component: {fileID: 1841608341}
   - component: {fileID: 1841608343}
   - component: {fileID: 1841608342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
