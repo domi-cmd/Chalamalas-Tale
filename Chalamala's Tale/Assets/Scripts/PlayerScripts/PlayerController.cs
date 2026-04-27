@@ -26,6 +26,16 @@ public class PlayerController : MonoBehaviour
         Normal,
         DodgeRollSliding,
     }
+
+    public enum PlayerFacingDirection
+    {
+        Up,
+        Right,
+        Down,
+        Left
+    }
+
+    public PlayerFacingDirection CurrentFacing { get; private set; } = PlayerFacingDirection.Down;
     
 
     void Start()
@@ -69,18 +79,22 @@ public class PlayerController : MonoBehaviour
         if (movement.x > 0)
         {
             spriteImage.sprite = spriteRight;
+            CurrentFacing = PlayerFacingDirection.Right;
         }
         else if (movement.x < 0)
         {
             spriteImage.sprite = spriteLeft;
+            CurrentFacing = PlayerFacingDirection.Left;
         }
         else if (movement.y > 0)
         {
             spriteImage.sprite = spriteBack;
+            CurrentFacing = PlayerFacingDirection.Up;
         }
         else if (movement.y < 0)
         {
             spriteImage.sprite = spriteIdle;
+            CurrentFacing = PlayerFacingDirection.Down;
         }
         else
         {

@@ -3,44 +3,82 @@ using UnityEngine;
 public class PlayerRangedAttack : MonoBehaviour
 {
     public GameObject projectilePrefab;
-    public float attackRangeRadius = 5f;
     public float firingCooldown = 1.25f;
     private float nextFiringTime = 0f;
+    private Vector2 attackDirection;
+    private float attackSpawnOffset = 1.5f;
 
-    private GameObject attackArea;
+    // We use the player sprite to determine in which direction the projectile should fly
+    private PlayerController playerController;
+    private int damage = 3;
+    private float projectileSpeed = 8f;
+    
 
     private void Start()
     {
-        attackArea = new GameObject("RangedAttackArea");
-        attackArea.transform.SetParent(transform);
-        attackArea.transform.localPosition = Vector3.zero;
-
-        CircleCollider2D col = attackArea.AddComponent<CircleCollider2D>();
-        col.isTrigger = true;
-        col.radius = attackRangeRadius;
-
-        var areaLogic = attackArea.AddComponent<PlayerRangedAttackArea>();
-        areaLogic.Setup(this); 
-
-        attackArea.SetActive(false);
+        playerController = GetComponent<PlayerController>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K) && Time.time >= nextFiringTime)
         {
-            StartCoroutine(PerformAttack());
+            FireAttack();
         }
     }
 
-    private System.Collections.IEnumerator PerformAttack()
+    private void FireAttack()
     {
+        if (projectilePrefab == null)
+        {
+            return;
+        }
+
+        // Decide in which direction the attack should fly
+        switch (playerController.CurrentFacing)
+        {
+            case PlayerController.PlayerFacingDirection.Left:  
+                attackDirection = Vector2.left;  
+                break;
+
+            case PlayerController.PlayerFacingDirection.Right: 
+                attackDirection = Vector2.right; 
+                break;
+
+            case PlayerController.PlayerFacingDirection.Up:    
+                attackDirection = Vector2.up;    
+                break;
+
+            case PlayerController.PlayerFacingDirection.Down:  
+                attackDirection = Vector2.down;  
+                break;
+        }
+
+        // Calculate cooldown until next attack
         nextFiringTime = Time.time + firingCooldown;
-        attackArea.SetActive(true);
+
+        // Spawn the projectile 1.5 units away from the player's center toward the enemy so it doesn't touch the 
+        // player's collider
+        Vector3 spawnPos = transform.position + (Vector3)(attackDirection * attackSpawnOffset);
         
-        // Wait a tiny bit so the OnEnable has time to process
-        yield return new WaitForSeconds(0.05f);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
         
-        attackArea.SetActive(false);
+        // Even if it spawns close, tell physics to ignore the player
+        Collider2D playerCollider = GetComponent<Collider2D>();
+        Collider2D projectileCollider = projectile.GetComponent<Collider2D>();
+        
+        if (playerCollider != null && projectileCollider != null)
+        {
+            Physics2D.IgnoreCollision(playerCollider, projectileCollider);
+        }
+
+        // Set Velocity
+        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = attackDirection * projectileSpeed;
+        }
+        
+        Destroy(projectile, 3f); 
     }
 }
