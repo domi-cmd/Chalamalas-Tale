@@ -8,7 +8,6 @@ public class Dialogue : MonoBehaviour
 
     public string[] firstDialogueText;
     public string[] secondDialogueText;
-
     private string[] activeDialogue; 
 
     public float textSpeed;
