@@ -75,7 +75,8 @@ public class Dialogue : MonoBehaviour
         {
             // end dialogue
             index = 0;
-            gameObject.SetActive(false);
+            textMeshPro.text = "";
+            transform.parent.gameObject.SetActive(false); // disable canvas instead
 
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
