@@ -30,7 +30,7 @@ public class Chalamala : MonoBehaviour
         if (distance < showDistance)
         {
             info.enabled = true;
-            if (Input.GetKeyDown(KeyCode.E)){
+            if (!dial.gameObject.activeSelf && Input.GetKeyDown(KeyCode.E)){
                 dial.gameObject.SetActive(true);
 
                 //stop player movement
