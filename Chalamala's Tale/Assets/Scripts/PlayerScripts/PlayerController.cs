@@ -13,11 +13,15 @@ public class PlayerController : MonoBehaviour
     public Sprite spriteIdle;
     public Sprite spriteBack;
 
-    public bool canMove = true; // to stop player actions when the scene is paused (menu, dialogues)
+    // to stop player actions when the scene is paused (menu, dialogues)
+    public bool canMove = true; 
 
     private PlayerState playerState;
     private float slideSpeed;
     private Vector2 slideDirection;
+
+    // Flag to check whether the player already has the ranged attack unlocked
+    private bool rangedAttackEnabled = false;
     
 
     private enum PlayerState
@@ -26,6 +30,16 @@ public class PlayerController : MonoBehaviour
         Normal,
         DodgeRollSliding,
     }
+
+    public enum PlayerFacingDirection
+    {
+        Up,
+        Right,
+        Down,
+        Left
+    }
+
+    public PlayerFacingDirection CurrentFacing { get; private set; } = PlayerFacingDirection.Down;
     
 
     void Start()
@@ -69,18 +83,22 @@ public class PlayerController : MonoBehaviour
         if (movement.x > 0)
         {
             spriteImage.sprite = spriteRight;
+            CurrentFacing = PlayerFacingDirection.Right;
         }
         else if (movement.x < 0)
         {
             spriteImage.sprite = spriteLeft;
+            CurrentFacing = PlayerFacingDirection.Left;
         }
         else if (movement.y > 0)
         {
             spriteImage.sprite = spriteBack;
+            CurrentFacing = PlayerFacingDirection.Up;
         }
         else if (movement.y < 0)
         {
             spriteImage.sprite = spriteIdle;
+            CurrentFacing = PlayerFacingDirection.Down;
         }
         else
         {
@@ -119,5 +137,15 @@ public class PlayerController : MonoBehaviour
     public void UnfreezePlayerMovement()
     {
         playerState = PlayerState.Normal;
+    }
+
+    public void EnablePlayerRangedAttack()
+    {
+        rangedAttackEnabled = true;
+    }
+
+    public bool HasRangedAttack()
+    {
+        return rangedAttackEnabled;
     }
 }

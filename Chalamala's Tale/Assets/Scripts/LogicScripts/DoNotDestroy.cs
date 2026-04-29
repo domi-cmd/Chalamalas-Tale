@@ -1,22 +1,28 @@
-using UnityEditor.Search;
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class DoNotDestroy : MonoBehaviour
 {
-    private static GameObject[] persistentObjects = new GameObject[10];
-    public int ObjectIndex;
+    private static HashSet<string> existing = new HashSet<string>();
+
     void Awake()
     {
-        if (persistentObjects[ObjectIndex] == null)
+        string key = GetKey();
+
+        if (!existing.Contains(key))
         {
-            persistentObjects[ObjectIndex] = gameObject;
+            existing.Add(key);
             DontDestroyOnLoad(gameObject);
-        } else if(persistentObjects[ObjectIndex]!= gameObject)
+        }
+        else
         {
             Destroy(gameObject);
         }
-    } 
+    }
 
+    string GetKey()
+    {
+        // clé basée sur le type du GameObject
+        return gameObject.name;
+    }
 }

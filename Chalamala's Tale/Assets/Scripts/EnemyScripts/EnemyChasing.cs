@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyChasing : MonoBehaviour
+public class EnemyChasing : MonoBehaviour, IDamageable
 {
     [Header("Health")]
     [SerializeField] private float maxHealth = 3f;
