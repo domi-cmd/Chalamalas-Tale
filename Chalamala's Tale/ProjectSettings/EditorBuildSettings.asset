@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Room.unity
     guid: 5d90761dd7d5e054aa5424a10c0effb7
   - enabled: 1
+    path: Assets/Scenes/RoomUpgradeRangedAttack.unity
+    guid: 3ee8414e7539ed44d9fd51c7c1edfdbb
+  - enabled: 1
     path: Assets/Scenes/RoomEnemyChasing.unity
     guid: 2c409a3183920d143834bd12261ed58e
   - enabled: 1
@@ -23,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial/Tutorial_first_scene.unity
     guid: 7af63ae6024fa204e8fdab53a2f45495
+  - enabled: 1
+    path: Assets/Scenes/RoomEnemyGoat.unity
+    guid: 9fe18934124de294fb27ea9163700ecf
+  - enabled: 1
+    path: Assets/Scenes/RoomEnemyTurret.unity
+    guid: 3ea6d285f8c35054d9fe30d7420d1237
   - enabled: 1
     path: Assets/Scenes/Tutorial/easy_fight.unity
     guid: 287a261d7d557ca4ca39c9beab687524

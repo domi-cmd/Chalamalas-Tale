@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Friend
   - Enemy
+  - RangedAttackUpgrade
   layers:
   - Default
   - TransparentFX

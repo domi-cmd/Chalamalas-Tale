@@ -83,6 +83,18 @@ public class GridManager : MonoBehaviour
                 SceneManager.LoadScene("Room");
                 break;
 
+            case RoomTypes.Goat_Room:
+                SceneManager.LoadScene("RoomEnemyGoat");
+                break;
+
+            case RoomTypes.Turret_Room:
+                SceneManager.LoadScene("RoomEnemyTurret");
+                break;
+
+            case RoomTypes.Ranged_Attack_Upgrade_Room:
+                SceneManager.LoadScene("RoomUpgradeRangedAttack");
+                break;
+
             // TODO: Missing rooms here (such as dragon room, other enemy rooms, more specific types of npc rooms, etc)
             default:
                 SceneManager.LoadScene("Room");
@@ -131,6 +143,9 @@ public class GridManager : MonoBehaviour
         // Set the room types of the start and final boss room, as they are fixed in place
         roomTypes[0, 0] = RoomTypes.Dragon_Room;
         roomTypes[3, 3] = RoomTypes.Start_Room;
+
+        // Also hardcode the upgrade ranged attack room
+        roomTypes[0, 3] = RoomTypes.Ranged_Attack_Upgrade_Room;
     }
 
     // Returns a list of direction indices leading to unvisited in-bounds neighbors
@@ -149,8 +164,8 @@ public class GridManager : MonoBehaviour
 
     private void AssignRoomType(System.Random roomRandomNumber, int r, int c)
     {
-        // Decide on the type of the room (at the moment there are only two types, 0 for npc, 1 for enemy)
-        int roomType = roomRandomNumber.Next(2, 4);
+        // Decide on the type of the room 
+        int roomType = roomRandomNumber.Next(3, 7);
 
         // Assign the type
         roomTypes[r, c] = (RoomTypes)roomType;
@@ -173,6 +188,9 @@ public enum RoomTypes
 {
     Start_Room,
     Dragon_Room,
+    Ranged_Attack_Upgrade_Room,
     NPC_Room,
-    Chasing_Enemy_Room
+    Chasing_Enemy_Room,
+    Goat_Room,
+    Turret_Room,
 }

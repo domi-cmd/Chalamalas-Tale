@@ -2,7 +2,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
-public class EnemyGoat : MonoBehaviour
+public class EnemyGoat : MonoBehaviour, IDamageable
 {
     private enum Phase
     {
@@ -147,7 +147,20 @@ public class EnemyGoat : MonoBehaviour
                 break;
         }
     }
+    void OnEnable()
+    {
+        Debug.Log("GOAT ENABLED");
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.RegisterEnemy();
+    }
 
+    void OnDisable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.UnregisterEnemy();
+    }
     private void EnterPhase(Phase newPhase)
     {
         currentPhase = newPhase;

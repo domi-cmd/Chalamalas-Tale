@@ -93,7 +93,19 @@ public class EnemyArcher : MonoBehaviour
             body.linearVelocity = Vector2.zero;
         }
     }
+    void OnEnable()
+    {   
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.RegisterEnemy();
+    }
 
+    void OnDisable()
+    {
+        AudioManager am = FindAnyObjectByType<AudioManager>();
+        if (am != null)
+            am.UnregisterEnemy();
+    }
     private void MoveWithArcherLogic(float distanceToPlayer)
     {
         // Outside shooting range: close the distance.

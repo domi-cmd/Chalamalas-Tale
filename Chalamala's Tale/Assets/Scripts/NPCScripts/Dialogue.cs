@@ -83,7 +83,8 @@ public class Dialogue : MonoBehaviour
             {
                 PlayerController pc = player.GetComponent<PlayerController>();
                 if (pc != null)
-                    pc.canMove = true;
+                    //pc.playerState = pc.PlayerState.Normal;
+                    pc.UnfreezePlayerMovement();
             }
         }
     }

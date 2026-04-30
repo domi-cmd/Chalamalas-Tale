@@ -32,7 +32,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         IsPaused = true;
-        player.SetPlayerMovement(false);
+        player.FreezePlayerMovement();
         
     }
     public void ResumeGame()
@@ -41,7 +41,6 @@ public class PauseMenu : MonoBehaviour
         settingMenu.SetActive(false);
         Time.timeScale = 1f;
         IsPaused = false;
-        player.SetPlayerMovement(true);
-
+        player.UnfreezePlayerMovement();
     }
 }

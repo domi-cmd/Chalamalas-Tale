@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3008353668745691461}
   - component: {fileID: 5968777599721593099}
   - component: {fileID: 672155085305880507}
-  - component: {fileID: 6724042598694419774}
   - component: {fileID: 2542549076725558783}
   - component: {fileID: 6338989439524615427}
+  - component: {fileID: -1722818773317194513}
   m_Layer: 0
-  m_Name: EnemyChasing
-  m_TagString: Enemy
+  m_Name: PlayerRangedAttack
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.74213827, g: 0.091016866, b: 0.091016866, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 24cf210708c57674b894af3341b1738b, type: 3}
+  m_Color: {r: 0.09019609, g: 0.6203269, b: 0.7411765, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -121,24 +121,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &6724042598694419774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4007544879303788332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e175d39b4bf9345abaf692a9d504cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyChasing
-  maxHealth: 10
-  aggroRangeRadius: 5
-  showAggroRange: 1
-  speed: 2.5
-  spriteImage: {fileID: 0}
+  m_Constraints: 0
 --- !u!61 &2542549076725558783
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +160,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -192,8 +175,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4007544879303788332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4a3d9c5672c7b4b47bfdcc13e4329aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDamage
+--- !u!114 &-1722818773317194513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007544879303788332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a20c1d2b86f9504199f0f50ac8a795d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  damageAmount: 3
+  enemyTag: Enemy
+  wallLayerMask:
+    serializedVersion: 2
+    m_Bits: 8
