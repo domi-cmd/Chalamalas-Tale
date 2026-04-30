@@ -35,7 +35,7 @@ public class PlayerArrowProjectile : MonoBehaviour
     {
         if (other.CompareTag(enemyTag))
         {
-            other.GetComponentInParent<EnemyChasing>()?.TakeDamage(damageAmount);
+            other.GetComponentInParent<IDamageable>()?.TakeDamage(damageAmount);
             Destroy(gameObject);
             return;
         }
