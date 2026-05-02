@@ -12,6 +12,14 @@ public class EnemyGoat : MonoBehaviour, IDamageable
         Confused
     }
 
+    [Header("Animation")]
+    [SerializeField] private Animator animator;
+
+    private static readonly int ConfusedState = Animator.StringToHash("isConfused");
+
+    //to then scale down the gigantic sprites of the confused animation
+    private Vector3 originalScale;
+
     [Header("Health")]
     [SerializeField] private float maxHealth = 3f;
     private float currentHealth;
@@ -90,6 +98,8 @@ public class EnemyGoat : MonoBehaviour, IDamageable
         }
 
         myCollider = GetComponent<Collider2D>();
+
+        originalScale = transform.localScale;
 
         body = GetComponent<Rigidbody2D>();
         body.gravityScale = 0f;
@@ -297,7 +307,7 @@ public class EnemyGoat : MonoBehaviour, IDamageable
         {
             return;
         }
-
+        
         if (setColorByPhase)
         {
             switch (currentPhase)
@@ -341,6 +351,11 @@ public class EnemyGoat : MonoBehaviour, IDamageable
                 spriteRenderer.sprite = nextSprite;
             }
         }
+        if (animator != null)
+    {
+        bool isConfused = currentPhase == Phase.Confused;
+        animator.SetBool(ConfusedState, isConfused);
+    }
     }
 
     public void TakeDamage(float damageAmount)
