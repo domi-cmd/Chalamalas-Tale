@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     private float slideSpeed;
     private Vector2 slideDirection;
 
+    private float knockbackEndTime;
+    private Vector2 knockbackVelocity;
+
     // Flag to check whether the player already has the ranged attack unlocked
     private bool rangedAttackEnabled = false;
     
@@ -29,6 +32,7 @@ public class PlayerController : MonoBehaviour
         CantMove,
         Normal,
         DodgeRollSliding,
+        Knockback,
     }
 
     public enum PlayerFacingDirection
@@ -69,6 +73,22 @@ public class PlayerController : MonoBehaviour
             case(PlayerState.DodgeRollSliding):
                 HandleDodgeRollSliding();
                 break;
+
+            case (PlayerState.Knockback):
+                HandleKnockback();
+                break;
+        }
+    }
+
+    private void HandleKnockback()
+    {
+        body.linearVelocity = knockbackVelocity;
+
+        if (Time.time >= knockbackEndTime)
+        {
+            knockbackVelocity = Vector2.zero;
+            playerState = PlayerState.Normal;
+            body.linearVelocity = Vector2.zero;
         }
     }
 
@@ -137,6 +157,23 @@ public class PlayerController : MonoBehaviour
     public void UnfreezePlayerMovement()
     {
         playerState = PlayerState.Normal;
+    }
+
+    public void ApplyKnockback(Vector2 velocity, float durationSeconds)
+    {
+        if (body == null)
+        {
+            body = GetComponentInChildren<Rigidbody2D>();
+        }
+
+        if (durationSeconds <= 0f)
+        {
+            return;
+        }
+
+        knockbackVelocity = velocity;
+        knockbackEndTime = Time.time + durationSeconds;
+        playerState = PlayerState.Knockback;
     }
 
     public void EnablePlayerRangedAttack()
