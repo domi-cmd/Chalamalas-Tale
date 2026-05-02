@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8361036298868327116}
   - component: {fileID: 8450712766913119627}
   - component: {fileID: 7815998306311985581}
+  - component: {fileID: -630443456875853394}
   m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -151,3 +152,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3d9c5672c7b4b47bfdcc13e4329aec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollisionDamage
+--- !u!114 &-630443456875853394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608552235706221553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d47a0f72a2addfb41b7a9a9d6e352b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlameDamage

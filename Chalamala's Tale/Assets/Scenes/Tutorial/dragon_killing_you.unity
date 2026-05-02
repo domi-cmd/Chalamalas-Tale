@@ -970,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9117654029680623180, guid: 6d78e61ff4b381b499c8800ed22b515a, type: 3}
       propertyPath: m_Name
-      value: 'Player '
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1586,12 +1586,13 @@ MonoBehaviour:
   maxHealth: 50
   healthBar: {fileID: 2146074211}
   flamePrefab: {fileID: 7608552235706221553, guid: 7d333c6d116b1844191377658057d57e, type: 3}
-  centerPoint: {fileID: 0}
+  centerPoint: {fileID: 1815547389}
   initialRadius: 0.5
   radiusStep: 0.1
   angleStep: 10
   flameCount: 70
   spiralDelay: 0.01
+  flameCooldown: 6
 --- !u!1 &2059304976
 GameObject:
   m_ObjectHideFlags: 0

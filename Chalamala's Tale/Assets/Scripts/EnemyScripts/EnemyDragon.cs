@@ -84,13 +84,11 @@ public class EnemyDragon : MonoBehaviour, IDamageable
 
     private IEnumerator SpawnCloseFlamesCoroutine(){
         Vector3 center = centerPoint.position ;
-        // Dragon size 
+        // Dragon size to define the borders of the rectangle
         SpriteRenderer sr = centerPoint.GetComponent<SpriteRenderer>();
 
         float halfWidth = sr.bounds.extents.x;
         float halfHeight = sr.bounds.extents.y;
-
-
 
 
         // Small margin so flames are "around" the dragon, not inside it
@@ -109,12 +107,14 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         {
             for (int iy = 0; iy <= stepsY; iy++)
             {
+                /* uncomment for empty rectangle
                 bool isBorder =
                     ix == 0 || ix == stepsX ||
                     iy == 0 || iy == stepsY;
 
                 if (!isBorder)
                     continue;
+                */
 
                 float x = minX + ix * flameSize;
                 float y = minY + iy * flameSize;
