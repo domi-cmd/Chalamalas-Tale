@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8450712766913119627}
   - component: {fileID: 7815998306311985581}
   - component: {fileID: -630443456875853394}
+  - component: {fileID: -8664900017965061587}
   m_Layer: 0
   m_Name: Flame
   m_TagString: Untagged
@@ -164,3 +165,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d47a0f72a2addfb41b7a9a9d6e352b80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlameDamage
+--- !u!95 &-8664900017965061587
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7608552235706221553}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14fd569c1888b8249b1c92204011da27, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
