@@ -1584,6 +1584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDragon
   maxHealth: 50
+  currentHealth: 0
   healthBar: {fileID: 2146074211}
   flamePrefab: {fileID: 7608552235706221553, guid: 7d333c6d116b1844191377658057d57e, type: 3}
   centerPoint: {fileID: 1815547389}
@@ -1593,6 +1594,28 @@ MonoBehaviour:
   flameCount: 70
   spiralDelay: 0.01
   flameCooldown: 6
+  phase2HealthPercent: 0.66
+  phase3HealthPercent: 0.33
+  onPhaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  makeImmovable: 1
+  roarIntervalSeconds: 5
+  roarKnockbackDistance: 4
+  roarKnockbackDurationSeconds: 0.25
+  fallingRockPrefab: {fileID: 0}
+  rockSpawnArea: {fileID: 0}
+  fallbackSpawnAreaSize: {x: 16, y: 10}
+  rockSpawnIntervalSeconds: 1.25
+  rockWarningDelaySeconds: 2
+  rockFallSpeed: 10
+  rockDamageRadius: 1.5
+  rockDamageAmount: 1
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  maxActiveRocks: 12
+  logPhase1Actions: 0
 --- !u!1 &2059304976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2014,6 @@ SceneRoots:
   - {fileID: 1508589798}
   - {fileID: 258604271}
   - {fileID: 1737047369}
+  - {fileID: 1139318727}
   - {fileID: 1929999558}
   - {fileID: 1020246884}
-  - {fileID: 1139318727}
