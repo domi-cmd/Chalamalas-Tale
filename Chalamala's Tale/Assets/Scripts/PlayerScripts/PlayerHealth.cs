@@ -79,6 +79,8 @@ public class PlayerHealth : MonoBehaviour
     {
         // Restore health AFTER scene is fully loaded
         currentHealth = maxHealth;
+        // refresh heats UI (ensuring that they are full after respwn)
+        OnPlayerDamaged?.Invoke();
 
         // Unsubscribe so it doesn't fire again accidentally
         SceneManager.sceneLoaded -= OnSceneLoaded;
