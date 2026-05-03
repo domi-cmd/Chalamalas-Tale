@@ -53,7 +53,8 @@ public class PlayerHealth : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         // Subscribe to scene loaded event
         SceneManager.sceneLoaded += OnSceneLoaded;
-        if (currentScene.name == "easy_fight" || currentScene.name == "dragon_killing_you")
+        // if player dies during the first fight, the tutorial restarts
+        if (currentScene.name == "easy_fight")
         {
             // to not mess up with room positions, we assign it automatically
             BasicGridManager.Instance.currentRow = 2;
@@ -61,7 +62,7 @@ public class PlayerHealth : MonoBehaviour
             SceneManager.LoadScene("Tutorial_first_scene");
         
         } else
-        // Else we are past the tutorial (and we respawn if first cell of big grid)
+        // Else (dragon_killing_you or already in real game grid) we go past the tutorial (and we respawn if first cell of big grid)
         {
             // to not mess up with room positions, we assign it automatically
             GridManager.Instance.currentRow = 3;
