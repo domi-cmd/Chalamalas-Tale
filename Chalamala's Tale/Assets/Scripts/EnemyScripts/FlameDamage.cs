@@ -1,22 +1,39 @@
 using UnityEngine;
+using System.Collections;
 
 public class FlameDamage : MonoBehaviour
 {
-    private float damageCooldown = 0.5f; // time between hits
-    private float timer = 0f;
+    [SerializeField] private float damagePerTick = 0.5f;
+    [SerializeField] private float damageCooldown = 2f;
 
-    void OnTriggerStay2D(Collider2D other)
+    private Coroutine damageRoutine;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         PlayerHealth player = other.GetComponentInParent<PlayerHealth>();
-
         if (player == null) return;
 
-        timer += Time.deltaTime;
+        damageRoutine = StartCoroutine(DealDamage(player));
+    }
 
-        if (timer >= damageCooldown)
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        PlayerHealth player = other.GetComponentInParent<PlayerHealth>();
+        if (player == null) return;
+
+        if (damageRoutine != null)
         {
-            player.TakeDamage(1f); 
-            timer = 0f;
+            StopCoroutine(damageRoutine);
+            damageRoutine = null;
+        }
+    }
+
+    private IEnumerator DealDamage(PlayerHealth player)
+    {
+        while (true)
+        {
+            player.TakeDamage(damagePerTick); 
+            yield return new WaitForSeconds(damageCooldown);
         }
     }
 }

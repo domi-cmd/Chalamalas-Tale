@@ -52,9 +52,11 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     public int flameCount = 70;
     public float spiralDelay = 0.01f;
 
-    // to have the flames appear each 7 seconds
+    // to handle delays of flame choreos
     private float flameTimer = 0f;
     public float flameCooldown = 4f;
+    private float spiralTimer = 0f;
+    public float spiralCooldown = 10f;
 
 
     [Header("Phases")]
@@ -143,12 +145,20 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         */
 
         flameTimer += Time.deltaTime;
+        spiralTimer += Time.deltaTime;
 
         if (flameTimer >= flameCooldown)
         {
             SpawnCloseFlames();
             flameTimer = 0f;
         }
+        if (spiralTimer >= spiralCooldown)
+        {
+            StartCoroutine(SpawnSpiral());
+            spiralTimer = 0f;
+            
+        }
+
 
         // handler of phase 1
         if (currentPhase == DragonPhase.Phase1)
@@ -412,20 +422,22 @@ public class EnemyDragon : MonoBehaviour, IDamageable
 
         for (int i = 0; i < flameCount; i++)
         {
-            Debug.Log($"flame:{i}");
             float rad = currentAngle * Mathf.Deg2Rad;
+
             Vector3 pos = centerPoint.position + new Vector3(
                 Mathf.Cos(rad) * currentRadius,
                 Mathf.Sin(rad) * currentRadius,
                 0f
             );
 
-            // Instantiate a true prefab clone
-            Instantiate(flamePrefab, pos, Quaternion.identity);
+            //  Store the instance
+            GameObject flame = Instantiate(flamePrefab, pos, Quaternion.identity);
+
+            //  Destroy the instance after 1 seconds
+            Destroy(flame, 1f);
 
             currentAngle -= angleStep;
             currentRadius += radiusStep;
-            //radiusStep = radiusStep - 0.01;
 
             yield return new WaitForSecondsRealtime(spiralDelay);
         }
