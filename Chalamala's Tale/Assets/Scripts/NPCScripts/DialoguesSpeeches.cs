@@ -1,0 +1,4 @@
+/*
+script collecting all the dialogues used along the game
+
+*/

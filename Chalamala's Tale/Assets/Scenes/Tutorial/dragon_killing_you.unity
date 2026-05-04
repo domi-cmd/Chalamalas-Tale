@@ -1552,6 +1552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5512987feeb71142ba4c0588056e417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDragon
+  roaring: {fileID: 3765682262604492960, guid: 9e26d918a53de9348b4ee1ab8a09effe, type: 3}
   maxHealth: 50
   currentHealth: 0
   healthBar: {fileID: 2146074211}
@@ -1573,7 +1574,7 @@ MonoBehaviour:
   roarIntervalSeconds: 5
   roarKnockbackDistance: 4
   roarKnockbackDurationSeconds: 0.25
-  fallingRockPrefab: {fileID: 0}
+  fallingRockPrefab: {fileID: 4007544879303788332, guid: 9c4a20b7f85e3ef45ba2648efdfbe0cc, type: 3}
   rockSpawnArea: {fileID: 0}
   fallbackSpawnAreaSize: {x: 16, y: 10}
   rockSpawnIntervalSeconds: 1.25

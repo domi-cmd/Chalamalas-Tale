@@ -18,6 +18,10 @@ class for the dragon boss ennemy:
 [RequireComponent(typeof(Collider2D))]
 public class EnemyDragon : MonoBehaviour, IDamageable
 {
+
+    public Sprite roaring;
+    private SpriteRenderer spriteRenderer;
+    private Sprite defaultSprite;
     public enum DragonPhase
     {
         Phase1 = 1,
@@ -44,6 +48,9 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     flames spawned later in the battle and relative variables
     */
     public GameObject flamePrefab; 
+
+
+
      // values for different patterns
     public Transform centerPoint;
     public float initialRadius = 0.5f;
@@ -113,6 +120,13 @@ public class EnemyDragon : MonoBehaviour, IDamageable
 
     private void Awake()
     {
+        // assign normal sprite
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            defaultSprite = spriteRenderer.sprite;
+        }
+
         if (maxHealth <= 0f)
         {
             maxHealth = 100f;
@@ -196,10 +210,18 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     private void DoRoarKnockback()
     {
         CachePlayerRefs();
+        
 
         if (playerController == null || playerTransform == null)
         {
             return;
+        }
+
+        // assign roaring sprite
+        if (spriteRenderer != null && roaring != null)
+        {
+            spriteRenderer.sprite = roaring;
+            StartCoroutine(RestoreSpriteAfterRoar());
         }
 
         Vector2 away = ((Vector2)playerTransform.position - (Vector2)transform.position);
@@ -218,6 +240,17 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         if (logPhase1Actions)
         {
             Debug.Log($"{name}: Roar knockback applied. vel={velocity}, duration={duration}", this);
+        }
+    }
+
+    // go back to default sprite
+    private IEnumerator RestoreSpriteAfterRoar()
+    {
+        yield return new WaitForSeconds(roarKnockbackDurationSeconds);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.sprite = defaultSprite;
         }
     }
 
