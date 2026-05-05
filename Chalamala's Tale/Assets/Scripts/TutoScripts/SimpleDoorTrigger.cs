@@ -11,11 +11,28 @@ public class SimpleDoorTrigger : MonoBehaviour
     {
         if (!collision.CompareTag("Player")) return;
 
-        // Save which door we used
+                // Save which door we used
         PlayerSpawnData.entrySide = side;
+
+
+        // Check if any enemies exist in the scene
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        Debug.Log("Enemies found: " + enemies.Length);
+        if (enemies.Length > 0)
+        {
+            // There are still enemies, do nothing
+            return;
+        }
+        else
+        {
+            
 
         // to correctly update the map, we change room accordingly to its logic
         BasicGridManager.Instance.MoveToRoom(side);
+        }
+
+
+
     }
 
 }
