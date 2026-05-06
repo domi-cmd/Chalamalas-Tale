@@ -1,17 +1,17 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-
+using System.Collections.Generic;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textMeshPro;
+    public DialoguesSpeeches database;
 
-    public string[] firstDialogueText;
-    public string[] secondDialogueText;
-    private string[] activeDialogue; 
+    public string currentScene;
 
     public float textSpeed;
     private int index;
+    private List<DialogueLine> activeDialogue;
 
     void Start()
     {
@@ -23,14 +23,12 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (textMeshPro.text == activeDialogue[index])
-            {
+            if (textMeshPro.text == FormatLine(activeDialogue[index]))
                 NextLine();
-            }
             else
             {
                 StopAllCoroutines();
-                textMeshPro.text = activeDialogue[index];
+                textMeshPro.text = FormatLine(activeDialogue[index]);
             }
         }
     }
@@ -41,51 +39,60 @@ public class Dialogue : MonoBehaviour
         index = 0;
         textMeshPro.text = "";
 
-        
-        int deaths = PlayerHealth.Instance != null ? PlayerHealth.Instance.deathCounter : 0;
+        activeDialogue = database.dialogues.FindAll(d => d.scene == currentScene);
 
-        
-        if (deaths == 0)
-            activeDialogue = firstDialogueText;
-        else
-            activeDialogue = secondDialogueText;
+        if (activeDialogue == null || activeDialogue.Count == 0)
+        {
+            Debug.LogWarning("No dialogue found for scene: " + currentScene);
+            EndDialogue();
+            return;
+        }
 
-        StartCoroutine(Typeline());
+        StartCoroutine(TypeLine());
     }
 
-    IEnumerator Typeline()
+    void EndDialogue(){
+    index = 0;
+    textMeshPro.text = "";
+
+    transform.parent.gameObject.SetActive(false);
+
+    GameObject player = GameObject.FindWithTag("Player");
+    if (player != null)
     {
-        foreach (char c in activeDialogue[index].ToCharArray())
+        PlayerController pc = player.GetComponent<PlayerController>();
+        if (pc != null)
+            pc.UnfreezePlayerMovement();
+    }}
+
+    IEnumerator TypeLine()
+    {
+        string line = FormatLine(activeDialogue[index]);
+
+        foreach (char c in line.ToCharArray())
         {
             textMeshPro.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
     }
 
+    string FormatLine(DialogueLine line)
+    {
+        return $"[{line.speaker}]: {line.text}";
+    }
+
     void NextLine()
     {
         index++;
 
-        if (index < activeDialogue.Length)
+        if (index < activeDialogue.Count)
         {
             textMeshPro.text = "";
-            StartCoroutine(Typeline());
+            StartCoroutine(TypeLine());
         }
         else
         {
-            // end dialogue
-            index = 0;
-            textMeshPro.text = "";
-            transform.parent.gameObject.SetActive(false); // disable canvas instead
-
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                PlayerController pc = player.GetComponent<PlayerController>();
-                if (pc != null)
-                    //pc.playerState = pc.PlayerState.Normal;
-                    pc.UnfreezePlayerMovement();
-            }
+            EndDialogue();
         }
     }
 }

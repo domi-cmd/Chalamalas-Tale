@@ -3074,9 +3074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textMeshPro: {fileID: 134958927192985211}
-  firstDialogueText:
-  - HELLOOOOO
-  secondDialogueText: []
+  database: {fileID: 11400000, guid: e5f4e87d1c229914c915786c165b3a01, type: 2}
+  currentScene: RoomBasicNPC
   textSpeed: 0
 --- !u!1001 &7701948021695860048
 PrefabInstance:
