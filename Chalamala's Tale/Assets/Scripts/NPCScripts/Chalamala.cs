@@ -15,7 +15,9 @@ public class Chalamala : MonoBehaviour
             player = GameObject.FindWithTag("Player").transform;
 
         // at the beginning we don't see the dialogue
-        info.enabled = false;
+        if (info != null) // only disable info if it exists (tutorial)
+            info.enabled = false;
+
         dial.gameObject.SetActive(false);   // since it has its own script, it need to be completely blocked
     }
 
@@ -29,7 +31,9 @@ public class Chalamala : MonoBehaviour
 
         if (distance < showDistance)
         {
-            info.enabled = true;
+            // show hint "press e" only if assigned
+            if (info != null)
+                info.enabled = true;
             if (!dial.gameObject.activeSelf && Input.GetKeyDown(KeyCode.E)){
                 dial.gameObject.SetActive(true);
 
@@ -44,7 +48,8 @@ public class Chalamala : MonoBehaviour
         }
         else
         {
-            info.enabled = false;
+            if (info != null)
+                info.enabled = false;
         }
     }
 
