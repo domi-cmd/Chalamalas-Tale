@@ -23,5 +23,5 @@ MonoBehaviour:
     text: Thank you for having come to restore the peace in the city
     scene: Tutorial_first_scene
   - speaker: Chalamala
-    text: still alive?
+    text: the dragon was on fire
     scene: RoomBasicNPC
