@@ -2,10 +2,26 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;  // for different coroutines
+using UnityEngine.UI; // for healthbar
+
+/*
+class for the dragon boss ennemy:
+- set up: put maximal health
+- take damage: only when there are no flames around the dragon
+- boss fight divided in 3 phases (the change of phase is induced by the current health of the dragon)
+- attack: ATM the dragon doesn't attack directly but using two prefabs:
+    - flames (different patterns generated throught the battle)
+    - falling rocks
+*/
 
 [RequireComponent(typeof(Collider2D))]
 public class EnemyDragon : MonoBehaviour, IDamageable
 {
+
+    public Sprite roaring;
+    private SpriteRenderer spriteRenderer;
+    private Sprite defaultSprite;
     public enum DragonPhase
     {
         Phase1 = 1,
@@ -16,9 +32,39 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     [Serializable]
     public class DragonPhaseChangedEvent : UnityEvent<DragonPhase> { }
 
+    /*
+    healt:
+    maximal health of 100 hp set at the beginning,
+    shown in the UI slider health bar
+    */
     [Header("Boss Health")]
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
+
+    [Header("UI")]
+    [SerializeField] private Slider healthBar;
+
+    /*
+    flames spawned later in the battle and relative variables
+    */
+    public GameObject flamePrefab; 
+
+
+
+     // values for different patterns
+    public Transform centerPoint;
+    public float initialRadius = 0.5f;
+    public float radiusStep = 0.1f;
+    public float angleStep = 10f;
+    public int flameCount = 70;
+    public float spiralDelay = 0.01f;
+
+    // to handle delays of flame choreos
+    private float flameTimer = 0f;
+    public float flameCooldown = 4f;
+    private float spiralTimer = 0f;
+    public float spiralCooldown = 10f;
+
 
     [Header("Phases")]
     [Tooltip("Switch to Phase 2 when health <= maxHealth * this value")]
@@ -74,12 +120,20 @@ public class EnemyDragon : MonoBehaviour, IDamageable
 
     private void Awake()
     {
+        // assign normal sprite
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            defaultSprite = spriteRenderer.sprite;
+        }
+
         if (maxHealth <= 0f)
         {
             maxHealth = 100f;
         }
 
         currentHealth = maxHealth;
+        healthBar.value = 1f;   // as the UI values are [0,1], we work with fractions of health to be shown
         currentPhase = DragonPhase.Phase1;
 
         body = GetComponent<Rigidbody2D>();
@@ -100,6 +154,27 @@ public class EnemyDragon : MonoBehaviour, IDamageable
 
     private void Update()
     {
+        /*
+        timer handling flames coreographies
+        */
+
+        flameTimer += Time.deltaTime;
+        spiralTimer += Time.deltaTime;
+
+        if (flameTimer >= flameCooldown)
+        {
+            SpawnCloseFlames();
+            flameTimer = 0f;
+        }
+        if (spiralTimer >= spiralCooldown)
+        {
+            StartCoroutine(SpawnSpiral());
+            spiralTimer = 0f;
+            
+        }
+
+
+        // handler of phase 1
         if (currentPhase == DragonPhase.Phase1)
         {
             HandlePhase1();
@@ -135,10 +210,18 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     private void DoRoarKnockback()
     {
         CachePlayerRefs();
+        
 
         if (playerController == null || playerTransform == null)
         {
             return;
+        }
+
+        // assign roaring sprite
+        if (spriteRenderer != null && roaring != null)
+        {
+            spriteRenderer.sprite = roaring;
+            StartCoroutine(RestoreSpriteAfterRoar());
         }
 
         Vector2 away = ((Vector2)playerTransform.position - (Vector2)transform.position);
@@ -157,6 +240,17 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         if (logPhase1Actions)
         {
             Debug.Log($"{name}: Roar knockback applied. vel={velocity}, duration={duration}", this);
+        }
+    }
+
+    // go back to default sprite
+    private IEnumerator RestoreSpriteAfterRoar()
+    {
+        yield return new WaitForSeconds(roarKnockbackDurationSeconds);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.sprite = defaultSprite;
         }
     }
 
@@ -297,6 +391,91 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         }
     }
 
+
+    /*
+    flames patterns
+    */
+    public void SpawnCloseFlames()
+    {
+        StartCoroutine(SpawnCloseFlamesCoroutine());
+    }
+
+    // for flames contourning the boss
+    private IEnumerator SpawnCloseFlamesCoroutine(){
+        Vector3 center = centerPoint.position ;
+        // Dragon size to define the borders of the rectangle
+        SpriteRenderer sr = centerPoint.GetComponent<SpriteRenderer>();
+
+        float halfWidth = sr.bounds.extents.x;
+        float halfHeight = sr.bounds.extents.y;
+
+
+        // Small margin so flames are "around" the dragon, not inside it
+        float margin = 1f;
+        float flameSize = 1f;
+
+        float minX = center.x - halfWidth - margin;
+        float maxX = center.x + halfWidth + margin;
+        float minY = center.y - halfHeight - margin;
+        float maxY = center.y + halfHeight + margin;
+
+        int stepsX = Mathf.CeilToInt((maxX - minX) / flameSize);
+        int stepsY = Mathf.CeilToInt((maxY - minY) / flameSize);
+
+        for (int ix = 0; ix <= stepsX; ix++)
+        {
+            for (int iy = 0; iy <= stepsY; iy++)
+            {
+                /* uncomment for empty rectangle
+                bool isBorder =
+                    ix == 0 || ix == stepsX ||
+                    iy == 0 || iy == stepsY;
+
+                if (!isBorder)
+                    continue;
+                */
+
+                float x = minX + ix * flameSize;
+                float y = minY + iy * flameSize;
+
+                Vector3 spawnPos = new Vector3(x, y, 0f);
+
+                GameObject flame = Instantiate(flamePrefab, spawnPos, Quaternion.identity);
+                Destroy(flame, 4f);
+            }
+        }
+        yield return null;
+    }
+
+    // to spawn a spiral of flames from the dragon center
+    IEnumerator SpawnSpiral()
+    {
+        float currentRadius = initialRadius;
+        float currentAngle = 0f;
+
+        for (int i = 0; i < flameCount; i++)
+        {
+            float rad = currentAngle * Mathf.Deg2Rad;
+
+            Vector3 pos = centerPoint.position + new Vector3(
+                Mathf.Cos(rad) * currentRadius,
+                Mathf.Sin(rad) * currentRadius,
+                0f
+            );
+
+            //  Store the instance
+            GameObject flame = Instantiate(flamePrefab, pos, Quaternion.identity);
+
+            //  Destroy the instance after 1 seconds
+            Destroy(flame, 1f);
+
+            currentAngle -= angleStep;
+            currentRadius += radiusStep;
+
+            yield return new WaitForSecondsRealtime(spiralDelay);
+        }
+    }
+
     public void TakeDamage(float damageAmount)
     {
         if (damageAmount <= 0f)
@@ -310,7 +489,11 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         }
 
         currentHealth = Mathf.Max(0f, currentHealth - damageAmount);
+        Debug.Log("current healt" + currentHealth + "damage taken:" + damageAmount);
         UpdatePhaseFromHealth();
+
+        // Update health bar
+        healthBar.value = currentHealth / maxHealth;
 
         if (currentHealth <= 0f)
         {
@@ -346,8 +529,11 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     private void Die()
     {
         Destroy(gameObject);
+        healthBar.gameObject.SetActive(false);
     }
 
+
+    //sound change
     private void OnEnable()
     {
         AudioManager am = FindAnyObjectByType<AudioManager>();

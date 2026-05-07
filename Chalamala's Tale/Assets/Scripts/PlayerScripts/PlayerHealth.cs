@@ -47,28 +47,43 @@ public class PlayerHealth : MonoBehaviour
     }
 
 
-    // handles the dying in the tutorial part
+    // handles the respwan after dying (max health brought back only after the player is in the correct room to avoid asynch errors) 
     public void Resurrect()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "easy_fight" | currentScene.name == "dragon_killing_you")
+        // Subscribe to scene loaded event
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        // if player dies during the first fight, the tutorial restarts
+        if (currentScene.name == "easy_fight")
         {
             // to not mess up with room positions, we assign it automatically
             BasicGridManager.Instance.currentRow = 2;
             BasicGridManager.Instance.currentCol = 0;
             SceneManager.LoadScene("Tutorial_first_scene");
-            currentHealth = maxHealth; // go back to total health
-            deathCounter += 1;
+        
         } else
-        // Else we are past the tutorial (and I think we should respawn in the tutorial?)
+        // Else (dragon_killing_you or already in real game grid) we go past the tutorial (and we respawn if first cell of big grid)
         {
             // to not mess up with room positions, we assign it automatically
             GridManager.Instance.currentRow = 3;
             GridManager.Instance.currentCol = 3;
             SceneManager.LoadScene("Room");
-            currentHealth = maxHealth; // go back to total health
-            deathCounter += 1;
+            
+            
         }
 
+        deathCounter += 1;
+
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Restore health AFTER scene is fully loaded
+        currentHealth = maxHealth;
+        // refresh heats UI (ensuring that they are full after respwn)
+        OnPlayerDamaged?.Invoke();
+
+        // Unsubscribe so it doesn't fire again accidentally
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }

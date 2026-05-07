@@ -19,6 +19,7 @@ public class PlayerMeleeSwipeAttackArea : MonoBehaviour
             return;
         }
 
+
         GameObject nearest = null;
         float shortestDistance = Mathf.Infinity;
 
@@ -52,7 +53,7 @@ public class PlayerMeleeSwipeAttackArea : MonoBehaviour
         if (collider.CompareTag("Enemy"))
         {
             collider.gameObject.GetComponentInParent<IDamageable>()?.TakeDamage(damage);
-            //Debug.Log("Enemy hit!");
+            Debug.Log("Enemy hit!");
         }
         /**
         // If an enemy is in the trigger collider area, check if it has a health component
