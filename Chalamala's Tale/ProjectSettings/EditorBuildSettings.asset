@@ -47,7 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoomEnemyKnight.unity
     guid: 7dceb7ea5d2613a4080cf2053478b396
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Bossroom.unity
     guid: 9e6314616c43a094cb37ed047035a475
   - enabled: 1
