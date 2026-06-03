@@ -29,7 +29,7 @@ public class GridManager : MonoBehaviour
     private const int COLS = 4;
 
     private Dictionary<RoomTypes, int> roomTypeCount = new Dictionary<RoomTypes, int>();
-    private const int MAX_PER_TYPE = 3; // not to have too many repetitions of the same room
+    private const int MAX_PER_TYPE = 3; // to avoid having too many repetitions of the same room
 
     private bool CanUseType(RoomTypes type)
     {
@@ -77,6 +77,7 @@ public class GridManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
         GenerateGrid();
+        
     }
 
     // Returns whether a certain side of the room has a door
@@ -104,7 +105,7 @@ public class GridManager : MonoBehaviour
                 break;
 
             case RoomTypes.NPC_Room:
-                SceneManager.LoadScene("RoomBasicNPC");
+                SceneManager.LoadScene("RoomDragonWarning");
                 break;
 
             case RoomTypes.Start_Room:
@@ -129,6 +130,14 @@ public class GridManager : MonoBehaviour
 
             case RoomTypes.Ranged_Attack_Upgrade_Room:
                 SceneManager.LoadScene("RoomUpgradeRangedAttack");
+                break;
+
+            case RoomTypes.Arrows_Enemy_Room:
+                SceneManager.LoadScene("RoomEnemyArrows");
+                break;
+
+            case RoomTypes.Knight_Enemy_Room:
+                SceneManager.LoadScene("RoomEnemyKnight");
                 break;
 
             default:
@@ -157,9 +166,12 @@ public class GridManager : MonoBehaviour
         // Also hardcode the upgrade ranged attack room
         roomTypes[0, 3] = RoomTypes.Ranged_Attack_Upgrade_Room;
 
+        roomTypes[2,2] = RoomTypes.NPC_Room;
+
         reserved[0, 0] = true;
         reserved[3, 3] = true;
         reserved[0, 3] = true;
+        reserved[2,2] = true;
 
         // Place goat and cheese rooms in guaranteed positions
         PlaceGuaranteedRooms();
@@ -189,6 +201,16 @@ public class GridManager : MonoBehaviour
             neighbors = GetUnvisitedNeighbors(r, c, visited);
             if (neighbors.Count > 0 && Random.value < 0.2f)
                 OpenPassage(r, c, neighbors[Random.Range(0, neighbors.Count)], visited, stack);
+        }
+        /*
+        safety check, prints the content of the generated cells
+        */
+        for (int r = 0; r < ROWS; r++)
+        {
+            for (int c = 0; c < COLS; c++)
+            {
+                Debug.Log($"[{r},{c}] = {roomTypes[r,c]}");
+            }
         }
     }
 
@@ -222,7 +244,7 @@ public class GridManager : MonoBehaviour
 
         for (int safety = 0; safety < 100; safety++)
         {
-            int roomType = roomRandomNumber.Next(3, 6);
+            int roomType = roomRandomNumber.Next(6, 10);
             type = (RoomTypes)roomType;
 
             if (CanUseType(type))
@@ -239,7 +261,7 @@ public class GridManager : MonoBehaviour
             {
                 if (t == RoomTypes.Start_Room || t == RoomTypes.Dragon_Room ||
                     t == RoomTypes.Ranged_Attack_Upgrade_Room || t == RoomTypes.Goat_Room ||
-                    t == RoomTypes.Cheese_Room)
+                    t == RoomTypes.Cheese_Room|| t == RoomTypes.NPC_Room )
                     continue;
 
                 if (CanUseType(t))
@@ -267,11 +289,11 @@ public class GridManager : MonoBehaviour
 
     private void PlaceSpecial(RoomTypes type)
     {
-        List<(int r, int c)> valid = new List<(int, int)>();
+        List<(int row, int col)> valid = new List<(int, int)>();
 
-        for (int row = 1; row < ROWS; row++)
+        for (int row = 1; row < ROWS; row++) // avoids row 0
         {
-            for (int col = 1; col < COLS; col++)
+            for (int col = 1; col < COLS; col++)  // avoids column 0
             {
                 if (reserved[row, col]) continue;
                 valid.Add((row, col));
@@ -292,6 +314,7 @@ public class GridManager : MonoBehaviour
         RegisterType(type);
     }
 
+
     // Helper method that opens the wall between current cell and its neighbor in the designated direction
     void OpenPassage(int r, int c, int dirIndex, bool[,] visited, Stack<(int, int)> stack)
     {
@@ -305,14 +328,27 @@ public class GridManager : MonoBehaviour
     private bool InBounds(int r, int c) => r >= 0 && r < ROWS && c >= 0 && c < COLS;
 }
 
+/*
+types of room present:
+- first 3 placed at fixed cells
+- goat and cheese at random cells in a specific area (3*3) placed once each
+- NPC placed once at at least one cell of distance from start  (atm just at a fixed cell)
+- other (enemies) randomly placed in the remaining cells 
+*/
+
 public enum RoomTypes
 {
-    Start_Room,
-    Dragon_Room,
-    Ranged_Attack_Upgrade_Room,
-    NPC_Room,
-    Chasing_Enemy_Room,
-    Goat_Room,
-    Turret_Room,
-    Cheese_Room
+    Start_Room,   //0
+    Dragon_Room,  //1
+    Ranged_Attack_Upgrade_Room,  //2
+
+    Goat_Room,  //3
+    Cheese_Room,  //4
+
+    NPC_Room,  //5
+
+    Chasing_Enemy_Room,  //6
+    Turret_Room,  //7
+    Arrows_Enemy_Room,  //8
+    Knight_Enemy_Room   //9
 }
