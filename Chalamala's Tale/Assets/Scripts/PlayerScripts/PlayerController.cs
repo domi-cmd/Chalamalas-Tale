@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleDodgeRoll()
     {
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Doing a dodge roll!");
             playerState = PlayerState.DodgeRollSliding;
