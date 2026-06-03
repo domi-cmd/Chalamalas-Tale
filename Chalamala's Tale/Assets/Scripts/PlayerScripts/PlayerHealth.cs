@@ -102,7 +102,7 @@ public class PlayerHealth : MonoBehaviour
             GridManager.Instance.currentCol = 3;
             
             SceneManager.sceneLoaded += RedrawMinimapAfterRespawn;
-            GridManager.Instance.GenerateGrid();
+            //GridManager.Instance.GenerateGrid();
 
             SceneManager.LoadScene("Room");
             

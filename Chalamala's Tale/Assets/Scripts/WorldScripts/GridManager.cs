@@ -274,7 +274,7 @@ public class GridManager : MonoBehaviour
         }
 
         if (!found)
-            Debug.LogWarning($"Could not assign a room type to [{r},{c}] — all types at max count.");
+            Debug.Log($"Could not assign a room type to [{r},{c}] — all types at max count.");
 
         roomTypes[r, c] = type;
         RegisterType(type);

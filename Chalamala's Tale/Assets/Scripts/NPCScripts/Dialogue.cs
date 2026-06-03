@@ -52,7 +52,6 @@ public class Dialogue : MonoBehaviour
         {
             sceneToUse = "SwissCheese";
             GameManager.Instance.hasCheese = true;  // can now go and see the easter egg at the village
-            GameManager.Instance.goatDead = false; // only once
         }
 
         activeDialogue = database.dialogues.FindAll(d => d.scene == sceneToUse);
