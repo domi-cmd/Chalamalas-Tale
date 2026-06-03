@@ -680,6 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6303889469613488804, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
+    - {fileID: 2605126311645926793, guid: 1dd23bdf539ffa640978f3875fdf6532, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -717,7 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   textMeshPro: {fileID: 134958927192985211}
   database: {fileID: 11400000, guid: e5f4e87d1c229914c915786c165b3a01, type: 2}
-  currentScene: RoomBasicNPC
+  currentScene: dragon
   cheese: 0
   textSpeed: 0
 --- !u!1001 &7701948021695860048

@@ -73,3 +73,19 @@ MonoBehaviour:
   - speaker: Boulder
     text: take this cheese
     scene: Swiss_cheese
+  - speaker: Chalamala
+    text: You have come this far, hence the real fight is yet to come
+    scene: dragon
+  - speaker: Chalamala
+    text: "Tame its flames\n and you will be forever remembered in the Chalamala's
+      tale"
+    scene: dragon
+  - speaker: Chalamala
+    text: 'Burn down
+
+      and the lives of you and of all Fribourg''s inhabitants
+      will stop there'
+    scene: dragon
+  - speaker: Scared wizard
+    text: 'This guy really knows how to encourage people... '
+    scene: dragon

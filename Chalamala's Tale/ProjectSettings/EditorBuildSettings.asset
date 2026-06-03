@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RoomEnemyChasing.unity
     guid: 2c409a3183920d143834bd12261ed58e
   - enabled: 1
-    path: Assets/Scenes/RoomBasicNPC.unity
+    path: Assets/Scenes/RoomDragonWarning.unity
     guid: 84f973d7b496dd442bf42fff2f5756af
   - enabled: 1
     path: Assets/Scenes/RoomEnemyGoat.unity
