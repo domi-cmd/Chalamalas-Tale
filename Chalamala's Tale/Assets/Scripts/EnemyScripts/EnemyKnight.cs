@@ -55,6 +55,16 @@ public class EnemyKnight : MonoBehaviour, IDamageable
     [Tooltip("Optional color tint applied during the attack windup/swing.")]
     [SerializeField] private Color attackColor = new Color(1f, 0.85f, 0.85f, 1f);
 
+    [Header("Sword Swing Visual")]
+    [Tooltip("Sword pivot child (usually at the hand/hilt). Rotated during attack.")]
+    [SerializeField] private Transform swordPivot;
+    [SerializeField] private float swordSwingStartAngle = -70f;
+    [SerializeField] private float swordSwingEndAngle = 70f;
+    [SerializeField] private float swordSwingDurationSeconds = 0.18f;
+    [SerializeField] private AnimationCurve swordSwingCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+    [Tooltip("Mirrors the swing when facing left so the sweep direction stays natural.")]
+    [SerializeField] private bool mirrorSwingByFacing = true;
+
     [Header("Facing")]
     [SerializeField] private SpriteRenderer spriteRenderer;
     [Tooltip("If true, flip left/right based on facing direction X.")]
@@ -75,6 +85,9 @@ public class EnemyKnight : MonoBehaviour, IDamageable
     private float nextAllowedBlockTime;
     private bool isBlocking;
     private bool isAttacking;
+    private Quaternion swordDefaultLocalRotation = Quaternion.identity;
+    private bool isSwordSwinging;
+    private float currentSwordSwingAngle;
 
     private void Awake()
     {
@@ -103,6 +116,11 @@ public class EnemyKnight : MonoBehaviour, IDamageable
         if (attackOrigin == null)
         {
             attackOrigin = transform;
+        }
+
+        if (swordPivot != null)
+        {
+            swordDefaultLocalRotation = swordPivot.localRotation;
         }
     }
 
@@ -175,6 +193,16 @@ public class EnemyKnight : MonoBehaviour, IDamageable
         }
     }
 
+    private void LateUpdate()
+    {
+        if (!isSwordSwinging)
+        {
+            return;
+        }
+
+        ApplyCurrentSwordRotation();
+    }
+
     public void TakeDamage(float damageAmount)
     {
         if (damageAmount <= 0f || currentHealth <= 0f)
@@ -222,6 +250,7 @@ public class EnemyKnight : MonoBehaviour, IDamageable
         isBlocking = true;
         nextAllowedBlockTime = Time.time + Mathf.Max(blockDurationSeconds, blockCooldownSeconds);
         body.linearVelocity = Vector2.zero;
+        ResetSwordPose();
 
         if (animator != null)
         {
@@ -268,9 +297,58 @@ public class EnemyKnight : MonoBehaviour, IDamageable
             yield return new WaitForSeconds(attackWindupSeconds);
         }
 
-        PerformSweepAttack();
+        if (swordPivot != null && swordSwingDurationSeconds > 0.01f)
+        {
+            yield return StartCoroutine(PlaySwordSwingAndApplyHit());
+        }
+        else
+        {
+            PerformSweepAttack();
+        }
+
         RestorePostAttackVisuals();
         isAttacking = false;
+    }
+
+    private IEnumerator PlaySwordSwingAndApplyHit()
+    {
+        float duration = Mathf.Max(0.01f, swordSwingDurationSeconds);
+        float elapsed = 0f;
+        bool hitApplied = false;
+        isSwordSwinging = true;
+
+        float mirrorSign = 1f;
+        if (mirrorSwingByFacing && Mathf.Abs(facingDirection.x) > 0.01f)
+        {
+            mirrorSign = facingDirection.x < 0f ? -1f : 1f;
+        }
+
+        float startAngle = swordSwingStartAngle * mirrorSign;
+        float endAngle = swordSwingEndAngle * mirrorSign;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            float t = Mathf.Clamp01(elapsed / duration);
+            float curved = swordSwingCurve != null ? swordSwingCurve.Evaluate(t) : t;
+            currentSwordSwingAngle = Mathf.Lerp(startAngle, endAngle, curved);
+            ApplyCurrentSwordRotation();
+
+            if (!hitApplied && t >= 0.5f)
+            {
+                PerformSweepAttack();
+                hitApplied = true;
+            }
+
+            yield return null;
+        }
+
+        if (!hitApplied)
+        {
+            PerformSweepAttack();
+        }
+
+        isSwordSwinging = false;
     }
 
     private void ApplyAttackVisuals()
@@ -292,11 +370,34 @@ public class EnemyKnight : MonoBehaviour, IDamageable
     {
         if (animator != null || spriteRenderer == null || isBlocking)
         {
+            ResetSwordPose();
             return;
         }
 
         spriteRenderer.sprite = defaultSprite;
         spriteRenderer.color = defaultColor;
+        ResetSwordPose();
+    }
+
+    private void ResetSwordPose()
+    {
+        isSwordSwinging = false;
+        currentSwordSwingAngle = 0f;
+
+        if (swordPivot != null)
+        {
+            swordPivot.localRotation = swordDefaultLocalRotation;
+        }
+    }
+
+    private void ApplyCurrentSwordRotation()
+    {
+        if (swordPivot == null)
+        {
+            return;
+        }
+
+        swordPivot.localRotation = swordDefaultLocalRotation * Quaternion.Euler(0f, 0f, currentSwordSwingAngle);
     }
 
     private void PerformSweepAttack()
