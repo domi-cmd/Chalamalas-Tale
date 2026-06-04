@@ -4,7 +4,22 @@ using System.Collections.Generic;
 
 public class GridManager : MonoBehaviour
 {
-    public static GridManager Instance;
+    private static GridManager _instance;
+
+    //singleton 
+    public static GridManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                GameObject obj = new GameObject("GridManager");
+                _instance = obj.AddComponent<GridManager>();
+            }
+
+            return _instance;
+        }
+    }
     // Keep track of which rooms have been visited, and should be part of the minimap
     public HashSet<(int, int)> visitedRooms = new HashSet<(int, int)>();
 
@@ -62,6 +77,9 @@ public class GridManager : MonoBehaviour
         ( 0,  1,  1,  3),  // right:  my=right(1),  neighbor=left(3)
     };
 
+    /*
+    dangerous right now as we don't use this gridmanager in the tutorial section,
+    the initialization happens before "Room" gets loaded
     // Creates the GridManager before any scene loads if it doesn't exist yet
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void CreateInstance()
@@ -69,15 +87,20 @@ public class GridManager : MonoBehaviour
         if (Instance != null) return;
         new GameObject("GridManager").AddComponent<GridManager>();
     }
+    */
 
     void Awake()
     {
-        // Singleton pattern that destroys duplicates and persists across scenes
-        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
-        Instance = this;
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        _instance = this;
         DontDestroyOnLoad(gameObject);
+
         GenerateGrid();
-        
     }
 
     // Returns whether a certain side of the room has a door

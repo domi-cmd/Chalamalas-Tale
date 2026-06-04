@@ -779,7 +779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2906671742558231861, guid: 8f2bf883dc6efa2498a7c9a62b82b9b2, type: 3}
       propertyPath: maxHealth
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3219566271364207523, guid: 8f2bf883dc6efa2498a7c9a62b82b9b2, type: 3}
       propertyPath: m_LocalScale.x
@@ -852,6 +852,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 235883139}
     m_Modifications:
     - target: {fileID: -2104305103450343537, guid: 791c338b2bd0d3544b30af6b018d3421, type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2104305103450343537, guid: 791c338b2bd0d3544b30af6b018d3421, type: 3}
       propertyPath: showAggroRange
       value: 0
       objectReference: {fileID: 0}
@@ -898,6 +902,10 @@ PrefabInstance:
     - target: {fileID: 4007544879303788332, guid: 791c338b2bd0d3544b30af6b018d3421, type: 3}
       propertyPath: m_Name
       value: EnemyArcher
+      objectReference: {fileID: 0}
+    - target: {fileID: 6724042598694419774, guid: 791c338b2bd0d3544b30af6b018d3421, type: 3}
+      propertyPath: maxHealth
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
