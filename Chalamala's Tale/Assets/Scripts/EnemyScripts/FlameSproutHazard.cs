@@ -1,7 +1,7 @@
 using UnityEngine;
 
-/// Ground flame hazard: stays inactive for a warning period, then erupts once and applies damage
-/// to the player if they're within range at eruption time.
+/// Ground flame hazard: stays inactive for a warning period, then remains dangerous
+/// for its active duration. It can damage the player only once.
 
 public class FlameSproutHazard : MonoBehaviour
 {
@@ -25,6 +25,7 @@ public class FlameSproutHazard : MonoBehaviour
     [SerializeField] private bool pauseParticlesDuringWarning = false;
 
     private bool hasErupted;
+    private bool hasDamagedPlayer;
 
     private SpriteRenderer cachedSpriteRenderer;
     private Collider2D[] cachedColliders;
@@ -53,11 +54,6 @@ public class FlameSproutHazard : MonoBehaviour
         cachedRenderers = GetComponentsInChildren<Renderer>(includeInactive: true);
         cachedParticleSystems = GetComponentsInChildren<ParticleSystem>(includeInactive: true);
 
-        if (destroyAfterSeconds > 0f)
-        {
-            Destroy(gameObject, destroyAfterSeconds + Mathf.Max(0f, warningDelaySeconds));
-        }
-
         SetWarningState();
     }
 
@@ -69,6 +65,7 @@ public class FlameSproutHazard : MonoBehaviour
     private void SetWarningState()
     {
         hasErupted = false;
+        hasDamagedPlayer = false;
 
         if (cachedColliders != null)
         {
@@ -153,14 +150,24 @@ public class FlameSproutHazard : MonoBehaviour
 
         hasErupted = true;
         SetEruptState();
-        DealDamageOnce();
 
-        // Allow visuals to play; object is destroyed via Destroy() scheduled in Awake.
+        float activeEndTime = Time.time + Mathf.Max(0.01f, destroyAfterSeconds);
+        while (Time.time < activeEndTime)
+        {
+            if (!hasDamagedPlayer)
+            {
+                TryDealDamageOnce();
+            }
+
+            yield return null;
+        }
+
+        Destroy(gameObject);
     }
 
-    private void DealDamageOnce()
+    private void TryDealDamageOnce()
     {
-        if (damageAmount <= 0f || damageRadius <= 0f)
+        if (hasDamagedPlayer || damageAmount <= 0f || damageRadius <= 0f)
         {
             return;
         }
@@ -177,6 +184,7 @@ public class FlameSproutHazard : MonoBehaviour
             if (ph != null)
             {
                 ph.TakeDamage(damageAmount);
+                hasDamagedPlayer = true;
                 break;
             }
         }
