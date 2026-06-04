@@ -40,10 +40,13 @@ public class Chalamala : MonoBehaviour
             // show hint "press e" only if assigned
             if (info != null)
                 info.enabled = true;
-            if (GameManager.Instance.swissCheeseSeen)
-            {
-                easter.enabled = true;
-            }
+                if (GameManager.Instance.swissCheeseSeen &&
+                    GridManager.Instance.currentRow == 3 &&
+                    GridManager.Instance.currentCol == 3)
+                {
+                    easter.enabled = true;
+                }
+
             if (!dial.gameObject.activeSelf && Input.GetKeyDown(KeyCode.E)){
                 dial.gameObject.SetActive(true);
 
