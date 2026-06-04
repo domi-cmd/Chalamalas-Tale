@@ -31,7 +31,7 @@ public class Chalamala : MonoBehaviour
 
         if (distance < showDistance)
         {
-            Debug.Log("can talk");
+            //Debug.Log("can talk");
             // show hint "press e" only if assigned
             if (info != null)
                 info.enabled = true;

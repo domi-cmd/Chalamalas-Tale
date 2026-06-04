@@ -189,12 +189,12 @@ public class GridManager : MonoBehaviour
         // Also hardcode the upgrade ranged attack room
         roomTypes[0, 3] = RoomTypes.Ranged_Attack_Upgrade_Room;
 
-        roomTypes[2,2] = RoomTypes.NPC_Room;
+        roomTypes[1,1] = RoomTypes.NPC_Room;
 
         reserved[0, 0] = true;
         reserved[3, 3] = true;
         reserved[0, 3] = true;
-        reserved[2,2] = true;
+        reserved[1,1] = true;
 
         // Place goat and cheese rooms in guaranteed positions
         PlaceGuaranteedRooms();
@@ -218,11 +218,11 @@ public class GridManager : MonoBehaviour
             int dirIndex = neighbors[Random.Range(0, neighbors.Count)];
             OpenPassage(r, c, dirIndex, visited, stack);
 
-            // 20% chance to carve a second passage for more open layouts
+            // 45% chance to carve a second passage for more open layouts
             // Disabled for the boss room to keep it more isolated
             if (r == 0 && c == 0) continue;
             neighbors = GetUnvisitedNeighbors(r, c, visited);
-            if (neighbors.Count > 0 && Random.value < 0.2f)
+            if (neighbors.Count > 0 && Random.value < 0.45f)
                 OpenPassage(r, c, neighbors[Random.Range(0, neighbors.Count)], visited, stack);
         }
         /*

@@ -36,9 +36,7 @@ MonoBehaviour:
     text: 'It goes something like this:
 
       once upon a time Fribourg was collapsing,
-      but
-
-      a powerful wizard arrived from the future'
+      but a powerful wizard arrived from the future'
     scene: Room
   - speaker: Chalamala
     text: He was ready to fight all the evil to save the city and be able to safely
@@ -52,14 +50,14 @@ MonoBehaviour:
       you don't have much choice)
     scene: Room
   - speaker: Wizard's mind
-    text: '* Very weird guy, I guess I only have a way to find out if what he sais
+    text: '* Very weird guy, I guess I only have a way to find out if what he says
       is true or if he''s completekly crazy*'
     scene: Room
   - speaker: Paesant
     text: Great mage, help me!
     scene: Villager
   - speaker: Paesant
-    text: "My farm is ruined, a terrible spell \nfell down on us! "
+    text: 'My farm is ruined, a terrible spell  fell down on us! '
     scene: Villager
   - speaker: Paesant
     text: That devilish goat came straight from hell and scared all my cows...
