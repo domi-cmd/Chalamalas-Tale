@@ -8,12 +8,19 @@ public class AudioManager : MonoBehaviour
     [Header("Music Sources")]
     [SerializeField] AudioSource calmSource;
     [SerializeField] AudioSource battleSource;
+    [SerializeField] AudioSource sfxSource;
+
     [SerializeField] AudioLowPassFilter calmFilter;
     [SerializeField] AudioLowPassFilter battleFilter;
 
     [Header("Clips")]
     public AudioClip backgroundCalm;
     public AudioClip backgroundBattle;
+    public AudioClip arrow;
+    public AudioClip door;
+    public AudioClip sword;
+    public AudioClip fireball;
+    public AudioClip dash;
     public static AudioManager instance;
     [Header("Settings")]
     public float transitionDuration = 2f;
@@ -21,6 +28,12 @@ public class AudioManager : MonoBehaviour
     private int enemyCount = 0;  
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
         calmSource.volume = 1f;
         battleSource.volume = 0f;
     }
@@ -45,10 +58,17 @@ public class AudioManager : MonoBehaviour
         {
             calmFilter.cutoffFrequency = 500f;
             battleFilter.cutoffFrequency = 500f;
-        }else
+        }else if(PlayerHealth.isDead == true)
+        {
+            battleSource.pitch = 0.8f;
+            calmSource.pitch = 0.8f;
+            battleFilter.cutoffFrequency = 1000f;
+        } else
         {
             calmFilter.cutoffFrequency = 22000f;
             battleFilter.cutoffFrequency = 22000f;
+            battleSource.pitch = 1f;
+            calmSource.pitch = 1f;
         }
     }
 
@@ -131,5 +151,9 @@ public class AudioManager : MonoBehaviour
         SwitchToBattle();
     else
         SwitchToCalm();
+}
+public void PlaySFX(AudioClip clip)
+{
+    sfxSource.PlayOneShot(clip);
 }
 }

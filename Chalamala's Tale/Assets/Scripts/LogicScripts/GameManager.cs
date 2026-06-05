@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using System;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -7,6 +8,12 @@ public class GameManager : MonoBehaviour
     public bool goatDead = false;
     public bool hasCheese = false;
     public bool swissCheeseSeen = false;
+    public static Action OnVictory;
+
+    public static void Victory()
+    {
+        OnVictory?.Invoke();
+    }
 
     private void Awake()
     {

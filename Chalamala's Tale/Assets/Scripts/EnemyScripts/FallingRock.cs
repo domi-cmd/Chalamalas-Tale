@@ -98,6 +98,7 @@ public class FallingRock : MonoBehaviour
         {
             return;
         }
+        AudioManager.instance.PlaySFX(AudioManager.instance.dash);
 
         hasImpacted = true;
 

@@ -29,6 +29,8 @@ public class PlayerMeleeSwipeAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.J))
         {
             Attack();
+            AudioManager.instance.PlaySFX(AudioManager.instance.sword);
+
         }
 
         if (attacking)

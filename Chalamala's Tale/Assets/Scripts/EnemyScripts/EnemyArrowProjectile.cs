@@ -16,11 +16,11 @@ public class EnemyArrowProjectile : MonoBehaviour
 
     private Collider2D projectileCollider;
     private float spawnTime;
-
     private void Awake()
     {
+        
         projectileCollider = GetComponent<Collider2D>();
-
+        AudioManager.instance.PlaySFX(AudioManager.instance.arrow);
         // Make this a trigger so it doesn't physically collide with anything.
         // We'll still detect overlaps and selectively react to walls/player.
         projectileCollider.isTrigger = true;

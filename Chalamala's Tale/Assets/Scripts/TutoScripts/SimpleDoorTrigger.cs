@@ -34,6 +34,8 @@ public class SimpleDoorTrigger : MonoBehaviour
             if (doorSpriteRenderer != null && unlockedSprite != null)
             {
                 doorSpriteRenderer.sprite = unlockedSprite;
+                AudioManager.instance.PlaySFX(AudioManager.instance.door);
+
             }
         }
     }

@@ -134,6 +134,8 @@ public class PlayerController : MonoBehaviour
             playerState = PlayerState.DodgeRollSliding;
             slideDirection = movement.normalized;
             slideSpeed = 15f;
+            AudioManager.instance.PlaySFX(AudioManager.instance.dash);
+
         }
     }
     public void PlayAttackAnimation()

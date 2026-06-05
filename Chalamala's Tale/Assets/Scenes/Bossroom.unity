@@ -1154,7 +1154,7 @@ SpriteRenderer:
 --- !u!1 &1479576741
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 9117654029680623180, guid: 7d076be85f5d9b9498f6529f80acc351, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -1741,8 +1741,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 611954771}
-  phase2HealthPercent: 0.66
-  phase3HealthPercent: 0.33
+  phase2HealthPercent: 0.5
   onPhaseChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1764,7 +1763,7 @@ MonoBehaviour:
   flameLifetimeSeconds: 2.5
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   maxActiveFlames: 12
   boulderPrefab: {fileID: 4007544879303788332, guid: 3fe4bf535eff9434e8442968bbdad355, type: 3}
   boulderSpawnAreaCenter: {fileID: 0}

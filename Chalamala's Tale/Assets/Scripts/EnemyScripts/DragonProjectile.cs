@@ -51,6 +51,8 @@ public class DragonProjectile : MonoBehaviour
         body.gravityScale = 0f;
         body.freezeRotation = true;
         body.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        AudioManager.instance.PlaySFX(AudioManager.instance.fireball);
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
