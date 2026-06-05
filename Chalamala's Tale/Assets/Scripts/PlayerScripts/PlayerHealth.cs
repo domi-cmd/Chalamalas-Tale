@@ -47,12 +47,14 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
             Debug.Log("You died!");
             OnPlayerDeath?.Invoke();
+            /*
             if (gravestonePrefab != null)
             {
                 Instantiate(gravestonePrefab, transform.position, Quaternion.identity);
             }
+            */
 
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             deathMenu.SetActive(true);
         }
     }
@@ -94,6 +96,7 @@ public class PlayerHealth : MonoBehaviour
     // handles the respwan after dying (max health brought back only after the player is in the correct room to avoid asynch errors) 
     public void Resurrect()
     {
+        Debug.Log("respawning");
         isDead=false;
         player.SetActive(true);
         Scene currentScene = SceneManager.GetActiveScene();
@@ -144,8 +147,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+
         // Restore health AFTER scene is fully loaded
         currentHealth = maxHealth;
+        deathMenu.SetActive(false);
 
         if (scene.name == "Room")
         {
