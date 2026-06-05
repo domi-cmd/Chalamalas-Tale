@@ -32,7 +32,7 @@ public class PlayerRangedAttack : MonoBehaviour
         {
             return;
         }
-
+        AudioManager.instance.PlaySFX(AudioManager.instance.fireball);
         // Decide in which direction the attack should fly
         switch (playerController.CurrentFacing)
         {

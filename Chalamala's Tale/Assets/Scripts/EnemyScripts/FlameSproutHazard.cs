@@ -152,6 +152,8 @@ public class FlameSproutHazard : MonoBehaviour
         }
 
         hasErupted = true;
+        AudioManager.instance.PlaySFX(AudioManager.instance.fireball);
+
         SetEruptState();
         DealDamageOnce();
 

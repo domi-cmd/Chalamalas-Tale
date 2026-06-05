@@ -288,12 +288,15 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         {
             DoRoarKnockback();
             nextRoarTime = Time.time + Mathf.Max(0.01f, roarIntervalSeconds);
+            AudioManager.instance.PlaySFX(AudioManager.instance.dash);
+
         }
 
         if (Time.time >= nextFlameWaveTime)
         {
             SpawnFlameSproutWave();
             nextFlameWaveTime = Time.time + Mathf.Max(0.01f, flameWaveIntervalSeconds);
+
         }
     }
 
@@ -486,6 +489,7 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         }
 
         dp.Initialize(direction, projectileSpeed, projectileDamage, projectileLifetime, playerLayerMask);
+
     }
 
     private void DoRoarKnockback()
@@ -623,6 +627,8 @@ public class EnemyDragon : MonoBehaviour, IDamageable
         }
 
         GameObject flameObject = Instantiate(prefab, spawnPos, Quaternion.identity);
+        AudioManager.instance.PlaySFX(AudioManager.instance.fireball);
+
         if (flameObject == null)
         {
             return;
@@ -807,6 +813,7 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     private void Die()
     {
         GetComponent<DropTable>()?.SpawnDrops();
+        GameManager.Victory();
         Destroy(gameObject);
         if (healthBar != null)
         {
