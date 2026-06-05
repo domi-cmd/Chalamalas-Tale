@@ -8,13 +8,12 @@ using UnityEngine.UI;
 
 /*
 Dragon Boss:
-- boss fight divided in 3 phases (the change of phase is induced by the current health of the dragon)
+- boss fight divided in 2 phases (the change of phase is induced by the current health of the dragon)
 - attacks:
     - Phase 1: Roar that knocks the player back, and random flame sprouts on the ground that 
     damage the player if they stay in the area for too long
     - Phase 2: Spawns a boulder that the player can hide behind, and shoots projectiles in an arc that the player has to 
     dodge while hiding behind the boulder. The boulder changes position after each barrage.
-    - Phase 3: Wicked spiral flame attack, todo
 
     todo: sprites, animations, boss health, victory screen
 */
@@ -34,8 +33,7 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     public enum DragonPhase
     {
         Phase1 = 1,
-        Phase2 = 2,
-        Phase3 = 3
+        Phase2 = 2
     }
 
     [Serializable]
@@ -73,9 +71,6 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     [Tooltip("Switch to Phase 2 when health <= maxHealth * this value")]
     [Range(0f, 1f)]
     [SerializeField] private float phase2HealthPercent = 0.66f;
-    [Tooltip("Switch to Phase 3 when health <= maxHealth * this value")]
-    [Range(0f, 1f)]
-    [SerializeField] private float phase3HealthPercent = 0.33f;
     [SerializeField] private DragonPhaseChangedEvent onPhaseChanged;
 
     [Header("Immovable")]
@@ -205,19 +200,15 @@ public class EnemyDragon : MonoBehaviour, IDamageable
             healthBar.value = 1f;
         }
 
-        currentPhase = debugStartingPhase;
+        // Handle stale serialized enum values from older versions that had Phase3.
+        currentPhase = debugStartingPhase == DragonPhase.Phase2
+            ? DragonPhase.Phase2
+            : DragonPhase.Phase1;
 
         // Force health into the correct range for the chosen starting phase
-        if (debugStartingPhase == DragonPhase.Phase3)
+        if (currentPhase == DragonPhase.Phase2)
         {
-            currentHealth = maxHealth * Mathf.Clamp01(phase3HealthPercent) * 0.5f;
-        }
-        else if (debugStartingPhase == DragonPhase.Phase2)
-        {
-            currentHealth = maxHealth * Mathf.Lerp(
-                Mathf.Clamp01(phase3HealthPercent),
-                Mathf.Clamp01(phase2HealthPercent),
-                0.5f);
+            currentHealth = maxHealth * Mathf.Clamp01(phase2HealthPercent) * 0.5f;
         }
 
         if (healthBar != null)
@@ -788,14 +779,9 @@ public class EnemyDragon : MonoBehaviour, IDamageable
     private void UpdatePhaseFromHealth()
     {
         float phase2Threshold = maxHealth * Mathf.Clamp01(phase2HealthPercent);
-        float phase3Threshold = maxHealth * Mathf.Clamp01(phase3HealthPercent);
 
         DragonPhase newPhase = DragonPhase.Phase1;
-        if (currentHealth <= phase3Threshold)
-        {
-            newPhase = DragonPhase.Phase3;
-        }
-        else if (currentHealth <= phase2Threshold)
+        if (currentHealth <= phase2Threshold)
         {
             newPhase = DragonPhase.Phase2;
         }

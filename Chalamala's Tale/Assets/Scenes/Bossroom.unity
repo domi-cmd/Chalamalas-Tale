@@ -1741,8 +1741,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 611954771}
-  phase2HealthPercent: 0.66
-  phase3HealthPercent: 0.33
+  phase2HealthPercent: 0.5
   onPhaseChanged:
     m_PersistentCalls:
       m_Calls: []
