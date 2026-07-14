@@ -47,12 +47,14 @@ public class PlayerHealth : MonoBehaviour
             isDead = true;
             Debug.Log("You died!");
             OnPlayerDeath?.Invoke();
+            /*
             if (gravestonePrefab != null)
             {
                 Instantiate(gravestonePrefab, transform.position, Quaternion.identity);
             }
+            */
 
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
             deathMenu.SetActive(true);
         }
     }
@@ -94,6 +96,7 @@ public class PlayerHealth : MonoBehaviour
     // handles the respwan after dying (max health brought back only after the player is in the correct room to avoid asynch errors) 
     public void Resurrect()
     {
+        Debug.Log("respawning");
         isDead=false;
         player.SetActive(true);
         Scene currentScene = SceneManager.GetActiveScene();
@@ -110,12 +113,20 @@ public class PlayerHealth : MonoBehaviour
         } else
         // Else (dragon_killing_you or already in real game grid) we go past the tutorial (and we respawn if first cell of big grid)
         {
+            // erase content of minimap of the tutorial
+            if (BasicGridManager.Instance != null)
+            {
+                BasicGridManager.Instance.visitedRooms.Clear();
+            }
+
+            BasicGridManager.Instance.tutorialFinished = true;
+
             // to not mess up with room positions, we assign it automatically
             GridManager.Instance.currentRow = 3;
             GridManager.Instance.currentCol = 3;
             
             SceneManager.sceneLoaded += RedrawMinimapAfterRespawn;
-            GridManager.Instance.GenerateGrid();
+            //GridManager.Instance.GenerateGrid();
 
             SceneManager.LoadScene("Room");
             
@@ -144,8 +155,10 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+
         // Restore health AFTER scene is fully loaded
         currentHealth = maxHealth;
+        deathMenu.SetActive(false);
 
         if (scene.name == "Room")
         {

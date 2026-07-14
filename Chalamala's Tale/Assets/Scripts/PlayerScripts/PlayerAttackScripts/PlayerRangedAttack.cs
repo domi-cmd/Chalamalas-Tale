@@ -60,8 +60,10 @@ public class PlayerRangedAttack : MonoBehaviour
         // player's collider
         Vector3 spawnPos = transform.position + (Vector3)(attackDirection * attackSpawnOffset);
         
-        GameObject projectile = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
-
+        // rotates the projectile accordingly to the orientation
+        Quaternion rotation = Quaternion.FromToRotation(Vector2.right, attackDirection);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPos, rotation);
+        
         PlayerArrowProjectile projectileDamage = projectile.GetComponent<PlayerArrowProjectile>();
         if (projectileDamage != null)
         {

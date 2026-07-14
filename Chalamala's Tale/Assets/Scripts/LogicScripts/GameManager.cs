@@ -7,10 +7,12 @@ public class GameManager : MonoBehaviour
 
     public bool goatDead = false;
     public bool hasCheese = false;
+    public bool swissCheeseSeen = false;
     public static Action OnVictory;
 
     public static void Victory()
     {
+        Debug.Log("Victory()");
         OnVictory?.Invoke();
     }
 

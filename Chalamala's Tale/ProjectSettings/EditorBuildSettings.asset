@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RoomEnemyChasing.unity
     guid: 2c409a3183920d143834bd12261ed58e
   - enabled: 1
-    path: Assets/Scenes/RoomBasicNPC.unity
+    path: Assets/Scenes/RoomDragonWarning.unity
     guid: 84f973d7b496dd442bf42fff2f5756af
   - enabled: 1
     path: Assets/Scenes/RoomEnemyGoat.unity
@@ -47,12 +47,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoomEnemyKnight.unity
     guid: 7dceb7ea5d2613a4080cf2053478b396
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Bossroom.unity
     guid: 9e6314616c43a094cb37ed047035a475
   - enabled: 1
     path: Assets/Scenes/RoomCheese.unity
     guid: 67e936eaae7d9bf49892b67499d845f4
+  - enabled: 1
+    path: Assets/Scenes/RoomEnemyArrows.unity
+    guid: f79f98ef96c1976499030930d6e2359a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

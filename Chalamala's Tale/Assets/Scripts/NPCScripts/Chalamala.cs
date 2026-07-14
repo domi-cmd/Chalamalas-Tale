@@ -3,6 +3,7 @@ using UnityEngine;
 public class Chalamala : MonoBehaviour
 {
     public Canvas info;   // to show interaction key
+    public Canvas easter;
     public Canvas dial; // to control the dialogue
     public Transform player;
     public float showDistance = 2f; // how close the player needs to be for the text to appear
@@ -18,6 +19,10 @@ public class Chalamala : MonoBehaviour
         if (info != null) // only disable info if it exists (tutorial)
             info.enabled = false;
 
+        // at the beginning we don't see the easter egg
+        if (easter != null) // only disable info if it exists
+            easter.enabled = false;
+
         dial.gameObject.SetActive(false);   // since it has its own script, it need to be completely blocked
     }
 
@@ -31,10 +36,17 @@ public class Chalamala : MonoBehaviour
 
         if (distance < showDistance)
         {
-            Debug.Log("can talk");
+            //Debug.Log("can talk");
             // show hint "press e" only if assigned
             if (info != null)
                 info.enabled = true;
+                if (GameManager.Instance.swissCheeseSeen &&
+                    GridManager.Instance.currentRow == 3 &&
+                    GridManager.Instance.currentCol == 3)
+                {
+                    easter.enabled = true;
+                }
+
             if (!dial.gameObject.activeSelf && Input.GetKeyDown(KeyCode.E)){
                 dial.gameObject.SetActive(true);
 

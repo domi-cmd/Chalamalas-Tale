@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     
 
     public string currentScene;
+    private string sceneToUse;
+    private string sceneUsed;
 
     // NEW
     public bool cheese = false;
@@ -45,21 +47,22 @@ public class Dialogue : MonoBehaviour
         textMeshPro.text = "";
 
         // Decide which scene to use
-        string sceneToUse = currentScene;
+        sceneUsed = currentScene;
 
-        // If cheese is true, use SwissCheese ONCE
-        if (GameManager.Instance.goatDead && currentScene == "Cheese")
+        // Special dialogue only once
+        if (GameManager.Instance.goatDead &&
+            currentScene == "Cheese" &&
+            !GameManager.Instance.swissCheeseSeen)
         {
-            sceneToUse = "SwissCheese";
-            GameManager.Instance.hasCheese = true;  // can now go and see the easter egg at the village
-            GameManager.Instance.goatDead = false; // only once
+            sceneUsed = "Swiss_cheese";
+            Debug.Log("cheese dialogue");
         }
 
-        activeDialogue = database.dialogues.FindAll(d => d.scene == sceneToUse);
+        activeDialogue = database.dialogues.FindAll(d => d.scene == sceneUsed);
 
         if (activeDialogue == null || activeDialogue.Count == 0)
         {
-            Debug.LogWarning("No dialogue found for scene: " + sceneToUse);
+            Debug.LogWarning("No dialogue found for scene: " + sceneUsed);
             EndDialogue();
             return;
         }
@@ -69,6 +72,16 @@ public class Dialogue : MonoBehaviour
 
     void EndDialogue()
     {
+        // If we just finished SwissCheese,
+        // mark it as seen and unlock cheese
+        if (sceneUsed == "Swiss_cheese" &&
+            GameManager.Instance.goatDead &&
+            !GameManager.Instance.swissCheeseSeen)
+        {
+            GameManager.Instance.swissCheeseSeen = true;
+            GameManager.Instance.hasCheese = true;
+            currentScene = "Cheese";
+        }
         index = 0;
         textMeshPro.text = "";
 

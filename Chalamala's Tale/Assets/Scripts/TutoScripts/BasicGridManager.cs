@@ -26,6 +26,8 @@ public class BasicGridManager : MonoBehaviour
     public int currentRow = 2;
     public int currentCol = 0;
 
+    public bool tutorialFinished = false;
+
     // Keeps track of the side from which the player exits the room, as to place him on the opposite side of the next room
     // (If u go left, u should come out at the right side of the next room, ect.)
     public int enteredFromSide = -1;
@@ -69,6 +71,10 @@ public class BasicGridManager : MonoBehaviour
     // Updates current room position and loads the new room that the player moved to
     public void MoveToRoom(int side)
     {
+        //deactivates the effect of basic grid manager when we are in the main game
+        if (tutorialFinished)
+            return;
+
         enteredFromSide = side;
         if (side == 0) currentRow--;
         if (side == 1) currentCol++;
