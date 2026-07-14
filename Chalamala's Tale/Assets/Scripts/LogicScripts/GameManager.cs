@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public static void Victory()
     {
+        Debug.Log("Victory()");
         OnVictory?.Invoke();
     }
 

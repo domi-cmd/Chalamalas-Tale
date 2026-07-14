@@ -398,6 +398,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1929906768539925909, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3702917610850003421, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -460,11 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3702917610850003421, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -716.2617
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702917610850003421, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 82.65259
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3702917610850003421, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -478,13 +482,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6599681475688694715, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6599681475688694715, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9454185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959778625997583506, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959778625997583506, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959778625997583506, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959778625997583506, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1929906768539925909, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1831806311}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
 --- !u!4 &402109733 stripped
 Transform:
@@ -1207,6 +1232,7 @@ GameObject:
   - component: {fileID: 1102163575}
   - component: {fileID: 1102163574}
   - component: {fileID: 1102163573}
+  - component: {fileID: 1102163577}
   m_Layer: 5
   m_Name: Canvas_menu
   m_TagString: Untagged
@@ -1314,6 +1340,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1102163577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102163571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201b2e0f99006429fb1f4a710a91a611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VictoryMenu
+  victoryUI: {fileID: 1831806309}
 --- !u!1 &1203268273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,6 +1682,10 @@ PrefabInstance:
     - target: {fileID: 3625696900900664196, guid: 88e4dbd87f9ef41408c496cde70a82e6, type: 3}
       propertyPath: m_Name
       value: GameMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625696900900664196, guid: 88e4dbd87f9ef41408c496cde70a82e6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2111,19 +2154,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3702917610850003421, guid: b9069b20f105d446b8fe2a018329042a, type: 3}
   m_PrefabInstance: {fileID: 370319908}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1831806311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1831806309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 201b2e0f99006429fb1f4a710a91a611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VictoryMenu
-  victoryUI: {fileID: 0}
 --- !u!4 &1843743742 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1569971188130460892, guid: ec9c7a50682ff48449377329d32d003a, type: 3}

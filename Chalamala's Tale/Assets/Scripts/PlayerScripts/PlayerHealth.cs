@@ -113,6 +113,14 @@ public class PlayerHealth : MonoBehaviour
         } else
         // Else (dragon_killing_you or already in real game grid) we go past the tutorial (and we respawn if first cell of big grid)
         {
+            // erase content of minimap of the tutorial
+            if (BasicGridManager.Instance != null)
+            {
+                BasicGridManager.Instance.visitedRooms.Clear();
+            }
+
+            BasicGridManager.Instance.tutorialFinished = true;
+
             // to not mess up with room positions, we assign it automatically
             GridManager.Instance.currentRow = 3;
             GridManager.Instance.currentCol = 3;
